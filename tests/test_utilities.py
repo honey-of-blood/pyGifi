@@ -17,7 +17,9 @@ from pygifi._utilities import (
 def test_center_zeros_mean():
     x = np.array([[1., 2.], [3., 4.], [5., 6.]])
     cx = center(x)
-    assert np.allclose(cx.mean(axis=0), 0.0), "Column means should be zero after centering"
+    assert np.allclose(
+        cx.mean(
+            axis=0), 0.0), "Column means should be zero after centering"
 
 
 def test_center_1d():

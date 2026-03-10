@@ -22,7 +22,16 @@ from pygifi._linalg import gs_rc, ls_rc
 from pygifi._splines import bspline_basis
 
 
-def make_gifi_variable(data, knots, degree, ordinal, ties, copies, missing, active, name):
+def make_gifi_variable(
+        data,
+        knots,
+        degree,
+        ordinal,
+        ties,
+        copies,
+        missing,
+        active,
+        name):
     """
     Create a static GifiVariable dict — holds input data and preprocessed basis.
 
@@ -52,7 +61,8 @@ def make_gifi_variable(data, knots, degree, ordinal, ties, copies, missing, acti
     nmis = len(notthere)
 
     if len(there) == 0:
-        raise ValueError(f"gifi_variable '{name}' cannot be completely missing")
+        raise ValueError(
+            f"gifi_variable '{name}' cannot be completely missing")
 
     work = data[there]  # non-missing values only
 
@@ -64,11 +74,15 @@ def make_gifi_variable(data, knots, degree, ordinal, ties, copies, missing, acti
     elif degree == -1:
         basis = make_indicator(work)
         if basis.shape[1] < 2:
-            raise ValueError(f"gifi_variable '{name}' must have more than one category")
+            raise ValueError(
+                f"gifi_variable '{name}' must have more than one unique category/level to be scaled, but only {basis.shape[1]} was found.")
         gifi_type = 'binary' if basis.shape[1] == 2 else 'categorical'
 
     else:  # degree >= 0
-        knots_arr = np.asarray(knots, dtype=float) if len(knots) > 0 else np.array([])
+        knots_arr = np.asarray(
+            knots,
+            dtype=float) if len(knots) > 0 else np.array(
+            [])
         basis = bspline_basis(work, degree=degree, innerknots=knots_arr)
         gifi_type = 'polynomial' if len(knots_arr) == 0 else 'splinical'
 
@@ -86,7 +100,8 @@ def make_gifi_variable(data, knots, degree, ordinal, ties, copies, missing, acti
     if basis is not None:
         qr = gs_rc(center(basis))
         if qr['rank'] == 0:
-            raise ValueError(f"gifi_variable '{name}' has zero-rank basis after centering")
+            raise ValueError(
+                f"gifi_variable '{name}' has zero-rank basis after centering")
     else:
         qr = None
 
@@ -105,7 +120,16 @@ def make_gifi_variable(data, knots, degree, ordinal, ties, copies, missing, acti
     }
 
 
-def make_gifi_set(data_cols, knots, degrees, ordinal, ties, copies, missing, active, names):
+def make_gifi_set(
+        data_cols,
+        knots,
+        degrees,
+        ordinal,
+        ties,
+        copies,
+        missing,
+        active,
+        names):
     """
     Create a GifiSet — a list of GifiVariable dicts.
 
@@ -137,7 +161,17 @@ def make_gifi_set(data_cols, knots, degrees, ordinal, ties, copies, missing, act
     ]
 
 
-def make_gifi(data, knots, degrees, ordinal, ties, copies, missing, active, names, sets):
+def make_gifi(
+        data,
+        knots,
+        degrees,
+        ordinal,
+        ties,
+        copies,
+        missing,
+        active,
+        names,
+        sets):
     """
     Create a Gifi — a list of GifiSets, one per set.
 
@@ -156,10 +190,10 @@ def make_gifi(data, knots, degrees, ordinal, ties, copies, missing, active, name
     sets = list(sets)
     nsets = max(sets) + 1
     result = []
-    
+
     # Ensure data is a numpy array for consistent slicing
     data_arr = np.asarray(data)
-    
+
     for s in range(nsets):
         k = [i for i, sv in enumerate(sets) if sv == s]
         set_data = data_arr[:, k]

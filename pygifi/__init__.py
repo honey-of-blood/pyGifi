@@ -21,6 +21,18 @@ from pygifi._isotone import cone_regression
 __version__ = "1.0.0"
 from typing import List
 
-__all__: List[str] = ["Homals", "Princals", "Morals", "make_numeric", "knots_gifi", "gifi_transform",
-           "encode", "decode", "categorical_encode", "categorical_decode", 
-           "get_dataset", "cv_morals", "cone_regression", "__version__"]
+__all__: List[str] = [
+    "Homals",
+    "Princals",
+    "Morals",
+    "make_numeric",
+    "knots_gifi",
+    "gifi_transform",
+    "encode",
+    "decode",
+    "categorical_encode",
+    "categorical_decode",
+    "get_dataset",
+    "cv_morals",
+    "cone_regression",
+    "__version__"]

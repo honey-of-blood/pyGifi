@@ -50,7 +50,7 @@ def plot_homals(result, dim=None, which='objectscores', ax=None, **kwargs):
         return r[k] if isinstance(r, dict) else getattr(r, k)
 
     plot_type = kwargs.pop('type', 'jointplot')
-    # Fallback to older `which` parameter 
+    # Fallback to older `which` parameter
     if which != 'objectscores':
         plot_type = which
 
@@ -62,7 +62,7 @@ def plot_homals(result, dim=None, which='objectscores', ax=None, **kwargs):
         ax.set_title('Homals — Scree Plot')
         ax.set_xticks(np.arange(len(evals)) + 1)
         return ax
-        
+
     if plot_type == 'transplot':
         # Transformation plot groups by variable
         transforms = get(result, 'transform')
@@ -72,16 +72,26 @@ def plot_homals(result, dim=None, which='objectscores', ax=None, **kwargs):
             # plot first copy of transform against original numeric values
             col_data = np.asarray(get(result, 'datanum')[:, j])
             sorted_idx = np.argsort(col_data)
-            ax.step(col_data[sorted_idx], np.asarray(tr)[sorted_idx, 0], 
-                     where='mid', color=var_colors[j], label=data.columns[j] if hasattr(data, 'columns') else f"Var{j}", alpha=0.8)
-        
+            ax.step(
+                col_data[sorted_idx],
+                np.asarray(tr)[
+                    sorted_idx,
+                    0],
+                where='mid',
+                color=var_colors[j],
+                label=data.columns[j] if hasattr(
+                    data,
+                    'columns') else f"Var{j}",
+                alpha=0.8)
+
         ax.set_xlabel('Original Values (quantified)')
         ax.set_ylabel('Transformed Scale')
         ax.set_title('Homals — Transformation Plot')
         ax.legend()
         return ax
 
-    which_list = ['objectscores', 'quantifications'] if plot_type == 'jointplot' else ['objectscores'] if plot_type == 'objplot' else ['objectscores', 'loadings']
+    which_list = ['objectscores', 'quantifications'] if plot_type == 'jointplot' else [
+        'objectscores'] if plot_type == 'objplot' else ['objectscores', 'loadings']
 
     if 'objectscores' in which_list:
         scores = np.asarray(get(result, 'objectscores'))
@@ -89,11 +99,18 @@ def plot_homals(result, dim=None, which='objectscores', ax=None, **kwargs):
                    color='steelblue', alpha=0.4, s=8, zorder=2, **kwargs)
 
     if 'quantifications' in which_list:
-        quants = get(result, 'quantifications')   # list of (n_cats, ndim) arrays
+        # list or dict of (n_cats, ndim) arrays
+        quants = get(result, 'quantifications')
         data = get(result, 'data')                # original DataFrame
         var_colors = plt.cm.Set1(np.linspace(0, 1, len(quants)))
 
-        for j, q in enumerate(quants):
+        # Normalize quantifications to an iterable of arrays
+        quants_list = list(
+            quants.values()) if isinstance(
+            quants,
+            dict) else quants
+
+        for j, q in enumerate(quants_list):
             q = np.asarray(q)
             # Get category labels from the original data column
             col = data.iloc[:, j]
@@ -127,19 +144,26 @@ def plot_homals(result, dim=None, which='objectscores', ax=None, **kwargs):
         try:
             loadings = np.asarray(get(result, 'loadings'))
             scores = np.asarray(get(result, 'objectscores'))
-            scalef = np.percentile(np.abs(scores), 80) / (np.max(np.abs(loadings)) + 1e-12)
+            scalef = np.percentile(np.abs(scores), 80) / \
+                (np.max(np.abs(loadings)) + 1e-12)
             for i in range(loadings.shape[0]):
-                ax.annotate('', xy=(loadings[i, dim[0]] * scalef,
-                                    loadings[i, dim[1]] * scalef),
-                            xytext=(0, 0),
-                            arrowprops=dict(arrowstyle='->', color='coral', lw=1.5))
+                ax.annotate('',
+                            xy=(loadings[i,
+                                         dim[0]] * scalef,
+                                loadings[i,
+                                         dim[1]] * scalef),
+                            xytext=(0,
+                                    0),
+                            arrowprops=dict(arrowstyle='->',
+                                            color='coral',
+                                            lw=1.5))
         except Exception:
             pass
 
     ax.axhline(0, color='gray', linewidth=0.5, linestyle='--')
     ax.axvline(0, color='gray', linewidth=0.5, linestyle='--')
-    ax.set_xlabel(f'Dimension {dim[0]+1}')
-    ax.set_ylabel(f'Dimension {dim[1]+1}')
+    ax.set_xlabel(f'Dimension {dim[0] + 1}')
+    ax.set_ylabel(f'Dimension {dim[1] + 1}')
     ax.set_title('Homals — Object Scores & Quantifications')
 
     return ax
@@ -185,24 +209,35 @@ def plot_princals(result, dim=None, type='biplot', ax=None, **kwargs):
         ax.set_title('Princals — Scree Plot')
         ax.set_xticks(np.arange(len(evals)) + 1)
         return ax
-        
+
     if type == 'transplot':
         if ax is None:
             fig, ax = plt.subplots(figsize=(7, 6))
         transforms = get(result, 'transform')
         data = get(result, 'data')
-        
-        # If transform is a list of matrices, handle it. If it's a single matrix, split by columns.
+
+        # If transform is a list of matrices, handle it. If it's a single
+        # matrix, split by columns.
         if isinstance(transforms, np.ndarray):
-            transforms = [transforms[:, i:i+1] for i in range(transforms.shape[1])]
-            
+            transforms = [transforms[:, i:i + 1]
+                          for i in range(transforms.shape[1])]
+
         var_colors = plt.cm.Set1(np.linspace(0, 1, len(transforms)))
         for j, tr in enumerate(transforms):
             col_data = np.asarray(get(result, 'datanum')[:, j])
             sorted_idx = np.argsort(col_data)
-            ax.step(col_data[sorted_idx], np.asarray(tr)[sorted_idx, 0], 
-                     where='mid', color=var_colors[j], label=data.columns[j] if hasattr(data, 'columns') else f"Var{j}", alpha=0.8)
-        
+            ax.step(
+                col_data[sorted_idx],
+                np.asarray(tr)[
+                    sorted_idx,
+                    0],
+                where='mid',
+                color=var_colors[j],
+                label=data.columns[j] if hasattr(
+                    data,
+                    'columns') else f"Var{j}",
+                alpha=0.8)
+
         ax.set_xlabel('Original Values (quantified)')
         ax.set_ylabel('Transformed Scale')
         ax.set_title('Princals — Transformation Plot')
@@ -216,35 +251,49 @@ def plot_princals(result, dim=None, type='biplot', ax=None, **kwargs):
         n_vars = loadings.shape[0] if loadings.ndim > 1 else 1
         x_pos = np.arange(n_vars)
         ax.bar(x_pos, loadings[:, dim[0]] if loadings.ndim > 1 else loadings,
-               color='steelblue', alpha=0.7, label=f'Dim {dim[0]+1}')
+               color='steelblue', alpha=0.7, label=f'Dim {dim[0] + 1}')
         if loadings.ndim > 1 and loadings.shape[1] > 1:
             ax.bar(x_pos, loadings[:, dim[1]], color='coral', alpha=0.7,
-                   label=f'Dim {dim[1]+1}')
+                   label=f'Dim {dim[1] + 1}')
         ax.set_title('Princals — Component Loadings')
         ax.legend()
     else:
         if ax is None:
             fig, ax = plt.subplots(figsize=(7, 6))
         scores = np.asarray(get(result, 'objectscores'))
-        ax.scatter(scores[:, dim[0]], scores[:, dim[1]],
-                   color='steelblue', alpha=0.6, zorder=3, label='Objects', **kwargs)
+        ax.scatter(scores[:,
+                          dim[0]],
+                   scores[:,
+                   dim[1]],
+                   color='steelblue',
+                   alpha=0.6,
+                   zorder=3,
+                   label='Objects',
+                   **kwargs)
 
         if type == 'biplot':
             try:
                 loadings = np.asarray(get(result, 'loadings'))
-                scalef = np.percentile(np.abs(scores), 80) / (np.max(np.abs(loadings)) + 1e-12)
+                scalef = np.percentile(np.abs(scores),
+                                       80) / (np.max(np.abs(loadings)) + 1e-12)
                 for i in range(loadings.shape[0]):
-                    ax.annotate('', xy=(loadings[i, dim[0]] * scalef,
-                                        loadings[i, dim[1]] * scalef),
-                                xytext=(0, 0),
-                                arrowprops=dict(arrowstyle='->', color='coral', lw=1.5))
+                    ax.annotate('',
+                                xy=(loadings[i,
+                                             dim[0]] * scalef,
+                                    loadings[i,
+                                             dim[1]] * scalef),
+                                xytext=(0,
+                                        0),
+                                arrowprops=dict(arrowstyle='->',
+                                                color='coral',
+                                                lw=1.5))
             except Exception:
                 pass  # Silently skip loadings overlay if not available
 
         ax.axhline(0, color='gray', linewidth=0.5, linestyle='--')
         ax.axvline(0, color='gray', linewidth=0.5, linestyle='--')
-        ax.set_xlabel(f'Dimension {dim[0]+1}')
-        ax.set_ylabel(f'Dimension {dim[1]+1}')
+        ax.set_xlabel(f'Dimension {dim[0] + 1}')
+        ax.set_ylabel(f'Dimension {dim[1] + 1}')
         ax.set_title('Princals — Biplot')
 
     return ax
@@ -254,54 +303,105 @@ def plot_morals(result, ncols=2):
     """Mirrors R's plot.morals: observed vs transformed per variable."""
     def get(r, k):
         return r[k] if isinstance(r, dict) else getattr(r, k)
-    
+
     # support both Morals object and dict containing results
-    data_X = get(result, 'X_') if hasattr(result, 'X_') else get(result, 'data')
+    data_X = get(
+        result,
+        'X_') if hasattr(
+        result,
+        'X_') else (
+            result.get('data') if isinstance(
+                result,
+                dict) else getattr(
+                    result,
+                    'data',
+                None))
     if data_X is None or not hasattr(data_X, 'columns'):
         # fallback if attributes not found
-        cols = [f"X{i}" for i in range(get(result, 'n_pred_') or get(result, 'xhat').shape[1])]
-        X_obs = np.asarray(data_X) if data_X is not None else np.zeros((get(result, 'xhat').shape[0], len(cols)))
+        num_preds = result.get('n_pred_') if isinstance(
+            result, dict) else getattr(
+            result, 'n_pred_', None)
+        xhat_matrix = result.get('xhat') if isinstance(
+            result, dict) else getattr(
+            result, 'xhat', getattr(
+                result, 'result_', {}).get(
+                'xhat', np.empty(
+                    (0, 1))))
+        num_preds = num_preds or (
+            xhat_matrix.shape[1] if xhat_matrix is not None else 1)
+        cols = [f"X{i}" for i in range(num_preds)]
+        X_obs = np.asarray(data_X) if data_X is not None else np.zeros(
+            (xhat_matrix.shape[0], len(cols)))
     else:
         cols = list(data_X.columns)
         X_obs = data_X.values
 
-    y_obs = get(result, 'y_')
+    y_obs = result.get('y_') if isinstance(
+        result, dict) else getattr(
+        result, 'y_', None)
     if y_obs is None:
         y_obs = np.zeros(len(X_obs))
-    
-    xhat = get(result, 'result_')['xhat'] if hasattr(result, 'result_') else get(result, 'xhat')
-    yhat = get(result, 'result_')['yhat'] if hasattr(result, 'result_') else get(result, 'yhat')
-    
+
+    xhat = getattr(
+        result,
+        'result_',
+        {}).get('xhat') if hasattr(
+        result,
+        'result_') else (
+            result.get('xhat') if isinstance(
+                result,
+                dict) else getattr(
+                    result,
+                    'xhat',
+                    np.empty(
+                        (0,
+                         1))))
+    yhat = getattr(
+        result,
+        'result_',
+        {}).get('yhat') if hasattr(
+        result,
+        'result_') else (
+            result.get('yhat') if isinstance(
+                result,
+                dict) else getattr(
+                    result,
+                    'yhat',
+                    np.zeros(
+                        len(X_obs))))
+
     nplots = len(cols) + 1   # predictors + response
     nrows = int(np.ceil(nplots / ncols))
-    
-    fig, axes = plt.subplots(nrows, ncols, figsize=(5*ncols, 4*nrows))
+
+    fig, axes = plt.subplots(nrows, ncols, figsize=(5 * ncols, 4 * nrows))
     axes = np.atleast_1d(axes).flatten()
-    
+
     # predictor transformations
     for i, col in enumerate(cols):
-        x_obs_i  = X_obs[:, i]
-        x_hat_i  = xhat[:, i]   # transformed predictor i
-        order  = np.argsort(x_obs_i)
+        x_obs_i = X_obs[:, i]
+        x_hat_i = xhat[:, i]   # transformed predictor i
+        order = np.argsort(x_obs_i)
         axes[i].plot(x_obs_i[order], x_hat_i[order], 'k-')
-        axes[i].set_xlabel('Observed'); axes[i].set_ylabel('Transformed')
+        axes[i].set_xlabel('Observed')
+        axes[i].set_ylabel('Transformed')
         axes[i].set_title(col)
-    
+
     # response transformation
     y_obs_arr = np.asarray(y_obs)
     order = np.argsort(y_obs_arr)
     axes[len(cols)].plot(y_obs_arr[order], yhat[order], 'k-')
-    axes[len(cols)].set_xlabel('Observed'); axes[len(cols)].set_ylabel('Transformed')
-    
+    axes[len(cols)].set_xlabel('Observed')
+    axes[len(cols)].set_ylabel('Transformed')
+
     y_name = 'Response'
     if hasattr(y_obs, 'name') and y_obs.name:
         y_name = str(y_obs.name)
     axes[len(cols)].set_title(y_name)
-    
+
     # hide unused panels
     for j in range(nplots, len(axes)):
         axes[j].set_visible(False)
-    
+
     fig.suptitle('MORALS', fontweight='bold')
     plt.tight_layout()
     return fig

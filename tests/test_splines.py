@@ -21,7 +21,8 @@ def test_bspline_partition_of_unity():
     x = np.linspace(0., 1., 20)
     b = bspline_basis(x, degree=2, innerknots=np.array([0.33, 0.67]))
     row_sums = b.sum(axis=1)
-    assert np.allclose(row_sums, 1.0, atol=1e-8), f"Rows don't sum to 1: {row_sums}"
+    assert np.allclose(
+        row_sums, 1.0, atol=1e-8), f"Rows don't sum to 1: {row_sums}"
 
 
 def test_bspline_nonnegative():
@@ -44,7 +45,8 @@ def test_bspline_right_endpoint():
     x = np.array([0., 0.5, 1.0])
     b = bspline_basis(x, degree=1, innerknots=np.array([0.5]))
     # Row at x=1.0 (right endpoint): last col = 1, others = 0
-    assert b[-1, -1] == 1.0, f"Right endpoint last col should be 1, got {b[-1, :]}"
+    assert b[-1, -
+             1] == 1.0, f"Right endpoint last col should be 1, got {b[-1, :]}"
     assert np.allclose(b[-1, :-1], 0.0)
 
 
@@ -90,6 +92,7 @@ def test_knots_gifi_invalid_type():
     with pytest.raises(ValueError, match="type must be 'Q', 'R', 'E', or 'D', got 'INVALID'"):
         knots_gifi(x, type='INVALID')
 
+
 def test_knots_gifi_data_few_unique():
     """'D' type with too few unique values for knots."""
     x = pd.DataFrame({'a': [1., 1., 2.]})
@@ -102,18 +105,18 @@ def test_deboor_fallback(monkeypatch):
     x = np.linspace(0., 1., 10)
     degree = 2
     innerknots = np.array([0.5])
-    
+
     # Run once normally to get the expected result
     expected_b = bspline_basis(x, degree=degree, innerknots=innerknots)
-    
+
     # Patch BSpline.design_matrix in the pygifi._splines namespace
     def mock_design(*args, **kwargs):
         raise Exception('Forced SciPy failure')
-        
+
     import pygifi._splines
     monkeypatch.setattr(pygifi._splines.BSpline, 'design_matrix', mock_design)
-    
+
     fallback_b = bspline_basis(x, degree=degree, innerknots=innerknots)
-        
+
     # The fallback should compute the mathematically identical basis matrix
     assert np.allclose(fallback_b, expected_b, atol=1e-8)

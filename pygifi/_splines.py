@@ -50,9 +50,11 @@ def bspline_basis(x, degree, innerknots, lowknot=None, highknot=None):
     innerknots = np.sort(np.unique(np.asarray(innerknots, dtype=float)))
 
     if lowknot is None:
-        lowknot = min(x.min(), innerknots.min()) if len(innerknots) > 0 else x.min()
+        lowknot = min(x.min(), innerknots.min()) if len(
+            innerknots) > 0 else x.min()
     if highknot is None:
-        highknot = max(x.max(), innerknots.max()) if len(innerknots) > 0 else x.max()
+        highknot = max(x.max(), innerknots.max()) if len(
+            innerknots) > 0 else x.max()
 
     # R: knots = c(rep(lowknot, degree+1), innerknots, rep(highknot, degree+1))
     knots = np.concatenate([
@@ -152,7 +154,8 @@ def knots_gifi(x, type='Q', n=None):
         out = []
         for i in range(ncols):
             col = xnum[:, i]
-            n_eff = n if n is not None else max(1, len(np.unique(col[~np.isnan(col)])) // 3)
+            n_eff = n if n is not None else max(
+                1, len(np.unique(col[~np.isnan(col)])) // 3)
             n_pts = n_eff + 2
             probs = np.linspace(0, 1, max(2, n_pts))
             y = np.nanquantile(col, probs)
@@ -162,7 +165,8 @@ def knots_gifi(x, type='Q', n=None):
         out = []
         for i in range(ncols):
             col = xnum[:, i]
-            n_eff = n if n is not None else max(1, len(np.unique(col[~np.isnan(col)])) // 3)
+            n_eff = n if n is not None else max(
+                1, len(np.unique(col[~np.isnan(col)])) // 3)
             n_pts = n_eff + 2
             y = np.linspace(np.nanmin(col), np.nanmax(col), max(2, n_pts))
             out.append(y[1:-1])

@@ -1,13 +1,13 @@
+from pygifi.plot import plot_homals, plot_princals
+from pygifi.princals import Princals
+from pygifi.homals import Homals
+import matplotlib.pyplot as plt
 import pytest
 import numpy as np
 import pandas as pd
 import matplotlib
 matplotlib.use('Agg')
-import matplotlib.pyplot as plt
 
-from pygifi.homals import Homals
-from pygifi.princals import Princals
-from pygifi.plot import plot_homals, plot_princals
 
 @pytest.fixture
 def dummy_data():
@@ -17,12 +17,14 @@ def dummy_data():
         'B': rng.uniform(0, 5, size=20)
     })
 
+
 def test_plot_homals_screeplot(dummy_data):
     model = Homals().fit(dummy_data)
     fig, ax = plt.subplots()
     plot_homals(model.result_, ax=ax, type='screeplot')
     assert plt.gcf() is not None
     plt.close('all')
+
 
 def test_plot_homals_transplot(dummy_data):
     model = Homals().fit(dummy_data)
@@ -31,6 +33,7 @@ def test_plot_homals_transplot(dummy_data):
     assert plt.gcf() is not None
     plt.close('all')
 
+
 def test_plot_homals_objplot(dummy_data):
     model = Homals().fit(dummy_data)
     fig, ax = plt.subplots()
@@ -38,12 +41,14 @@ def test_plot_homals_objplot(dummy_data):
     assert plt.gcf() is not None
     plt.close('all')
 
+
 def test_plot_princals_screeplot(dummy_data):
     model = Princals().fit(dummy_data)
     fig, ax = plt.subplots()
     plot_princals(model.result_, ax=ax, type='screeplot')
     assert plt.gcf() is not None
     plt.close('all')
+
 
 def test_plot_princals_transplot(dummy_data):
     model = Princals().fit(dummy_data)

@@ -38,7 +38,9 @@ def test_homals_objectscores_shape(sample_df):
 def test_homals_transform_equals_objectscores(sample_df):
     """transform(X) must return the same thing as result_['objectscores']."""
     model = Homals(ndim=2, itmax=200).fit(sample_df)
-    assert np.allclose(model.transform(sample_df), model.result_['objectscores'])
+    assert np.allclose(
+        model.transform(sample_df),
+        model.result_['objectscores'])
 
 
 def test_homals_ndim_3(sample_df):
@@ -74,7 +76,7 @@ def test_homals_result_keys(sample_df):
 def test_homals_quantifications_shape(sample_df):
     """quantifications[j] must have shape (nbas, ndim)."""
     model = Homals(ndim=2, itmax=200).fit(sample_df)
-    for q in model.result_['quantifications']:
+    for q in model.result_['quantifications'].values():
         assert q.shape[1] == 2
 
 
@@ -90,12 +92,15 @@ def test_homals_normobj_z_scales(sample_df):
     """normobj_z=True should scale objectscores by sqrt(nobs)."""
     nobs = len(sample_df)
     m_scaled = Homals(ndim=2, itmax=200, normobj_z=True).fit(sample_df)
-    m_raw    = Homals(ndim=2, itmax=200, normobj_z=False).fit(sample_df)
+    m_raw = Homals(ndim=2, itmax=200, normobj_z=False).fit(sample_df)
     s1 = m_scaled.result_['objectscores']
     s0 = m_raw.result_['objectscores']
-    # Reset seed: both use same seed, so raw objectscores should be proportional
+    # Reset seed: both use same seed, so raw objectscores should be
+    # proportional
     ratio = np.linalg.norm(s1) / np.linalg.norm(s0)
-    assert np.isclose(ratio, np.sqrt(nobs), rtol=0.05), f"ratio={ratio}, sqrt(nobs)={np.sqrt(nobs):.3f}"
+    assert np.isclose(
+        ratio, np.sqrt(nobs), rtol=0.05), f"ratio={ratio}, sqrt(nobs)={
+        np.sqrt(nobs):.3f}"
 
 
 # ---------- sklearn compatibility ----------

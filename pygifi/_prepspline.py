@@ -49,7 +49,8 @@ def level_to_spline(levels, data):
         df_col = pd.DataFrame(col)
 
         if lv == 'nominal':
-            # R: knotsGifi(data[,i], "D") — D-type: unique values minus endpoints
+            # R: knotsGifi(data[,i], "D") — D-type: unique values minus
+            # endpoints
             kl = knots_gifi(df_col, type='D', n=3)
             knot_list.append(kl[0])
             ord_vec.append(False)
@@ -60,14 +61,14 @@ def level_to_spline(levels, data):
             kl = knots_gifi(df_col, type='D', n=3)
             knot_list.append(kl[0])
             ord_vec.append(True)
-            deg_vec.append(-1) # Categorical ordinal by default
+            deg_vec.append(-1)  # Categorical ordinal by default
 
         elif lv == 'metric':
             # R: knotsGifi(data[,i], "E") — empty knots (polynomial/continuous)
             kl = knots_gifi(df_col, type='E', n=3)
             knot_list.append(kl[0])
             ord_vec.append(True)
-            deg_vec.append(1) # Linear polynomial by default
+            deg_vec.append(1)  # Linear polynomial by default
 
     return {
         'knotList': knot_list,

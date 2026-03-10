@@ -14,8 +14,16 @@ from pygifi._linalg import gs_rc
 
 def test_gifi_variable_categorical():
     data = np.array([1., 2., 1., 3., 2.])
-    gv = make_gifi_variable(data, knots=[], degree=-1, ordinal=False,
-                             ties='s', copies=2, missing='s', active=True, name='x')
+    gv = make_gifi_variable(
+        data,
+        knots=[],
+        degree=-1,
+        ordinal=False,
+        ties='s',
+        copies=2,
+        missing='s',
+        active=True,
+        name='x')
     assert gv['type'] == 'categorical'
     assert gv['basis'].shape[0] == 5
     assert gv['basis'].shape[1] == 3   # 3 unique values
@@ -24,8 +32,16 @@ def test_gifi_variable_categorical():
 
 def test_gifi_variable_binary():
     data = np.array([1., 2., 1., 2., 1.])
-    gv = make_gifi_variable(data, knots=[], degree=-1, ordinal=False,
-                             ties='s', copies=2, missing='s', active=True, name='y')
+    gv = make_gifi_variable(
+        data,
+        knots=[],
+        degree=-1,
+        ordinal=False,
+        ties='s',
+        copies=2,
+        missing='s',
+        active=True,
+        name='y')
     assert gv['type'] == 'binary'
     assert gv['basis'].shape[1] == 2
 
@@ -33,32 +49,64 @@ def test_gifi_variable_binary():
 def test_gifi_variable_copies_capped():
     """copies should be capped at basis.ncol - 1."""
     data = np.array([1., 2., 1., 2., 1.])   # binary → 2 basis cols
-    gv = make_gifi_variable(data, knots=[], degree=-1, ordinal=False,
-                             ties='s', copies=10, missing='s', active=True, name='y')
+    gv = make_gifi_variable(
+        data,
+        knots=[],
+        degree=-1,
+        ordinal=False,
+        ties='s',
+        copies=10,
+        missing='s',
+        active=True,
+        name='y')
     # 2 basis cols → copies capped at 1
     assert gv['copies'] == 1
 
 
 def test_gifi_variable_polynomial():
     data = np.linspace(1., 5., 10)
-    gv = make_gifi_variable(data, knots=[], degree=2, ordinal=False,
-                             ties='s', copies=2, missing='s', active=True, name='z')
+    gv = make_gifi_variable(
+        data,
+        knots=[],
+        degree=2,
+        ordinal=False,
+        ties='s',
+        copies=2,
+        missing='s',
+        active=True,
+        name='z')
     assert gv['type'] == 'polynomial'
     assert gv['basis'].shape[0] == 10
 
 
 def test_gifi_variable_splinical():
     data = np.linspace(1., 5., 10)
-    gv = make_gifi_variable(data, knots=[3.0], degree=2, ordinal=False,
-                             ties='s', copies=2, missing='s', active=True, name='z')
+    gv = make_gifi_variable(
+        data,
+        knots=[3.0],
+        degree=2,
+        ordinal=False,
+        ties='s',
+        copies=2,
+        missing='s',
+        active=True,
+        name='z')
     assert gv['type'] == 'splinical'
 
 
 def test_gifi_variable_qr_orthonormal():
     """QR from gs_rc should give Q.T @ Q = I."""
     data = np.array([1., 2., 1., 3., 2., 1., 3., 2.])
-    gv = make_gifi_variable(data, knots=[], degree=-1, ordinal=False,
-                             ties='s', copies=2, missing='s', active=True, name='x')
+    gv = make_gifi_variable(
+        data,
+        knots=[],
+        degree=-1,
+        ordinal=False,
+        ties='s',
+        copies=2,
+        missing='s',
+        active=True,
+        name='x')
     q = gv['qr']['q']
     assert np.allclose(q.T @ q, np.eye(gv['qr']['rank']), atol=1e-10)
 
@@ -66,15 +114,32 @@ def test_gifi_variable_qr_orthonormal():
 def test_gifi_variable_completely_missing_raises():
     data = np.array([np.nan, np.nan, np.nan])
     with pytest.raises(ValueError, match="completely missing"):
-        make_gifi_variable(data, knots=[], degree=-1, ordinal=False,
-                            ties='s', copies=2, missing='s', active=True, name='bad')
+        make_gifi_variable(
+            data,
+            knots=[],
+            degree=-1,
+            ordinal=False,
+            ties='s',
+            copies=2,
+            missing='s',
+            active=True,
+            name='bad')
 
 
 def test_gifi_variable_single_category_raises():
-    data = np.array([1., 1., 1., 1.])  # all same → 1 unique → indicator has 1 col
-    with pytest.raises(ValueError, match="more than one category"):
-        make_gifi_variable(data, knots=[], degree=-1, ordinal=False,
-                            ties='s', copies=2, missing='s', active=True, name='bad')
+    # all same → 1 unique → indicator has 1 col
+    data = np.array([1., 1., 1., 1.])
+    with pytest.raises(ValueError, match="more than one unique category/level"):
+        make_gifi_variable(
+            data,
+            knots=[],
+            degree=-1,
+            ordinal=False,
+            ties='s',
+            copies=2,
+            missing='s',
+            active=True,
+            name='bad')
 
 
 # ---------- make_gifi ----------
@@ -95,7 +160,17 @@ def test_make_gifi_structure():
     names = ['a', 'b', 'c']
     sets = [0, 1, 2]
 
-    gifi = make_gifi(data, knots, degrees, ordinal, ties, copies, missing, active, names, sets)
+    gifi = make_gifi(
+        data,
+        knots,
+        degrees,
+        ordinal,
+        ties,
+        copies,
+        missing,
+        active,
+        names,
+        sets)
     assert len(gifi) == 3   # 3 sets
     assert len(gifi[0]) == 1  # 1 variable per set
 
@@ -125,8 +200,16 @@ def test_make_gifi_single_set():
 def test_x_gifi_variable_transform_shape():
     np.random.seed(123)
     data = np.array([1., 2., 1., 3., 2., 1., 3., 2.])
-    gv = make_gifi_variable(data, knots=[], degree=-1, ordinal=False,
-                             ties='s', copies=2, missing='s', active=True, name='x')
+    gv = make_gifi_variable(
+        data,
+        knots=[],
+        degree=-1,
+        ordinal=False,
+        ties='s',
+        copies=2,
+        missing='s',
+        active=True,
+        name='x')
     nobs, ndim = 8, 2
     x = np.random.randn(nobs, ndim)
     x = gs_rc(center(x))['q']
@@ -141,8 +224,16 @@ def test_x_gifi_variable_transform_shape():
 def test_x_gifi_variable_transform_orthonormal():
     np.random.seed(123)
     data = np.array([1., 2., 1., 3., 2., 1., 3., 2.])
-    gv = make_gifi_variable(data, knots=[], degree=-1, ordinal=False,
-                             ties='s', copies=2, missing='s', active=True, name='x')
+    gv = make_gifi_variable(
+        data,
+        knots=[],
+        degree=-1,
+        ordinal=False,
+        ties='s',
+        copies=2,
+        missing='s',
+        active=True,
+        name='x')
     x = gs_rc(center(np.random.randn(8, 2)))['q']
     xgv = make_x_gifi_variable(gv, x)
     T = xgv['transform']

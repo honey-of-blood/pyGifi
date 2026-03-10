@@ -83,19 +83,27 @@ class Morals(BaseEstimator, TransformerMixin):  # type: ignore
         self.verbose = verbose
         self.init_x = init_x
 
-    def fit(self, X: Union[pd.DataFrame, np.ndarray], y: Union[pd.Series, pd.DataFrame, np.ndarray], sample_weight: Any = None) -> 'Morals':
+    def fit(self,
+            X: Union[pd.DataFrame,
+                     np.ndarray],
+            y: Union[pd.Series,
+                     pd.DataFrame,
+                     np.ndarray],
+            sample_weight: Any = None) -> 'Morals':
         """Fit Morals model to predictors X and response y."""
         if not isinstance(X, pd.DataFrame):
             X = pd.DataFrame(X)
+        if X.empty:
+            raise ValueError("Input data X cannot be empty.")
         if not isinstance(y, (pd.Series, pd.DataFrame)):
             y = pd.Series(y)
-            
+
         npred, nobs = X.shape[1], X.shape[0]
-        
+
         # Coerce to numeric (handles categories/factors like R)
         X_num = make_numeric(X)
         y_num = make_numeric(y).ravel()  # type: ignore
-        
+
         xnames = list(X.columns)
 
         # Broadcast per-predictor params
@@ -114,15 +122,19 @@ class Morals(BaseEstimator, TransformerMixin):  # type: ignore
             ]
         else:
             xknots = self.xknots
-            
+
         if self.yknots is None:
-            yknots = [knots_gifi(pd.DataFrame(y), type="Q", n=None)[0]]  # type: ignore
+            yknots = [
+                knots_gifi(
+                    pd.DataFrame(y),
+                    type="Q",
+                    n=None)[0]]  # type: ignore
         else:
             yknots = self.yknots
 
         # Combine X+y into one data matrix
         data = np.column_stack([X_num, y_num])
-        
+
         # All X share set 0, Y is set 1
         sets = [0] * npred + [1]
 
@@ -182,15 +194,30 @@ class Morals(BaseEstimator, TransformerMixin):  # type: ignore
         return self
 
     def transform(self, X: Any) -> np.ndarray:
-        """Returns the object scores."""
+        """
+        Returns the object scores for the fitted data.
+
+        Note: Out-of-sample projection is currently not supported in this Python port.
+        """
         from sklearn.utils.validation import check_is_fitted
         check_is_fitted(self, "is_fitted_")
-        return self.result_["objectscores"]  # type: ignore
+
+        X_num = make_numeric(X)
+        if hasattr(self, 'X_') and self.X_ is not None:
+            # Check if this is the identical data we fit on
+            if X_num.shape == make_numeric(self.X_).shape:
+                return self.result_["objectscores"]  # type: ignore
+
+        raise NotImplementedError(
+            "Out-of-sample transformation (projecting new data onto fitted knots) "
+            "is not natively supported in the PyGifi port of R's Gifi package."
+        )
 
     def __repr__(self) -> str:
         if hasattr(self, 'result_'):
-            return (f"Morals()\n"
-                    f"Loss value: {self.result_['f']:.6f}\n"
-                    f"Number of iterations: {self.result_['ntel']}\n"
-                    f"Squared Multiple Correlation (SMC): {self.result_['smc']:.6f}")
+            return (
+                f"Morals()\n" f"Loss value: {
+                    self.result_['f']:.6f}\n" f"Number of iterations: {
+                    self.result_['ntel']}\n" f"Squared Multiple Correlation (SMC): {
+                    self.result_['smc']:.6f}")
         return "Morals()"

@@ -131,7 +131,8 @@ def ls_rc(x, y, eps=1e-10):
     # p = reorder back to original column order
     p = np.argsort(pivot)
 
-    a = r_full[:rank, :rank]       # leading rank×rank upper triangular submatrix
+    # leading rank×rank upper triangular submatrix
+    a = r_full[:rank, :rank]
     v = r_full[:rank, rank:]        # right part
 
     u = q.T @ y_2d            # (l, k)

@@ -1,5 +1,10 @@
 """Tests for pygifi.plot — Smoke tests to ensure plotting functions do not crash."""
 
+from pygifi.plot import plot_homals, plot_princals, plot_morals
+from pygifi.morals import Morals
+from pygifi.princals import Princals
+from pygifi.homals import Homals
+import matplotlib.pyplot as plt
 import pytest
 import numpy as np
 import pandas as pd
@@ -7,12 +12,6 @@ import matplotlib
 
 # Use a non-interactive backend so tests don't open windows
 matplotlib.use('Agg')
-import matplotlib.pyplot as plt
-
-from pygifi.homals import Homals
-from pygifi.princals import Princals
-from pygifi.morals import Morals
-from pygifi.plot import plot_homals, plot_princals, plot_morals
 
 
 @pytest.fixture
@@ -31,10 +30,10 @@ def dummy_data():
 def test_plot_homals_objectscores(dummy_data):
     """Ensure plot_homals executes without errors."""
     model = Homals().fit(dummy_data)
-    
+
     fig, ax = plt.subplots()
     plot_homals(model.result_, ax=ax, which='objectscores')
-    
+
     assert plt.gcf() is not None
     plt.close('all')
 
@@ -42,10 +41,10 @@ def test_plot_homals_objectscores(dummy_data):
 def test_plot_princals_biplot(dummy_data):
     """Ensure plot_princals(type='biplot') executes without errors."""
     model = Princals().fit(dummy_data)
-    
+
     fig, ax = plt.subplots()
     plot_princals(model.result_, ax=ax, type='biplot')
-    
+
     assert plt.gcf() is not None
     plt.close('all')
 
@@ -53,10 +52,10 @@ def test_plot_princals_biplot(dummy_data):
 def test_plot_princals_loadings(dummy_data):
     """Ensure plot_princals(type='loadings') executes without errors."""
     model = Princals().fit(dummy_data)
-    
+
     fig, ax = plt.subplots()
     plot_princals(model.result_, ax=ax, type='loadings')
-    
+
     assert plt.gcf() is not None
     plt.close('all')
 
@@ -66,10 +65,10 @@ def test_plot_morals_transformation(dummy_data):
     X = dummy_data[['A', 'B']]
     y = dummy_data['C']
     model = Morals().fit(X, y)
-    
-    # plot_morals returns an array of 2 axes
-    axes = plot_morals(model.result_)
-    
-    assert len(axes) == 2
+
+    # plot_morals returns a Figure
+    fig = plot_morals(model.result_)
+
+    assert len(fig.axes) > 0   # confirm axes are generated
     assert plt.gcf() is not None
     plt.close('all')

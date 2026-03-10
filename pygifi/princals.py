@@ -81,20 +81,20 @@ class Princals(BaseEstimator, TransformerMixin):  # type: ignore
     """
 
     def __init__(
-        self, 
-        ndim: int = 2, 
-        levels: Union[str, List[str]] = 'ordinal', 
-        ordinal: Optional[Union[bool, List[bool]]] = None, 
+        self,
+        ndim: int = 2,
+        levels: Union[str, List[str]] = 'ordinal',
+        ordinal: Optional[Union[bool, List[bool]]] = None,
         knots: Optional[List[np.ndarray]] = None,
-        degrees: Union[int, List[int]] = 1, 
-        copies: Union[int, List[int]] = 1, 
-        ties: Union[str, List[str]] = 's', 
-        missing: Union[str, List[str]] = 's', 
+        degrees: Union[int, List[int]] = 1,
+        copies: Union[int, List[int]] = 1,
+        ties: Union[str, List[str]] = 's',
+        missing: Union[str, List[str]] = 's',
         normobj_z: bool = True,
-        active: Union[bool, List[bool]] = True, 
-        itmax: int = 1000, 
-        eps: float = 1e-6, 
-        verbose: bool = False, 
+        active: Union[bool, List[bool]] = True,
+        itmax: int = 1000,
+        eps: float = 1e-6,
+        verbose: bool = False,
         init_x: Optional[np.ndarray] = None
     ) -> None:
         self.ndim = ndim
@@ -112,7 +112,7 @@ class Princals(BaseEstimator, TransformerMixin):  # type: ignore
         self.verbose = verbose
         self.init_x = init_x
 
-    def _get_ordinal_flags(self, data, levels):
+    def _get_ordinal_flags(self, data: Union[pd.DataFrame, np.ndarray], levels: Union[str, List[str]]) -> List[bool]:
         if levels == 'nominal':
             # ALL variables treated as nominal — return all False
             return [False] * data.shape[1]
@@ -120,10 +120,11 @@ class Princals(BaseEstimator, TransformerMixin):  # type: ignore
             return [True] * data.shape[1]
         elif isinstance(levels, list):
             # per-variable specification
-            return [l == 'ordinal' for l in levels]
+            return [lvl == 'ordinal' for lvl in levels]
         return [True] * data.shape[1]
 
-    def fit(self, X: Union[pd.DataFrame, np.ndarray], y: Any = None) -> 'Princals':
+    def fit(self, X: Union[pd.DataFrame, np.ndarray],
+            y: Any = None) -> 'Princals':
         """
         Fit Princals on X.
 
@@ -139,6 +140,8 @@ class Princals(BaseEstimator, TransformerMixin):  # type: ignore
         # --- Coerce + validate ---
         if not isinstance(X, pd.DataFrame):
             X = pd.DataFrame(X)
+        if X.empty:
+            raise ValueError("Input data X cannot be empty.")
         names = list(X.columns)
         data_orig = X.copy()
         data = make_numeric(X)
@@ -169,7 +172,7 @@ class Princals(BaseEstimator, TransformerMixin):  # type: ignore
             else:
                 ordinal_v = self._get_ordinal_flags(data, self.levels)
             degrees_v = reshape(self.degrees, nvars)  # type: ignore
-        
+
         copies_v = reshape(self.copies, nvars)  # type: ignore
 
         # --- Build Gifi structure ---
@@ -212,7 +215,7 @@ class Princals(BaseEstimator, TransformerMixin):  # type: ignore
             scores_list.append(sc_j)
             quants.append(jg['quantifications'])
             loadings_list.append(h['x'].T @ tr_j)    # (ndim, copies_j)
-            
+
             cy = sc_j.T @ sc_j
             dmeasures.append(cy)
             dsum += cy
@@ -296,21 +299,21 @@ class Princals(BaseEstimator, TransformerMixin):  # type: ignore
                     f"Number of iterations: {self.result_['ntel']}\n"
                     f"Eigenvalues: {evals_str}")
         return f"Princals(ndim={self.ndim})"
-        
+
     def summary(self) -> None:
         """Print extended summary matching R's summary.princals()."""
         check_is_fitted(self, 'is_fitted_')
         print(repr(self))
         print("\nComponent Loadings:")
-        df_loadings = pd.DataFrame(self.result_['loadings'], 
-                                   columns=[f"D{d+1}" for d in range(self.ndim)])
+        df_loadings = pd.DataFrame(self.result_['loadings'], columns=[
+                                   f"D{d + 1}" for d in range(self.ndim)])
         if hasattr(self.result_['data'], 'columns'):
             df_loadings.index = self.result_['data'].columns
         print(df_loadings)
         print("\nProportion of Variance Accounted For:")
         evals = self.result_['evals'][:self.ndim]
-        total_var = self.n_vars_ # total variance is number of active variables in princals
+        total_var = self.n_vars_  # total variance is number of active variables in princals
         vaf = evals / total_var
-        df_vaf = pd.DataFrame({'VAF': vaf, 'Cumulative VAF': np.cumsum(vaf)}, 
-                              index=[f"D{d+1}" for d in range(self.ndim)])
+        df_vaf = pd.DataFrame({'VAF': vaf, 'Cumulative VAF': np.cumsum(vaf)},
+                              index=[f"D{d + 1}" for d in range(self.ndim)])
         print(df_vaf)

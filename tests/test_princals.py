@@ -51,7 +51,9 @@ def test_princals_ndim_3(numeric_df):
 def test_princals_transform_returns_scores(numeric_df):
     """transform(X) returns result_['objectscores']."""
     model = Princals(ndim=2, itmax=200).fit(numeric_df)
-    assert np.allclose(model.transform(numeric_df), model.result_['objectscores'])
+    assert np.allclose(
+        model.transform(numeric_df),
+        model.result_['objectscores'])
 
 
 # ---------- Output matrix shapes ----------
@@ -66,7 +68,12 @@ def test_princals_transform_matrix_shape_copies1(numeric_df):
 
 def test_princals_transform_list_when_copies_multi(cat_df):
     """copies=2 → transform should be list."""
-    model = Princals(ndim=2, copies=2, levels='nominal', degrees=-1, itmax=200).fit(cat_df)
+    model = Princals(
+        ndim=2,
+        copies=2,
+        levels='nominal',
+        degrees=-1,
+        itmax=200).fit(cat_df)
     tr = model.result_['transform']
     assert isinstance(tr, list), f"Expected list for copies>1, got {type(tr)}"
 
@@ -74,13 +81,15 @@ def test_princals_transform_list_when_copies_multi(cat_df):
 def test_princals_weights_matrix_shape(numeric_df):
     """weights shape must be (nvars, ndim)."""
     model = Princals(ndim=2, itmax=200).fit(numeric_df)
-    assert model.result_['weights'].shape == (3, 2), f"Got {model.result_['weights'].shape}"
+    assert model.result_['weights'].shape == (
+        3, 2), f"Got {model.result_['weights'].shape}"
 
 
 def test_princals_loadings_matrix_shape(numeric_df):
     """loadings shape must be (nvars, ndim)."""
     model = Princals(ndim=2, itmax=200).fit(numeric_df)
-    assert model.result_['loadings'].shape == (3, 2), f"Got {model.result_['loadings'].shape}"
+    assert model.result_['loadings'].shape == (
+        3, 2), f"Got {model.result_['loadings'].shape}"
 
 
 def test_princals_quantifications_shape(numeric_df):
@@ -106,7 +115,11 @@ def test_princals_loss_positive(numeric_df):
 
 def test_princals_nominal_level(cat_df):
     """levels='nominal', degrees=-1 → categorical indicator treatment."""
-    model = Princals(ndim=2, levels='nominal', degrees=-1, itmax=200).fit(cat_df)
+    model = Princals(
+        ndim=2,
+        levels='nominal',
+        degrees=-1,
+        itmax=200).fit(cat_df)
     assert model.result_['objectscores'].shape == (10, 2)
 
 

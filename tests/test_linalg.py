@@ -93,10 +93,12 @@ def test_ls_rc_rank_deficient():
     x[:, 2] = x[:, 0] * 2  # make it explicitly rank 2
     y = np.random.randn(10)
     result = ls_rc(x, y)
-    assert result['solution'].shape == (3, 1) or result['solution'].shape == (3,)
+    assert result['solution'].shape == (
+        3, 1) or result['solution'].shape == (3,)
     assert np.isfinite(result['solution']).all()
 
 # ---------- null_rc ----------
+
 
 def test_null_rc_perpendicular_to_x():
     """Null space vectors should be approximately orthogonal to x.T."""
@@ -106,7 +108,8 @@ def test_null_rc_perpendicular_to_x():
     ns = null_rc(x)
     # x @ ns should be ~0 at each column
     residual = np.abs(x @ ns)
-    assert np.allclose(residual, 0, atol=1e-8), f"Null space not perpendicular: {residual}"
+    assert np.allclose(
+        residual, 0, atol=1e-8), f"Null space not perpendicular: {residual}"
 
 
 def test_null_rc_full_rank_returns_zeros():

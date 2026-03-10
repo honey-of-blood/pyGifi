@@ -76,19 +76,19 @@ class Homals(BaseEstimator, TransformerMixin):  # type: ignore
     """
 
     def __init__(
-        self, 
-        ndim: int = 2, 
-        levels: Union[str, List[str]] = 'nominal', 
-        ordinal: Optional[Union[bool, List[bool]]] = None, 
+        self,
+        ndim: int = 2,
+        levels: Union[str, List[str]] = 'nominal',
+        ordinal: Optional[Union[bool, List[bool]]] = None,
         knots: Optional[List[np.ndarray]] = None,
-        ties: Union[str, List[str]] = 's', 
-        degrees: Union[int, List[int]] = -1, 
-        missing: Union[str, List[str]] = 's', 
+        ties: Union[str, List[str]] = 's',
+        degrees: Union[int, List[int]] = -1,
+        missing: Union[str, List[str]] = 's',
         normobj_z: bool = True,
-        active: Union[bool, List[bool]] = True, 
-        itmax: int = 1000, 
-        eps: float = 1e-6, 
-        verbose: bool = False, 
+        active: Union[bool, List[bool]] = True,
+        itmax: int = 1000,
+        eps: float = 1e-6,
+        verbose: bool = False,
         init_x: Optional[np.ndarray] = None
     ) -> None:
         self.ndim = ndim
@@ -105,7 +105,8 @@ class Homals(BaseEstimator, TransformerMixin):  # type: ignore
         self.verbose = verbose
         self.init_x = init_x
 
-    def fit(self, X: Union[pd.DataFrame, np.ndarray], y: Any = None) -> 'Homals':
+    def fit(self, X: Union[pd.DataFrame, np.ndarray],
+            y: Any = None) -> 'Homals':
         """
         Fit Homals on X.
 
@@ -121,6 +122,8 @@ class Homals(BaseEstimator, TransformerMixin):  # type: ignore
         # --- Coerce input ---
         if not isinstance(X, pd.DataFrame):
             X = pd.DataFrame(X)
+        if X.empty:
+            raise ValueError("Input data X cannot be empty.")
         names = list(X.columns)
         list(X.index)
         data_orig = X.copy()
@@ -132,9 +135,13 @@ class Homals(BaseEstimator, TransformerMixin):  # type: ignore
         valid_ties = ('s', 'p', 't')
         valid_missing = ('m', 's', 'a')
         if self.ties not in valid_ties:
-            raise ValueError(f"ties must be one of {valid_ties}, got '{self.ties}'")
+            raise ValueError(
+                f"ties must be one of {valid_ties}, got '{
+                    self.ties}'")
         if self.missing not in valid_missing:
-            raise ValueError(f"missing must be one of {valid_missing}, got '{self.missing}'")
+            raise ValueError(
+                f"missing must be one of {valid_missing}, got '{
+                    self.missing}'")
 
         ties_v = reshape(self.ties, nvars)  # type: ignore
         missing_v = reshape(self.missing, nvars)  # type: ignore
@@ -148,7 +155,9 @@ class Homals(BaseEstimator, TransformerMixin):  # type: ignore
             knots_v = levelprep['knotList']
             degrees_v = levelprep['degvec']
         else:
-            ordinal_v = reshape(self.ordinal if self.ordinal is not None else True, nvars)  # type: ignore
+            ordinal_v = reshape(
+                self.ordinal if self.ordinal is not None else True,
+                nvars)  # type: ignore
             knots_v = self.knots
             degrees_v = reshape(self.degrees, nvars)  # type: ignore
 
@@ -165,7 +174,8 @@ class Homals(BaseEstimator, TransformerMixin):  # type: ignore
             missing=missing_v,
             active=active_v,
             names=names,
-            sets=list(range(nvars)),  # each variable is its own set (homals convention)
+            sets=list(range(nvars)),
+            # each variable is its own set (homals convention)
         )
 
         # --- Run ALS engine ---
@@ -180,7 +190,6 @@ class Homals(BaseEstimator, TransformerMixin):  # type: ignore
         weights = []
         scores = []
         quantifications = []
-        loadings = []
         dsum = np.zeros((self.ndim, self.ndim))
         nact = 0
 
@@ -208,12 +217,11 @@ class Homals(BaseEstimator, TransformerMixin):  # type: ignore
         evals_raw = np.linalg.eigh(rhat)[0]
         evals = evals_raw[::-1]
 
-        # Object scores (with optional sqrt(nobs) scaling)
         objectscores = h['x'].copy()
-        if self.normobj_z:
-            objectscores = objectscores * np.sqrt(nobs)
 
         # Bug 3: R Object Score Normalization (variance = 1 per dimension)
+        # Apply standard variance = 1 per dimension FIRST, matching R's core
+        # normalization.
         for d in range(self.ndim):
             std = np.std(objectscores[:, d])
             if std > 1e-10:
@@ -222,13 +230,21 @@ class Homals(BaseEstimator, TransformerMixin):  # type: ignore
                 for q in quantifications:
                     q[:, d] /= std
 
+        # Scaling parameter logic: scale objectscores by sqrt(nobs) if enabled
+        if self.normobj_z:
+            objectscores = objectscores * np.sqrt(nobs)
+
         lambda_ = dsum / nvars                           # average discriminant
 
-        # Score matrix: first dim of each variable's scores (matches R scoremat)
+        # Score matrix: first dim of each variable's scores (matches R
+        # scoremat)
         scoremat = np.column_stack([sc[:, 0] for sc in scores])
 
-        # Bug 2: Proper per-variable dictionary for quantifications and loadings
-        self.quantifications = {name: q for name, q in zip(names, quantifications)}
+        # Bug 2: Proper per-variable dictionary for quantifications and
+        # loadings
+        self.quantifications = {
+            name: q for name, q in zip(
+                names, quantifications)}
         self.loadings = {name: q.T for name, q in zip(names, quantifications)}
         # Also expose via trailing underscore for scikit-learn convention
         self.quantifications_ = self.quantifications
@@ -291,7 +307,7 @@ class Homals(BaseEstimator, TransformerMixin):  # type: ignore
                     f"Number of iterations: {self.result_['ntel']}\n"
                     f"Eigenvalues: {evals_str}")
         return f"Homals(ndim={self.ndim})"
-        
+
     def summary(self) -> None:
         """Print extended summary matching R's summary.homals()."""
         check_is_fitted(self, 'is_fitted_')
@@ -299,5 +315,6 @@ class Homals(BaseEstimator, TransformerMixin):  # type: ignore
         print("\nCategory Quantifications:")
         for name, q in self.result_['quantifications'].items():
             print(f"-- {name} --")
-            print(pd.DataFrame(q, columns=[f"D{d+1}" for d in range(self.ndim)]))
+            print(pd.DataFrame(q, columns=[
+                  f"D{d + 1}" for d in range(self.ndim)]))
             print()

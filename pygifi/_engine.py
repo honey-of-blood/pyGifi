@@ -18,7 +18,15 @@ from pygifi._isotone import cone_regression
 from pygifi._structures import make_x_gifi
 
 
-def gifi_transform(data, target, basis, copies, degree, ordinal, ties, missing):
+def gifi_transform(
+        data,
+        target,
+        basis,
+        copies,
+        degree,
+        ordinal,
+        ties,
+        missing):
     """
     Apply optimal scaling transformation to one variable.
 
@@ -68,8 +76,14 @@ def gifi_transform(data, target, basis, copies, degree, ordinal, ties, missing):
 
     # Extra copies: always subspace
     for copy_idx in range(1, copies):
-        h[:, copy_idx] = cone_regression(data=data, target=target[:, copy_idx], basis=basis,
-                                  type='s', ties=ties, missing=missing)
+        h[:,
+          copy_idx] = cone_regression(data=data,
+                                      target=target[:,
+                                                    copy_idx],
+                                      basis=basis,
+                                      type='s',
+                                      ties=ties,
+                                      missing=missing)
 
     return h
 
@@ -105,7 +119,7 @@ def gifi_engine(gifi, ndim, itmax=1000, eps=1e-6, verbose=False, init_x=None):
     nvars = sum(len(s) for s in gifi)
 
     if nvars < 2:
-        raise ValueError("gifi_engine requires more than one variable")
+        raise ValueError(f"gifi_engine requires at least two variables to perform multivariate analysis, but only {nvars} were provided.")
 
     # --- Initialization ---
     if init_x is not None:
@@ -149,7 +163,8 @@ def gifi_engine(gifi, ndim, itmax=1000, eps=1e-6, verbose=False, init_x=None):
         for i, gifi_set in enumerate(gifi):
             x_set = xGifi[i]
 
-            # Stack transforms of active variables: hh (nobs, sum_active_copies)
+            # Stack transforms of active variables: hh (nobs,
+            # sum_active_copies)
             hh_parts = []
             active_count = 0
             for j, gv in enumerate(gifi_set):
@@ -181,7 +196,8 @@ def gifi_engine(gifi, ndim, itmax=1000, eps=1e-6, verbose=False, init_x=None):
             for j, gv in enumerate(gifi_set):
                 jcopies = x_set[j]['transform'].shape[1]
                 ja = aa[scopies:scopies + jcopies, :]        # (copies, ndim)
-                jtarget = target[:, scopies:scopies + jcopies]  # (nobs, copies)
+                # (nobs, copies)
+                jtarget = target[:, scopies:scopies + jcopies]
 
                 hj = gifi_transform(
                     data=gv['data'],
@@ -193,15 +209,18 @@ def gifi_engine(gifi, ndim, itmax=1000, eps=1e-6, verbose=False, init_x=None):
                     ties=gv['ties'],
                     missing=gv['missing'],
                 )
-                hj = gs_rc(normalize(center(hj)))['q']       # normalize transform
+                hj = gs_rc(normalize(center(hj)))[
+                    'q']       # normalize transform
 
-                sc = hj @ ja                                 # (nobs, ndim) scores
+                # (nobs, ndim) scores
+                sc = hj @ ja
 
                 # Update mutable state
                 xGifi[i][j]['transform'] = hj
                 xGifi[i][j]['weights'] = ja
                 xGifi[i][j]['scores'] = sc
-                xGifi[i][j]['quantifications'] = ls_rc(gv['basis'], sc)['solution']
+                xGifi[i][j]['quantifications'] = ls_rc(gv['basis'], sc)[
+                    'solution']
 
                 if gv['active']:
                     hh_new_parts.append(hj)
@@ -218,7 +237,12 @@ def gifi_engine(gifi, ndim, itmax=1000, eps=1e-6, verbose=False, init_x=None):
         fnew /= (asets * ndim)
 
         if verbose:
-            print(f"Iter {itel:4d}  fold={fold:.8f}  fmid={fmid:.8f}  fnew={fnew:.8f}")
+            print(
+                f"Iter {
+                    itel:4d}  fold={
+                    fold:.8f}  fmid={
+                    fmid:.8f}  fnew={
+                    fnew:.8f}")
 
         # Convergence check (matches R: itel > 1 required)
         if (itel == itmax or (fold - fnew) < eps) and itel > 1:

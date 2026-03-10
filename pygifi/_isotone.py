@@ -62,7 +62,7 @@ def pava(xo, wo=None):
                 x[i] = (x[i] + x[i + 1]) / 2.0
             w[i] = ww
             c[i] = c[i] + c[i + 1]
-            
+
             # Shift remaining blocks down
             x[i + 1:m - 1] = x[i + 2:m]
             w[i + 1:m - 1] = w[i + 2:m]
@@ -82,7 +82,7 @@ def pava(xo, wo=None):
                 x[i - 1] = (x[i - 1] + x[i]) / 2.0
             w[i - 1] = ww
             c[i - 1] = c[i - 1] + c[i]
-            
+
             x[i:m - 1] = x[i + 1:m]
             w[i:m - 1] = w[i + 1:m]
             c[i:m - 1] = c[i + 1:m]
@@ -94,7 +94,8 @@ def pava(xo, wo=None):
             i += 1
 
     # Reconstruct xa(k) from working arrays — exact Fortran AMALGM logic (labels 14-17).
-    # Accumulate original weights WO(J) until sum matches pooled block weight W(I).
+    # Accumulate original weights WO(J) until sum matches pooled block weight
+    # W(I).
     tol = 1e-15
     xa = np.zeros(k)
     i1 = 0                           # start index into original observations
@@ -172,7 +173,8 @@ def isotone(x, y, w=None, ties='s'):
         s[notthere] = y[notthere]
 
     elif ties == 't':
-        # Tertiary: pool by mean, PAVA, translate: add (isotone_mean - raw_mean) to each obs
+        # Tertiary: pool by mean, PAVA, translate: add (isotone_mean -
+        # raw_mean) to each obs
         gw = np.array([len(gi) for gi in g], dtype=float)
         gh = [y[gi] for gi in g]
         gm = np.array([np.sum(h) for h in gh]) / gw

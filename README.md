@@ -3,6 +3,7 @@
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL%203.0-green.svg)](https://opensource.org/licenses/GPL-3.0)
 [![Tests](https://img.shields.io/badge/tests-149%20passed-brightgreen.svg)]()
+[![Code Style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 Welcome to **pygifi**! 🎉 This is a **Python port** of the legendary R [Gifi library](https://cran.r-project.org/package=Gifi) by Mair, De Leeuw, and Groenen. If you're into multivariate analysis, optimal scaling, or handling categorical data like a pro, you've come to the right place. Think of it as bringing the magic of R's Gifi to Python's ecosystem – no more switching tools! 📈
 
@@ -105,7 +106,15 @@ Loss value: 0.5900
 Eigenvalues: [1.234, 0.987]
 ```
 
+```
+
 Tada! You've just performed optimal scaling. Experiment with `levels='ordinal'` or try `Princals()` for PCA vibes. 📉
+
+### ⚠️ A Note on Out-of-Sample Predictions
+Because `pygifi` relies heavily on R's core Alternating Least Squares (ALS) and B-spline optimal scaling logic, it calculates optimal component knots *strictly based on the entire provided dataset structure*. 
+
+**Out-of-sample prediction natively (like `model.transform(X_test)`) is currently not supported in this Python port.** 
+If you project completely unseen data through the spline knot framework without re-fitting it, you will encounter a `NotImplementedError`. Re-fitting your model or utilizing cross-validation surrogate loss (like `cv_morals`) is required when testing split sample sets!
 
 ## 📁 Project Structure: What's What?
 
@@ -160,7 +169,9 @@ print("Success!" if model.result_['f'] < 1 else "Hmm...")
 
 ## 🔍 Comparison with R Gifi
 
-Curious how it stacks up? pygifi is a direct port, so results are nearly identical! For exact matches, use the same random seed. Install R Gifi and compare – differences are tiny (floating-point precision). 📏
+Curious how it stacks up? `pygifi` is a deterministic parity port: we map the identical knot logic, tie handling, and missing-value distribution techniques from the CRAN `.R` engine. 
+
+Results strictly match R within tight floating-point convergence precision bounds! Install R Gifi and compare them using an identical global mathematical objective. 📏
 
 ## 🤝 Contributing & Issues
 

@@ -12,7 +12,8 @@ import pandas as pd
 from typing import Union, List, Dict, Any, Tuple
 
 
-def categorical_encode(data: Union[pd.Series, List, np.ndarray]) -> Tuple[np.ndarray, Dict[int, Any]]:
+def categorical_encode(
+        data: Union[pd.Series, List, np.ndarray]) -> Tuple[np.ndarray, Dict[int, Any]]:
     """
     Encode category labels into 1-indexed numeric codes.
     """
@@ -23,7 +24,8 @@ def categorical_encode(data: Union[pd.Series, List, np.ndarray]) -> Tuple[np.nda
     return codes, mapping
 
 
-def categorical_decode(codes: np.ndarray, mapping: Dict[int, Any]) -> np.ndarray:
+def categorical_decode(
+        codes: np.ndarray, mapping: Dict[int, Any]) -> np.ndarray:
     """
     Decode numeric codes back into original category labels.
     """
@@ -34,7 +36,8 @@ def categorical_decode(codes: np.ndarray, mapping: Dict[int, Any]) -> np.ndarray
     return labels
 
 
-def decode(cell: Union[np.ndarray, List[int]], dims: Union[np.ndarray, List[int]]) -> int:
+def decode(cell: Union[np.ndarray, List[int]],
+           dims: Union[np.ndarray, List[int]]) -> int:
     """
     Python port of R's decode(cell, dims) / src/coding.c:DECODE.
     Converts multi-way cell coordinates to a single 1-indexed integer index.
@@ -42,10 +45,11 @@ def decode(cell: Union[np.ndarray, List[int]], dims: Union[np.ndarray, List[int]
     cell = np.asarray(cell, dtype=int)
     dims = np.asarray(dims, dtype=int)
     if len(cell) != len(dims):
-        raise ValueError("Dimension error: cell and dims must have same length")
+        raise ValueError(
+            "Dimension error: cell and dims must have same length")
     if np.any(cell > dims) or np.any(cell < 1):
         raise ValueError("No such cell")
-    
+
     aux = 1
     ind = 1
     for i in range(len(dims)):
@@ -63,19 +67,19 @@ def encode(ind: int, dims: Union[np.ndarray, List[int]]) -> np.ndarray:
     n = len(dims)
     if ind < 1 or ind > np.prod(dims):
         raise ValueError("No such cell")
-    
+
     cell = np.zeros(n, dtype=int)
     aux = int(ind)
     pdim = 1
     for i in range(n - 1):
         pdim *= dims[i]
-        
+
     for i in range(n - 1, 0, -1):
         cell[i] = (aux - 1) // pdim
         aux -= pdim * cell[i]
         pdim //= dims[i - 1]
         cell[i] += 1
-        
+
     cell[0] = aux
     return cell
 
@@ -104,25 +108,28 @@ def make_numeric(data: Union[pd.DataFrame, np.ndarray, List]) -> np.ndarray:
 
     nobs, nvars = data.shape
     result = np.empty((nobs, nvars), dtype=float)
-    
+
     for i in range(nvars):
         series = data.iloc[:, i]
         # Check if column is categorical or string-like (needs encoding)
         is_discrete = (
-            isinstance(series.dtype, pd.CategoricalDtype) or 
+            isinstance(series.dtype, pd.CategoricalDtype) or
             pd.api.types.is_string_dtype(series) or
             series.dtype == object
         )
-        
+
         if is_discrete:
-            # Try converting factor levels to numeric (R: as.numeric(levels(x))[x])
+            # Try converting factor levels to numeric (R:
+            # as.numeric(levels(x))[x])
             try:
                 # For string-like, ensure it's categorical for easier mapping
                 cat = pd.Categorical(series)
                 # Attempt numeric level conversion (e.g., "1.0", "2.0")
                 numeric_levels = pd.to_numeric(cat.categories, errors='raise')
                 # Map each observation to its numeric level
-                level_map = {c: float(v) for c, v in zip(cat.categories, numeric_levels)}
+                level_map = {
+                    c: float(v) for c, v in zip(
+                        cat.categories, numeric_levels)}
                 result[:, i] = series.map(level_map).astype(float)
             except (ValueError, TypeError):
                 # Fall back to ordinal codes + 1 (R: as.numeric(x))

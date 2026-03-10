@@ -58,7 +58,7 @@ def test_pava_length():
 
 def test_pava_zero_weights():
     """Test PAVA with some weights being exactly zero.
-    
+
     Fortran AMALGM reconstructs by accumulating original weights until
     the sum matches the pooled block weight.  Block 0 pools x[0]=2 with
     x[1]=1 (weights 1+0=1), so its weight is 1.  In reconstruction,
@@ -71,12 +71,14 @@ def test_pava_zero_weights():
     result = pava(x, w)
     assert np.allclose(result, [2., 3., 3.])
 
+
 def test_pava_empty():
     """Empty arrays should return empty."""
     x = np.array([])
     assert len(pava(x)) == 0
 
 # ---------- isotone ----------
+
 
 def test_isotone_simple_ties_s():
     """Ties mode 's': tied x values are averaged, then PAVA applied."""
@@ -86,7 +88,8 @@ def test_isotone_simple_ties_s():
     # Group 1 mean=3, Group 2 mean=3, Group 3 mean=1 → PAVA([3,3,1])
     # PAVA pools group 2 and 3: (3+1)/2=2 → [3,3,2,2] after assigning back
     assert len(result) == 4
-    # Result must be non-decreasing within same x-group (may vary by implementation)
+    # Result must be non-decreasing within same x-group (may vary by
+    # implementation)
 
 
 def test_isotone_monotone_output():
