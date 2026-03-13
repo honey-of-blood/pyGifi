@@ -242,6 +242,35 @@ pytest tests/ --ignore=tests/test_parity.py --cov=pygifi --cov-report=term-missi
 
 ---
 
+## 📊 Analysis / Visualization
+
+Generate three types of plots for every dataset — comparing raw data, PyGifi-transformed, and R Gifi-transformed values.
+
+### One-command run (from the project root)
+
+```bash
+python3 plot.py
+```
+
+This automatically:
+1. Runs R Gifi Princals on all datasets (`analysis/get_r_transforms.R`) → saves transforms to `analysis/r_transforms/`
+2. Runs PyGifi Princals on all datasets
+3. Generates three plots per dataset into `analysis/plots/<dataset_name>/`:
+
+| Output file | What it shows |
+|---|---|
+| `01_raw_distributions.png` | Bar chart of category frequencies for every variable (original data, before transformation) |
+| `02_trend_plots.png` | Grouped bars per category showing the value each method assigns: Raw (scaled integer codes), PyGifi, R Gifi |
+| `03_pca_plots.png` | PCA scatter (PC1 vs PC2) on all 3 forms of the data side-by-side — shows how optimal scaling changes structure |
+
+> **Requirements:** R with `install.packages("Gifi")`. If R is unavailable, plots are generated for Raw and PyGifi only.
+
+### Adding your own dataset
+
+Drop a CSV into `validation/datasets/` and run `python3 plot.py` — it picks up all datasets automatically.
+
+---
+
 ## 📁 Project Structure — Explained for Beginners
 
 ```
@@ -281,6 +310,16 @@ pyGifi/
 │   │
 │   └── data/                       ← Built-in datasets (CSV files, loaded by get_dataset())
 │       ├── ABC.csv, galo.csv, hartigan.csv, neumann.csv, mammals.csv ...
+│
+├── analysis/                       ← Visualization analysis (raw distributions, trends, PCA)
+│   ├── analyze.py                  ← Main analysis script — generates all 3 plot types
+│   ├── get_r_transforms.R          ← R helper: runs Gifi Princals, saves transforms for analysis
+│   ├── r_transforms/               ← Auto-generated R transformed CSVs (input for analyze.py)
+│   └── plots/                      ← All generated plots (auto-created on each run)
+│       └── <dataset_name>/
+│           ├── 01_raw_distributions.png
+│           ├── 02_trend_plots.png
+│           └── 03_pca_plots.png
 │
 ├── tests/                          ← Automated test suite
 │   ├── test_homals.py              ← Tests for Homals model
@@ -324,6 +363,9 @@ pyGifi/
 ├── Gifi_test.R                     ← Standalone R Gifi master test: same loop as above
 │                                      → saves output to validation/results/r_master_report.txt
 │
+├── plot.py                         ← Project-root launcher: runs analysis/analyze.py
+│                                      with a single `python3 plot.py` command
+│
 ├── run_validation.py               ← Project-root launcher: runs the full validation pipeline
 │                                      with a single `python3 run_validation.py` command
 │
@@ -348,6 +390,7 @@ pyGifi/
 ├── LICENSE                         ← GPL-3.0 license
 └── README.md                       ← This file
 ```
+
 
 ---
 
