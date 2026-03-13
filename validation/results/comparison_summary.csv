@@ -1,0 +1,287 @@
+Dataset,Variable,Category,Max|diff|,Mean|diff|,Status
+bike_dataset,Transformed Dataset,ALL,0.022893,0.002604,PASS
+bike_dataset,Age,adult,0.003857,0.003857,PASS
+bike_dataset,Age,midage,0.001022,0.001022,PASS
+bike_dataset,Age,old,0.003144,0.003144,PASS
+bike_dataset,Age,senior,0.004347,0.004347,PASS
+bike_dataset,Age,young,0.001491,0.001491,PASS
+bike_dataset,Cars,manycars,0.00063,0.00063,PASS
+bike_dataset,Cars,nocar,0.00063,0.00063,PASS
+bike_dataset,Cars,onecar,0.001624,0.001624,PASS
+bike_dataset,Cars,threecars,0.001766,0.001766,PASS
+bike_dataset,Cars,twocars,0.001375,0.001375,PASS
+bike_dataset,Children,fourchildren,0.003075,0.003075,PASS
+bike_dataset,Children,manychildren,0.004603,0.004603,PASS
+bike_dataset,Children,nochild,0.000964,0.000964,PASS
+bike_dataset,Children,onechild,0.000964,0.000964,PASS
+bike_dataset,Children,threechildren,0.000964,0.000964,PASS
+bike_dataset,Children,twochildren,0.000964,0.000964,PASS
+bike_dataset,Commute.Distance,0-1 miles,0.000578,0.000578,PASS
+bike_dataset,Commute.Distance,1-2 miles,0.001755,0.001755,PASS
+bike_dataset,Commute.Distance,10+ miles,0.001123,0.001123,PASS
+bike_dataset,Commute.Distance,2-5 miles,0.001123,0.001123,PASS
+bike_dataset,Commute.Distance,5-10 miles,0.00204,0.00204,PASS
+bike_dataset,Education,bachelors,0.000901,0.000901,PASS
+bike_dataset,Education,graduate degree,0.000901,0.000901,PASS
+bike_dataset,Education,high school,0.00015,0.00015,PASS
+bike_dataset,Education,partial college,0.00015,0.00015,PASS
+bike_dataset,Education,partial high school,0.006562,0.006562,PASS
+bike_dataset,Gender,female,0.000552,0.000552,PASS
+bike_dataset,Gender,male,0.000533,0.000533,PASS
+bike_dataset,Home.Owner,no,0.00134,0.00134,PASS
+bike_dataset,Home.Owner,yes,0.000616,0.000616,PASS
+bike_dataset,Income,highincome,0.014545,0.014545,PASS
+bike_dataset,Income,lowincome,0.004697,0.004697,PASS
+bike_dataset,Income,midincome,0.004204,0.004204,PASS
+bike_dataset,Income,veryhighincome,0.004204,0.004204,PASS
+bike_dataset,Marital.Status,married,0.001304,0.001304,PASS
+bike_dataset,Marital.Status,single,0.001524,0.001524,PASS
+bike_dataset,Occupation,clerical,0.005445,0.005445,PASS
+bike_dataset,Occupation,management,0.003922,0.003922,PASS
+bike_dataset,Occupation,manual,0.003922,0.003922,PASS
+bike_dataset,Occupation,professional,0.000312,0.000312,PASS
+bike_dataset,Occupation,skilled manual,0.000374,0.000374,PASS
+bike_dataset,Purchased.Bike,no,0.000501,0.000501,PASS
+bike_dataset,Purchased.Bike,yes,0.000541,0.000541,PASS
+bike_dataset,Region,europe,0.001081,0.001081,PASS
+bike_dataset,Region,north america,0.000463,0.000463,PASS
+bike_dataset,Region,pacific,0.000463,0.000463,PASS
+car_dataset,Transformed Dataset,ALL,0.004033,0.000162,PASS
+car_dataset,brand,acura,0.000237,0.000237,PASS
+car_dataset,brand,audi,0.000237,0.000237,PASS
+car_dataset,brand,bmw,0.000237,0.000237,PASS
+car_dataset,brand,buick,0.000237,0.000237,PASS
+car_dataset,brand,cadillac,0.000237,0.000237,PASS
+car_dataset,brand,chevrolet,0.000237,0.000237,PASS
+car_dataset,brand,chrysler,0.000237,0.000237,PASS
+car_dataset,brand,dodge,0.000237,0.000237,PASS
+car_dataset,brand,ford,0.000209,0.000209,PASS
+car_dataset,brand,gmc,0.000209,0.000209,PASS
+car_dataset,brand,harley-davidson,0.000209,0.000209,PASS
+car_dataset,brand,heartland,0.000209,0.000209,PASS
+car_dataset,brand,honda,0.000209,0.000209,PASS
+car_dataset,brand,hyundai,0.000356,0.000356,PASS
+car_dataset,brand,infiniti,0.000413,0.000413,PASS
+car_dataset,brand,jaguar,0.000413,0.000413,PASS
+car_dataset,brand,jeep,0.000413,0.000413,PASS
+car_dataset,brand,kia,0.000413,0.000413,PASS
+car_dataset,brand,land,0.000767,0.000767,PASS
+car_dataset,brand,lexus,0.000767,0.000767,PASS
+car_dataset,brand,lincoln,0.000767,0.000767,PASS
+car_dataset,brand,maserati,0.000767,0.000767,PASS
+car_dataset,brand,mazda,0.000767,0.000767,PASS
+car_dataset,brand,mercedes-benz,0.000767,0.000767,PASS
+car_dataset,brand,nissan,0.001572,0.001572,PASS
+car_dataset,brand,peterbilt,0.001572,0.001572,PASS
+car_dataset,brand,ram,0.001572,0.001572,PASS
+car_dataset,brand,toyota,0.001572,0.001572,PASS
+car_dataset,color,beige,4.5e-05,4.5e-05,PASS
+car_dataset,color,billet silver metallic clearcoat,4.5e-05,4.5e-05,PASS
+car_dataset,color,black,4.5e-05,4.5e-05,PASS
+car_dataset,color,black clearcoat,4.5e-05,4.5e-05,PASS
+car_dataset,color,blue,4.5e-05,4.5e-05,PASS
+car_dataset,color,bright white clearcoat,4.5e-05,4.5e-05,PASS
+car_dataset,color,brown,4.5e-05,4.5e-05,PASS
+car_dataset,color,charcoal,4.5e-05,4.5e-05,PASS
+car_dataset,color,color:,4.5e-05,4.5e-05,PASS
+car_dataset,color,dark blue,4.5e-05,4.5e-05,PASS
+car_dataset,color,gold,4.5e-05,4.5e-05,PASS
+car_dataset,color,gray,4.5e-05,4.5e-05,PASS
+car_dataset,color,green,4.5e-05,4.5e-05,PASS
+car_dataset,color,jazz blue pearlcoat,4.5e-05,4.5e-05,PASS
+car_dataset,color,light blue,4.5e-05,4.5e-05,PASS
+car_dataset,color,maroon,8e-06,8e-06,PASS
+car_dataset,color,no_color,8e-06,8e-06,PASS
+car_dataset,color,orange,8e-06,8e-06,PASS
+car_dataset,color,phantom black,8e-06,8e-06,PASS
+car_dataset,color,red,8e-06,8e-06,PASS
+car_dataset,color,silver,8e-06,8e-06,PASS
+car_dataset,color,toreador red,8e-06,8e-06,PASS
+car_dataset,color,turquoise,6.8e-05,6.8e-05,PASS
+car_dataset,color,white,6.8e-05,6.8e-05,PASS
+car_dataset,color,yellow,6.8e-05,6.8e-05,PASS
+car_dataset,condition,1 days left,0.001076,0.001076,PASS
+car_dataset,condition,1 hours left,0.001076,0.001076,PASS
+car_dataset,condition,1 minutes,0.001076,0.001076,PASS
+car_dataset,condition,13 days left,0.001076,0.001076,PASS
+car_dataset,condition,14 hours left,0.001076,0.001076,PASS
+car_dataset,condition,15 hours left,0.001076,0.001076,PASS
+car_dataset,condition,16 hours left,0.001076,0.001076,PASS
+car_dataset,condition,16 minutes,0.001076,0.001076,PASS
+car_dataset,condition,17 hours left,0.001076,0.001076,PASS
+car_dataset,condition,18 hours left,0.000452,0.000452,PASS
+car_dataset,condition,19 hours left,0.000452,0.000452,PASS
+car_dataset,condition,2 hours left,0.000452,0.000452,PASS
+car_dataset,condition,21 hours left,0.000251,0.000251,PASS
+car_dataset,condition,23 hours left,0.000251,0.000251,PASS
+car_dataset,condition,24 hours left,0.000251,0.000251,PASS
+car_dataset,condition,3 days left,0.000251,0.000251,PASS
+car_dataset,condition,3 hours left,0.000251,0.000251,PASS
+car_dataset,condition,32 minutes,0.000251,0.000251,PASS
+car_dataset,condition,34 minutes,0.000251,0.000251,PASS
+car_dataset,condition,4 days left,0.000251,0.000251,PASS
+car_dataset,condition,5 days left,0.000251,0.000251,PASS
+car_dataset,condition,5 hours left,0.000251,0.000251,PASS
+car_dataset,condition,53 minutes,0.000251,0.000251,PASS
+car_dataset,condition,6 hours left,0.000251,0.000251,PASS
+car_dataset,condition,7 days left,0.000251,0.000251,PASS
+car_dataset,condition,7 hours left,0.000251,0.000251,PASS
+car_dataset,condition,8 days left,0.000251,0.000251,PASS
+car_dataset,condition,9 days left,0.000251,0.000251,PASS
+car_dataset,condition,9 minutes,0.000251,0.000251,PASS
+car_dataset,condition,fewdaysleft,0.000251,0.000251,PASS
+car_dataset,condition,hoursleft,0.000251,0.000251,PASS
+car_dataset,condition,listing expired,0.000621,0.000621,PASS
+car_dataset,condition,manydaysleft,0.000607,0.000607,PASS
+car_dataset,condition,severaldaysleft,0.000607,0.000607,PASS
+car_dataset,country,canada,0.000524,0.000524,PASS
+car_dataset,country,usa,4e-06,4e-06,PASS
+car_dataset,mileage,highmileage,0.000304,0.000304,PASS
+car_dataset,mileage,lowmileage,3e-06,3e-06,PASS
+car_dataset,mileage,mediummileage,3e-06,3e-06,PASS
+car_dataset,mileage,veryhighmileage,3e-06,3e-06,PASS
+car_dataset,mileage,verylowmileage,0.00015,0.00015,PASS
+car_dataset,model,1500,0.000221,0.000221,PASS
+car_dataset,model,2500,0.000221,0.000221,PASS
+car_dataset,model,2500hd,0.000221,0.000221,PASS
+car_dataset,model,300,0.000221,0.000221,PASS
+car_dataset,model,3500,0.000221,0.000221,PASS
+car_dataset,model,5,0.000221,0.000221,PASS
+car_dataset,model,acadia,0.000221,0.000221,PASS
+car_dataset,model,cab,0.000221,0.000221,PASS
+car_dataset,model,camaro,0.000221,0.000221,PASS
+car_dataset,model,caravan,0.000221,0.000221,PASS
+car_dataset,model,cargo,0.000221,0.000221,PASS
+car_dataset,model,challenger,0.000221,0.000221,PASS
+car_dataset,model,charger,0.000221,0.000221,PASS
+car_dataset,model,chassis,0.000221,0.000221,PASS
+car_dataset,model,cherokee,0.000221,0.000221,PASS
+car_dataset,model,colorado,0.000221,0.000221,PASS
+car_dataset,model,compass,0.000221,0.000221,PASS
+car_dataset,model,convertible,0.000221,0.000221,PASS
+car_dataset,model,corvette,0.000221,0.000221,PASS
+car_dataset,model,country,0.000221,0.000221,PASS
+car_dataset,model,coupe,0.000221,0.000221,PASS
+car_dataset,model,cruiser,0.000221,0.000221,PASS
+car_dataset,model,cruze,0.000221,0.000221,PASS
+car_dataset,model,cutaway,0.000221,0.000221,PASS
+car_dataset,model,cx-3,0.000221,0.000221,PASS
+car_dataset,model,dart,0.000221,0.000221,PASS
+car_dataset,model,discovery,0.000221,0.000221,PASS
+car_dataset,model,door,0.000221,0.000221,PASS
+car_dataset,model,doors,0.000255,0.000255,PASS
+car_dataset,model,drw,0.000255,0.000255,PASS
+car_dataset,model,durango,0.000255,0.000255,PASS
+car_dataset,model,e-class,0.000255,0.000255,PASS
+car_dataset,model,edge,0.000255,0.000255,PASS
+car_dataset,model,el,0.000255,0.000255,PASS
+car_dataset,model,elantra,0.000255,0.000255,PASS
+car_dataset,model,enclave,0.000255,0.000255,PASS
+car_dataset,model,encore,0.000255,0.000255,PASS
+car_dataset,model,equinox,0.000255,0.000255,PASS
+car_dataset,model,escape,0.000255,0.000255,PASS
+car_dataset,model,esv,0.000255,0.000255,PASS
+car_dataset,model,explorer,0.000255,0.000255,PASS
+car_dataset,model,f-150,0.000255,0.000255,PASS
+car_dataset,model,fiesta,0.000255,0.000255,PASS
+car_dataset,model,flex,0.000255,0.000255,PASS
+car_dataset,model,focus,0.000255,0.000255,PASS
+car_dataset,model,forte,0.000255,0.000255,PASS
+car_dataset,model,fusion,0.000255,0.000255,PASS
+car_dataset,model,ghibli,0.000255,0.000255,PASS
+car_dataset,model,glc,0.000255,0.000255,PASS
+car_dataset,model,gle,0.000255,0.000255,PASS
+car_dataset,model,gx,0.000255,0.000255,PASS
+car_dataset,model,impala,0.000255,0.000255,PASS
+car_dataset,model,journey,0.000255,0.000255,PASS
+car_dataset,model,ld,0.000255,0.000255,PASS
+car_dataset,model,limited,0.000255,0.000255,PASS
+car_dataset,model,m,0.000255,0.000255,PASS
+car_dataset,model,malibu,0.000255,0.000255,PASS
+car_dataset,model,mdx,0.000255,0.000255,PASS
+car_dataset,model,mpv,0.000255,0.000255,PASS
+car_dataset,model,mustang,0.000255,0.000255,PASS
+car_dataset,model,nautilus,0.000255,0.000255,PASS
+car_dataset,model,pacifica,0.000255,0.000255,PASS
+car_dataset,model,passenger,0.000255,0.000255,PASS
+car_dataset,model,pickup,0.000255,0.000255,PASS
+car_dataset,model,pioneer,0.000255,0.000255,PASS
+car_dataset,model,pk,0.000255,0.000255,PASS
+car_dataset,model,q5,0.000255,0.000255,PASS
+car_dataset,model,q70,0.000255,0.000255,PASS
+car_dataset,model,road/street,0.000255,0.000255,PASS
+car_dataset,model,se,0.000255,0.000255,PASS
+car_dataset,model,series,0.000255,0.000255,PASS
+car_dataset,model,sl-class,0.000255,0.000255,PASS
+car_dataset,model,sonic,0.000255,0.000255,PASS
+car_dataset,model,sorento,0.000255,0.000255,PASS
+car_dataset,model,soul,0.000255,0.000255,PASS
+car_dataset,model,spark,0.000255,0.000255,PASS
+car_dataset,model,sport,0.000255,0.000255,PASS
+car_dataset,model,sportage,0.000255,0.000255,PASS
+car_dataset,model,srw,0.000255,0.000255,PASS
+car_dataset,model,srx,0.000255,0.000255,PASS
+car_dataset,model,suburban,0.000255,0.000255,PASS
+car_dataset,model,sundance,0.000255,0.000255,PASS
+car_dataset,model,tahoe,0.000255,0.000255,PASS
+car_dataset,model,trail,0.000255,0.000255,PASS
+car_dataset,model,traverse,0.000255,0.000255,PASS
+car_dataset,model,trax,0.000255,0.000255,PASS
+car_dataset,model,truck,0.000255,0.000255,PASS
+car_dataset,model,utility,0.000255,0.000255,PASS
+car_dataset,model,van,0.000255,0.000255,PASS
+car_dataset,model,vans,0.000255,0.000255,PASS
+car_dataset,model,vehicl,0.000255,0.000255,PASS
+car_dataset,model,volt,0.000255,0.000255,PASS
+car_dataset,model,wagon,0.000255,0.000255,PASS
+car_dataset,model,x3,0.000255,0.000255,PASS
+car_dataset,model,xt5,0.000255,0.000255,PASS
+car_dataset,price,highprice,2.2e-05,2.2e-05,PASS
+car_dataset,price,lowprice,2.2e-05,2.2e-05,PASS
+car_dataset,price,luxuryprice,2.2e-05,2.2e-05,PASS
+car_dataset,price,midprice,2.2e-05,2.2e-05,PASS
+car_dataset,price,verylowprice,0.000106,0.000106,PASS
+car_dataset,state,arizona,0.000278,0.000278,PASS
+car_dataset,state,arkansas,0.000278,0.000278,PASS
+car_dataset,state,california,0.000278,0.000278,PASS
+car_dataset,state,colorado,0.000278,0.000278,PASS
+car_dataset,state,connecticut,0.000278,0.000278,PASS
+car_dataset,state,florida,0.000278,0.000278,PASS
+car_dataset,state,georgia,0.000142,0.000142,PASS
+car_dataset,state,illinois,0.000142,0.000142,PASS
+car_dataset,state,indiana,0.000142,0.000142,PASS
+car_dataset,state,kansas,0.000142,0.000142,PASS
+car_dataset,state,kentucky,0.000142,0.000142,PASS
+car_dataset,state,louisiana,0.000142,0.000142,PASS
+car_dataset,state,maryland,0.000142,0.000142,PASS
+car_dataset,state,massachusetts,0.000142,0.000142,PASS
+car_dataset,state,michigan,0.000142,0.000142,PASS
+car_dataset,state,minnesota,0.000142,0.000142,PASS
+car_dataset,state,mississippi,0.000142,0.000142,PASS
+car_dataset,state,missouri,0.000142,0.000142,PASS
+car_dataset,state,nebraska,0.000142,0.000142,PASS
+car_dataset,state,nevada,0.000142,0.000142,PASS
+car_dataset,state,new jersey,0.000142,0.000142,PASS
+car_dataset,state,new york,0.000142,0.000142,PASS
+car_dataset,state,north carolina,0.000142,0.000142,PASS
+car_dataset,state,ohio,0.000142,0.000142,PASS
+car_dataset,state,oklahoma,4.7e-05,4.7e-05,PASS
+car_dataset,state,ontario,0.00018,0.00018,PASS
+car_dataset,state,oregon,0.00018,0.00018,PASS
+car_dataset,state,pennsylvania,0.00018,0.00018,PASS
+car_dataset,state,rhode island,0.00018,0.00018,PASS
+car_dataset,state,south carolina,0.00018,0.00018,PASS
+car_dataset,state,tennessee,0.00018,0.00018,PASS
+car_dataset,state,texas,0.00018,0.00018,PASS
+car_dataset,state,utah,0.00018,0.00018,PASS
+car_dataset,state,virginia,0.00018,0.00018,PASS
+car_dataset,state,washington,0.000844,0.000844,PASS
+car_dataset,state,west virginia,0.000844,0.000844,PASS
+car_dataset,state,wisconsin,0.000844,0.000844,PASS
+car_dataset,state,wyoming,0.000844,0.000844,PASS
+car_dataset,title_status,clean vehicle,1.7e-05,1.7e-05,PASS
+car_dataset,title_status,salvage insurance,0.000166,0.000166,PASS
+car_dataset,year,moderate,0.000279,0.000279,PASS
+car_dataset,year,old,0.000279,0.000279,PASS
+car_dataset,year,recent,8.9e-05,8.9e-05,PASS
+car_dataset,year,veryold,8.9e-05,8.9e-05,PASS

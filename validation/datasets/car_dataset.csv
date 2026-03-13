@@ -1,0 +1,1001 @@
+Unnamed: 0,price,brand,model,year,title_status,mileage,color,state,country,condition
+0,LowPrice,toyota,cruiser,Old,clean vehicle,VeryHighMileage,black,new jersey,usa,ManyDaysLeft
+1,VeryLowPrice,ford,se,Moderate,clean vehicle,HighMileage,silver,tennessee,usa,SeveralDaysLeft
+2,LowPrice,dodge,mpv,Recent,clean vehicle,LowMileage,silver,georgia,usa,FewDaysLeft
+3,HighPrice,ford,door,Moderate,clean vehicle,MediumMileage,blue,virginia,usa,HoursLeft
+4,HighPrice,chevrolet,1500,Recent,clean vehicle,VeryLowMileage,red,florida,usa,HoursLeft
+5,LowPrice,dodge,mpv,Recent,clean vehicle,LowMileage,white,texas,usa,FewDaysLeft
+6,LowPrice,chevrolet,pk,Old,clean vehicle,HighMileage,black,georgia,usa,HoursLeft
+7,MidPrice,gmc,door,Recent,clean vehicle,LowMileage,gray,california,usa,HoursLeft
+8,MidPrice,chevrolet,malibu,Recent,clean vehicle,VeryLowMileage,silver,florida,usa,HoursLeft
+9,LowPrice,ford,mpv,Recent,clean vehicle,MediumMileage,black,texas,usa,FewDaysLeft
+10,MidPrice,dodge,coupe,Old,clean vehicle,MediumMileage,orange,georgia,usa,HoursLeft
+11,MidPrice,gmc,mpv,Recent,clean vehicle,LowMileage,white,california,usa,HoursLeft
+12,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,black,tennessee,usa,HoursLeft
+13,LowPrice,chrysler,wagon,Recent,clean vehicle,HighMileage,gray,texas,usa,FewDaysLeft
+14,HighPrice,ford,door,Moderate,clean vehicle,MediumMileage,black,virginia,usa,HoursLeft
+15,MidPrice,gmc,door,Recent,clean vehicle,LowMileage,white,california,usa,HoursLeft
+16,LowPrice,kia,forte,Recent,clean vehicle,LowMileage,blue,north carolina,usa,FewDaysLeft
+17,MidPrice,buick,encore,Recent,clean vehicle,LowMileage,red,tennessee,usa,HoursLeft
+18,LowPrice,ford,mpv,Recent,clean vehicle,LowMileage,white,texas,usa,FewDaysLeft
+19,HighPrice,ford,door,Moderate,clean vehicle,LowMileage,gray,virginia,usa,HoursLeft
+20,MidPrice,gmc,door,Recent,clean vehicle,LowMileage,white,california,usa,HoursLeft
+21,LowPrice,kia,forte,Recent,clean vehicle,LowMileage,black,north carolina,usa,FewDaysLeft
+22,MidPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,black,ohio,usa,FewDaysLeft
+23,LowPrice,ford,mpv,Recent,clean vehicle,LowMileage,blue,texas,usa,FewDaysLeft
+24,HighPrice,ford,door,Moderate,clean vehicle,MediumMileage,silver,virginia,usa,HoursLeft
+25,MidPrice,gmc,door,Recent,clean vehicle,LowMileage,silver,california,usa,HoursLeft
+26,HighPrice,kia,sorento,Recent,clean vehicle,VeryLowMileage,blue,north carolina,usa,FewDaysLeft
+27,MidPrice,buick,door,Moderate,clean vehicle,LowMileage,brown,ohio,usa,FewDaysLeft
+28,VeryLowPrice,ford,doors,Recent,clean vehicle,LowMileage,white,texas,usa,FewDaysLeft
+29,MidPrice,ford,chassis,Old,clean vehicle,MediumMileage,white,tennessee,usa,HoursLeft
+30,MidPrice,gmc,door,Recent,clean vehicle,LowMileage,silver,california,usa,HoursLeft
+31,MidPrice,infiniti,q70,Recent,clean vehicle,MediumMileage,gray,new york,usa,19 hours left
+32,HighPrice,chevrolet,camaro,,clean vehicle,LowMileage,red,pennsylvania,usa,HoursLeft
+33,LowPrice,ford,mpv,Recent,clean vehicle,LowMileage,no_color,texas,usa,FewDaysLeft
+34,MidPrice,ford,convertible,VeryOld,clean vehicle,LowMileage,gray,virginia,usa,HoursLeft
+35,MidPrice,gmc,door,Recent,clean vehicle,LowMileage,black,california,usa,HoursLeft
+36,MidPrice,mercedes-benz,vans,Recent,clean vehicle,MediumMileage,white,new york,usa,19 hours left
+37,MidPrice,chevrolet,1500,Recent,clean vehicle,VeryLowMileage,white,tennessee,usa,HoursLeft
+38,LowPrice,ford,mpv,Recent,clean vehicle,LowMileage,gold,texas,usa,FewDaysLeft
+39,LowPrice,ford,pk,VeryOld,clean vehicle,HighMileage,white,tennessee,usa,HoursLeft
+40,MidPrice,gmc,door,Recent,clean vehicle,LowMileage,white,california,usa,HoursLeft
+41,MidPrice,mercedes-benz,vans,Recent,clean vehicle,MediumMileage,white,new york,usa,19 hours left
+42,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,red,tennessee,usa,HoursLeft
+43,LowPrice,ford,mpv,Recent,clean vehicle,LowMileage,red,texas,usa,FewDaysLeft
+44,LuxuryPrice,ford,srw,Recent,clean vehicle,VeryLowMileage,black,pennsylvania,usa,3 days left
+45,MidPrice,gmc,door,Recent,clean vehicle,LowMileage,black,california,usa,HoursLeft
+46,MidPrice,jeep,compass,Recent,clean vehicle,LowMileage,red,north carolina,usa,FewDaysLeft
+47,MidPrice,chevrolet,malibu,Recent,clean vehicle,VeryLowMileage,white,tennessee,usa,HoursLeft
+48,LowPrice,dodge,mpv,Recent,clean vehicle,LowMileage,gray,texas,usa,FewDaysLeft
+49,LuxuryPrice,ford,srw,Recent,clean vehicle,LowMileage,black,pennsylvania,usa,3 days left
+50,MidPrice,gmc,mpv,Recent,clean vehicle,LowMileage,red,california,usa,HoursLeft
+51,MidPrice,jeep,compass,Recent,clean vehicle,LowMileage,silver,north carolina,usa,FewDaysLeft
+52,HighPrice,buick,enclave,Recent,clean vehicle,LowMileage,no_color,tennessee,usa,HoursLeft
+53,LowPrice,ford,mpv,Recent,clean vehicle,LowMileage,gray,texas,usa,FewDaysLeft
+54,MidPrice,chrysler,300,Recent,clean vehicle,LowMileage,gray,south carolina,usa,HoursLeft
+55,MidPrice,gmc,mpv,Recent,clean vehicle,LowMileage,silver,california,usa,HoursLeft
+56,MidPrice,jeep,cherokee,Recent,clean vehicle,LowMileage,charcoal,north carolina,usa,FewDaysLeft
+57,MidPrice,buick,door,Recent,clean vehicle,LowMileage,silver,florida,usa,FewDaysLeft
+58,HighPrice,chrysler,pacifica,Recent,clean vehicle,VeryLowMileage,white,ohio,usa,FewDaysLeft
+59,MidPrice,chrysler,300,Recent,clean vehicle,LowMileage,gray,south carolina,usa,HoursLeft
+60,MidPrice,gmc,door,Recent,clean vehicle,LowMileage,white,california,usa,HoursLeft
+61,HighPrice,jeep,cherokee,Recent,clean vehicle,LowMileage,white,north carolina,usa,FewDaysLeft
+62,MidPrice,chevrolet,door,Recent,clean vehicle,LowMileage,black,florida,usa,HoursLeft
+63,LowPrice,ford,door,Recent,clean vehicle,LowMileage,black,texas,usa,FewDaysLeft
+64,HighPrice,chrysler,pacifica,Recent,clean vehicle,LowMileage,red,south carolina,usa,HoursLeft
+65,MidPrice,gmc,door,Recent,clean vehicle,LowMileage,silver,california,usa,HoursLeft
+66,HighPrice,jeep,cherokee,Recent,clean vehicle,LowMileage,silver,north carolina,usa,FewDaysLeft
+67,MidPrice,chevrolet,door,Recent,clean vehicle,LowMileage,white,florida,usa,HoursLeft
+68,VeryLowPrice,ford,door,Recent,clean vehicle,LowMileage,silver,texas,usa,FewDaysLeft
+69,MidPrice,chrysler,300,Recent,clean vehicle,LowMileage,gray,south carolina,usa,HoursLeft
+70,MidPrice,gmc,door,Recent,clean vehicle,LowMileage,black,california,usa,HoursLeft
+71,MidPrice,jeep,compass,Recent,clean vehicle,LowMileage,charcoal,north carolina,usa,FewDaysLeft
+72,HighPrice,bmw,x3,Recent,clean vehicle,LowMileage,black,tennessee,usa,HoursLeft
+73,VeryLowPrice,ford,door,Recent,clean vehicle,LowMileage,black,texas,usa,FewDaysLeft
+74,MidPrice,chrysler,300,Recent,clean vehicle,LowMileage,gray,south carolina,usa,HoursLeft
+75,MidPrice,gmc,door,Recent,clean vehicle,LowMileage,red,california,usa,HoursLeft
+76,MidPrice,jeep,compass,Recent,clean vehicle,LowMileage,red,north carolina,usa,FewDaysLeft
+77,HighPrice,buick,door,Recent,clean vehicle,LowMileage,white,florida,usa,HoursLeft
+78,VeryLowPrice,ford,door,Recent,clean vehicle,LowMileage,black,texas,usa,FewDaysLeft
+79,MidPrice,chrysler,300,Recent,clean vehicle,LowMileage,gray,south carolina,usa,HoursLeft
+80,MidPrice,gmc,door,Recent,clean vehicle,LowMileage,black,california,usa,HoursLeft
+81,MidPrice,jeep,compass,Recent,clean vehicle,LowMileage,red,north carolina,usa,FewDaysLeft
+82,MidPrice,chevrolet,camaro,Recent,clean vehicle,LowMileage,black,florida,usa,HoursLeft
+83,VeryLowPrice,ford,door,Recent,clean vehicle,LowMileage,blue,texas,usa,FewDaysLeft
+84,HighPrice,ford,door,Recent,clean vehicle,MediumMileage,black,pennsylvania,usa,3 days left
+85,MidPrice,gmc,door,Recent,clean vehicle,LowMileage,white,california,usa,HoursLeft
+86,MidPrice,jeep,compass,Recent,clean vehicle,LowMileage,gray,north carolina,usa,FewDaysLeft
+87,MidPrice,chevrolet,equinox,Recent,clean vehicle,VeryLowMileage,silver,florida,usa,HoursLeft
+88,VeryLowPrice,ford,door,Recent,clean vehicle,VeryLowMileage,white,texas,usa,FewDaysLeft
+89,MidPrice,ford,door,Recent,clean vehicle,LowMileage,black,pennsylvania,usa,FewDaysLeft
+90,LowPrice,ford,door,Recent,clean vehicle,MediumMileage,white,texas,usa,FewDaysLeft
+91,LowPrice,chrysler,door,Moderate,clean vehicle,MediumMileage,black,pennsylvania,usa,FewDaysLeft
+92,HighPrice,bmw,door,Recent,clean vehicle,VeryLowMileage,gray,michigan,usa,FewDaysLeft
+93,LowPrice,ford,door,Recent,clean vehicle,HighMileage,white,texas,usa,FewDaysLeft
+94,HighPrice,dodge,challenger,Moderate,clean vehicle,VeryLowMileage,white,pennsylvania,usa,FewDaysLeft
+95,LuxuryPrice,bmw,m,Recent,clean vehicle,LowMileage,blue,michigan,usa,FewDaysLeft
+96,MidPrice,ford,door,Recent,clean vehicle,LowMileage,black,texas,usa,FewDaysLeft
+97,HighPrice,ford,door,Moderate,clean vehicle,LowMileage,white,pennsylvania,usa,FewDaysLeft
+98,HighPrice,chevrolet,colorado,Recent,clean vehicle,LowMileage,black,michigan,usa,HoursLeft
+99,LowPrice,ford,mpv,Recent,clean vehicle,LowMileage,black,texas,usa,FewDaysLeft
+100,MidPrice,ford,focus,Recent,clean vehicle,VeryLowMileage,black,south carolina,usa,21 hours left
+101,HighPrice,cadillac,door,Recent,clean vehicle,LowMileage,gray,michigan,usa,FewDaysLeft
+102,MidPrice,ford,mpv,Recent,clean vehicle,LowMileage,white,texas,usa,FewDaysLeft
+103,MidPrice,ford,focus,Recent,clean vehicle,LowMileage,white,south carolina,usa,21 hours left
+104,HighPrice,cadillac,door,Recent,clean vehicle,VeryLowMileage,no_color,michigan,usa,FewDaysLeft
+105,LowPrice,ford,mpv,Recent,clean vehicle,LowMileage,white,texas,usa,FewDaysLeft
+106,LowPrice,ford,focus,Recent,clean vehicle,LowMileage,white,south carolina,usa,21 hours left
+107,MidPrice,chevrolet,malibu,Recent,clean vehicle,VeryLowMileage,no_color,michigan,usa,17 hours left
+108,LowPrice,ford,door,Recent,clean vehicle,LowMileage,black,texas,usa,FewDaysLeft
+109,HighPrice,dodge,durango,Recent,clean vehicle,LowMileage,white,south carolina,usa,21 hours left
+110,HighPrice,cadillac,door,Recent,clean vehicle,LowMileage,white,michigan,usa,FewDaysLeft
+111,LowPrice,ford,mpv,Recent,clean vehicle,LowMileage,white,texas,usa,FewDaysLeft
+112,MidPrice,ford,escape,Recent,clean vehicle,LowMileage,gold,south carolina,usa,21 hours left
+113,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,white,michigan,usa,FewDaysLeft
+114,LowPrice,ford,mpv,Recent,clean vehicle,LowMileage,gray,texas,usa,FewDaysLeft
+115,HighPrice,dodge,charger,Recent,clean vehicle,LowMileage,silver,michigan,usa,21 hours left
+116,HighPrice,chevrolet,colorado,Recent,clean vehicle,LowMileage,turquoise,michigan,usa,FewDaysLeft
+117,LowPrice,ford,door,Recent,clean vehicle,LowMileage,black,texas,usa,FewDaysLeft
+118,HighPrice,chrysler,pacifica,Recent,clean vehicle,VeryLowMileage,gray,michigan,usa,21 hours left
+119,HighPrice,chevrolet,colorado,Recent,clean vehicle,VeryLowMileage,gray,michigan,usa,FewDaysLeft
+120,LowPrice,ford,mpv,Recent,clean vehicle,LowMileage,black,texas,usa,FewDaysLeft
+121,HighPrice,ford,door,Recent,clean vehicle,LowMileage,red,south carolina,usa,21 hours left
+122,HighPrice,cadillac,door,Recent,clean vehicle,LowMileage,black,michigan,usa,FewDaysLeft
+123,HighPrice,ford,explorer,Recent,clean vehicle,LowMileage,black,south carolina,usa,21 hours left
+124,HighPrice,chevrolet,colorado,Recent,clean vehicle,LowMileage,black,michigan,usa,2 hours left
+125,MidPrice,ford,door,Recent,clean vehicle,MediumMileage,white,texas,usa,FewDaysLeft
+126,HighPrice,ford,f-150,Recent,clean vehicle,LowMileage,gray,south carolina,usa,21 hours left
+127,LuxuryPrice,chevrolet,3500,Recent,clean vehicle,VeryLowMileage,black,washington,usa,21 hours left
+128,LowPrice,ford,mpv,Recent,clean vehicle,LowMileage,gold,texas,usa,FewDaysLeft
+129,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,gray,south carolina,usa,21 hours left
+130,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,black,michigan,usa,HoursLeft
+131,VeryLowPrice,dodge,mpv,Recent,clean vehicle,LowMileage,gray,florida,usa,17 hours left
+132,MidPrice,chevrolet,door,Recent,clean vehicle,LowMileage,silver,michigan,usa,3 hours left
+133,LowPrice,dodge,mpv,Recent,clean vehicle,LowMileage,silver,florida,usa,17 hours left
+134,HighPrice,chrysler,van,Recent,clean vehicle,LowMileage,silver,south carolina,usa,21 hours left
+135,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,beige,michigan,usa,HoursLeft
+136,LowPrice,dodge,mpv,Recent,clean vehicle,LowMileage,gray,florida,usa,17 hours left
+137,MidPrice,chrysler,300,Recent,clean vehicle,LowMileage,gray,arizona,usa,34 minutes
+138,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,white,michigan,usa,FewDaysLeft
+139,LowPrice,dodge,dart,Recent,clean vehicle,LowMileage,black,michigan,usa,FewDaysLeft
+140,VeryLowPrice,dodge,mpv,Recent,clean vehicle,LowMileage,gray,florida,usa,16 hours left
+141,,dodge,van,Old,salvage insurance,HighMileage,orange,utah,usa,FewDaysLeft
+142,HighPrice,chevrolet,2500,Recent,clean vehicle,VeryLowMileage,silver,michigan,usa,HoursLeft
+143,LowPrice,dodge,doors,Recent,clean vehicle,LowMileage,black,florida,usa,16 hours left
+144,,dodge,door,Moderate,salvage insurance,HighMileage,silver,utah,usa,FewDaysLeft
+145,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,black,michigan,usa,FewDaysLeft
+146,LowPrice,dodge,doors,Recent,clean vehicle,LowMileage,gray,florida,usa,16 hours left
+147,HighPrice,cadillac,esv,Moderate,clean vehicle,LowMileage,gray,washington,usa,21 hours left
+148,MidPrice,dodge,mpv,Recent,clean vehicle,VeryLowMileage,white,florida,usa,16 hours left
+149,LowPrice,ford,cutaway,Moderate,clean vehicle,VeryHighMileage,beige,pennsylvania,usa,3 days left
+150,MidPrice,chevrolet,1500,Recent,clean vehicle,MediumMileage,white,washington,usa,21 hours left
+151,LowPrice,chrysler,doors,Recent,clean vehicle,LowMileage,gray,florida,usa,17 hours left
+152,MidPrice,ford,door,Recent,clean vehicle,MediumMileage,gray,south carolina,usa,21 hours left
+153,HighPrice,chevrolet,door,Moderate,clean vehicle,LowMileage,white,washington,usa,21 hours left
+154,VeryLowPrice,dodge,mpv,Recent,clean vehicle,LowMileage,red,florida,usa,16 hours left
+155,HighPrice,ford,explorer,Recent,clean vehicle,MediumMileage,black,south carolina,usa,21 hours left
+156,HighPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,gray,washington,usa,21 hours left
+157,VeryLowPrice,dodge,mpv,Recent,clean vehicle,LowMileage,white,florida,usa,16 hours left
+158,HighPrice,ford,el,Recent,clean vehicle,MediumMileage,silver,south carolina,usa,21 hours left
+159,MidPrice,cadillac,door,Recent,clean vehicle,LowMileage,white,michigan,usa,HoursLeft
+160,VeryLowPrice,dodge,mpv,Recent,clean vehicle,VeryLowMileage,gray,florida,usa,16 hours left
+161,MidPrice,ford,edge,Recent,clean vehicle,LowMileage,white,south carolina,usa,21 hours left
+162,HighPrice,bmw,series,Recent,clean vehicle,LowMileage,blue,michigan,usa,FewDaysLeft
+163,LowPrice,dodge,doors,Recent,clean vehicle,LowMileage,black,florida,usa,18 hours left
+164,HighPrice,ford,door,Recent,clean vehicle,MediumMileage,white,south carolina,usa,21 hours left
+165,HighPrice,bmw,series,Recent,clean vehicle,LowMileage,gray,michigan,usa,FewDaysLeft
+166,LowPrice,dodge,doors,Recent,clean vehicle,LowMileage,silver,florida,usa,16 hours left
+167,HighPrice,ford,flex,Recent,clean vehicle,LowMileage,gray,south carolina,usa,21 hours left
+168,HighPrice,buick,door,Recent,clean vehicle,LowMileage,beige,michigan,usa,HoursLeft
+169,LowPrice,dodge,doors,Recent,clean vehicle,LowMileage,white,florida,usa,16 hours left
+170,HighPrice,ford,door,Moderate,clean vehicle,LowMileage,brown,pennsylvania,usa,1 days left
+171,HighPrice,bmw,series,Recent,clean vehicle,LowMileage,black,michigan,usa,FewDaysLeft
+172,LowPrice,dodge,mpv,Recent,clean vehicle,LowMileage,black,florida,usa,16 hours left
+173,MidPrice,ford,door,Moderate,clean vehicle,MediumMileage,black,pennsylvania,usa,21 hours left
+174,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,black,michigan,usa,HoursLeft
+175,MidPrice,ford,door,Recent,clean vehicle,LowMileage,white,texas,usa,FewDaysLeft
+176,LowPrice,ford,door,Moderate,clean vehicle,MediumMileage,white,new york,usa,21 hours left
+177,HighPrice,chevrolet,door,Recent,clean vehicle,LowMileage,blue,michigan,usa,3 hours left
+178,MidPrice,ford,door,Recent,clean vehicle,MediumMileage,white,texas,usa,FewDaysLeft
+179,HighPrice,ford,door,Moderate,clean vehicle,MediumMileage,silver,south carolina,usa,21 hours left
+180,HighPrice,chevrolet,door,Recent,clean vehicle,LowMileage,silver,michigan,usa,HoursLeft
+181,LowPrice,ford,mpv,Recent,clean vehicle,LowMileage,white,texas,usa,FewDaysLeft
+182,VeryLowPrice,chevrolet,van,Old,clean vehicle,VeryHighMileage,white,michigan,usa,FewDaysLeft
+183,HighPrice,chevrolet,door,Recent,clean vehicle,LowMileage,white,michigan,usa,HoursLeft
+184,VeryLowPrice,ford,door,Recent,clean vehicle,LowMileage,white,texas,usa,FewDaysLeft
+185,VeryLowPrice,dodge,pk,VeryOld,clean vehicle,HighMileage,black,michigan,usa,FewDaysLeft
+186,MidPrice,cadillac,srx,Recent,clean vehicle,LowMileage,gray,michigan,usa,FewDaysLeft
+187,VeryLowPrice,ford,door,Recent,clean vehicle,LowMileage,white,texas,usa,FewDaysLeft
+188,VeryLowPrice,chrysler,door,VeryOld,salvage insurance,VeryHighMileage,red,north carolina,usa,3 days left
+189,HighPrice,chevrolet,colorado,Recent,clean vehicle,VeryLowMileage,brown,michigan,usa,HoursLeft
+190,MidPrice,ford,door,Recent,clean vehicle,MediumMileage,white,texas,usa,FewDaysLeft
+191,HighPrice,ford,door,Moderate,clean vehicle,HighMileage,black,south carolina,usa,21 hours left
+192,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,silver,michigan,usa,32 minutes
+193,VeryLowPrice,ford,door,Recent,clean vehicle,MediumMileage,red,texas,usa,FewDaysLeft
+194,MidPrice,ford,door,Moderate,clean vehicle,HighMileage,red,georgia,usa,21 hours left
+195,HighPrice,chevrolet,door,Recent,clean vehicle,LowMileage,black,michigan,usa,FewDaysLeft
+196,,ford,mpv,Recent,clean vehicle,MediumMileage,white,texas,usa,FewDaysLeft
+197,MidPrice,ford,cab,Moderate,clean vehicle,VeryHighMileage,white,south carolina,usa,21 hours left
+198,HighPrice,chevrolet,door,Recent,clean vehicle,LowMileage,white,michigan,usa,FewDaysLeft
+199,VeryLowPrice,ford,wagon,Recent,clean vehicle,MediumMileage,white,texas,usa,FewDaysLeft
+200,VeryLowPrice,dodge,pickup,VeryOld,clean vehicle,MediumMileage,white,georgia,usa,21 hours left
+201,HighPrice,chevrolet,door,Recent,clean vehicle,MediumMileage,white,michigan,usa,HoursLeft
+202,VeryLowPrice,ford,doors,Recent,clean vehicle,LowMileage,gray,texas,usa,FewDaysLeft
+203,LowPrice,dodge,pickup,VeryOld,clean vehicle,VeryHighMileage,gray,south carolina,usa,21 hours left
+204,LowPrice,chevrolet,malibu,Recent,clean vehicle,LowMileage,gray,texas,usa,21 hours left
+205,MidPrice,ford,door,Recent,clean vehicle,HighMileage,white,texas,usa,FewDaysLeft
+206,VeryLowPrice,chevrolet,vehicl,Recent,salvage insurance,VeryLowMileage,black,kentucky,usa,3 days left
+207,MidPrice,buick,encore,Recent,clean vehicle,MediumMileage,black,texas,usa,21 hours left
+208,VeryLowPrice,ford,wagon,Recent,clean vehicle,VeryHighMileage,white,texas,usa,FewDaysLeft
+209,VeryLowPrice,chrysler,door,VeryOld,salvage insurance,HighMileage,silver,massachusetts,usa,3 days left
+210,HighPrice,chevrolet,camaro,Recent,clean vehicle,VeryLowMileage,green,georgia,usa,3 days left
+211,LowPrice,ford,mpv,Recent,clean vehicle,LowMileage,white,texas,usa,FewDaysLeft
+212,MidPrice,ford,door,Recent,clean vehicle,LowMileage,silver,arizona,usa,HoursLeft
+213,MidPrice,chevrolet,trax,Recent,clean vehicle,VeryLowMileage,white,georgia,usa,3 days left
+214,VeryLowPrice,ford,door,Recent,clean vehicle,MediumMileage,white,texas,usa,FewDaysLeft
+215,MidPrice,ford,door,Recent,clean vehicle,HighMileage,no_color,florida,usa,2 hours left
+216,HighPrice,chevrolet,tahoe,Recent,clean vehicle,VeryLowMileage,white,georgia,usa,3 days left
+217,VeryLowPrice,ford,door,Recent,clean vehicle,LowMileage,silver,texas,usa,FewDaysLeft
+218,MidPrice,ford,door,Moderate,clean vehicle,MediumMileage,white,arizona,usa,14 hours left
+219,HighPrice,chevrolet,tahoe,Recent,clean vehicle,VeryLowMileage,gray,georgia,usa,3 days left
+220,VeryLowPrice,ford,doors,Recent,clean vehicle,LowMileage,gray,texas,usa,FewDaysLeft
+221,MidPrice,dodge,door,Moderate,clean vehicle,MediumMileage,black,pennsylvania,usa,FewDaysLeft
+222,MidPrice,chevrolet,trax,Recent,clean vehicle,VeryLowMileage,white,georgia,usa,3 days left
+223,VeryLowPrice,ford,mpv,Recent,clean vehicle,LowMileage,white,texas,usa,FewDaysLeft
+224,MidPrice,dodge,door,Moderate,clean vehicle,LowMileage,black,pennsylvania,usa,FewDaysLeft
+225,HighPrice,chevrolet,tahoe,Recent,clean vehicle,VeryLowMileage,white,georgia,usa,3 days left
+226,VeryLowPrice,ford,door,Recent,clean vehicle,LowMileage,gray,texas,usa,FewDaysLeft
+227,MidPrice,dodge,door,Moderate,clean vehicle,HighMileage,white,pennsylvania,usa,FewDaysLeft
+228,MidPrice,chevrolet,door,Moderate,clean vehicle,LowMileage,black,texas,usa,21 hours left
+229,VeryLowPrice,ford,doors,Recent,clean vehicle,MediumMileage,black,texas,usa,FewDaysLeft
+230,LowPrice,ford,van,Moderate,clean vehicle,HighMileage,white,florida,usa,2 hours left
+231,MidPrice,chevrolet,3500,Moderate,clean vehicle,HighMileage,white,texas,usa,21 hours left
+232,VeryLowPrice,ford,door,Recent,clean vehicle,LowMileage,white,texas,usa,FewDaysLeft
+233,VeryLowPrice,ford,door,Moderate,clean vehicle,MediumMileage,white,florida,usa,2 hours left
+234,LowPrice,bmw,door,Moderate,clean vehicle,MediumMileage,gray,texas,usa,21 hours left
+235,VeryLowPrice,ford,door,Recent,clean vehicle,MediumMileage,white,texas,usa,FewDaysLeft
+236,MidPrice,dodge,door,Moderate,clean vehicle,MediumMileage,white,arizona,usa,1 days left
+237,HighPrice,chevrolet,2500,Recent,clean vehicle,LowMileage,white,georgia,usa,SeveralDaysLeft
+238,VeryLowPrice,dodge,van,Recent,clean vehicle,MediumMileage,silver,texas,usa,FewDaysLeft
+239,VeryLowPrice,ford,door,Moderate,clean vehicle,MediumMileage,white,florida,usa,1 days left
+240,HighPrice,chevrolet,suburban,Recent,clean vehicle,VeryLowMileage,silver,georgia,usa,3 days left
+241,LowPrice,ford,mpv,Recent,clean vehicle,MediumMileage,silver,texas,usa,FewDaysLeft
+242,VeryLowPrice,ford,cargo,Moderate,clean vehicle,HighMileage,white,florida,usa,2 hours left
+243,HighPrice,chevrolet,2500,Recent,clean vehicle,LowMileage,white,georgia,usa,SeveralDaysLeft
+244,VeryLowPrice,ford,mpv,Recent,clean vehicle,LowMileage,white,texas,usa,FewDaysLeft
+245,LowPrice,ford,door,Moderate,clean vehicle,HighMileage,white,florida,usa,2 hours left
+246,MidPrice,chevrolet,equinox,Recent,clean vehicle,VeryLowMileage,silver,georgia,usa,3 days left
+247,VeryLowPrice,dodge,mpv,Recent,clean vehicle,MediumMileage,white,texas,usa,FewDaysLeft
+248,HighPrice,ford,pickup,Old,clean vehicle,MediumMileage,white,pennsylvania,usa,1 days left
+249,MidPrice,chevrolet,equinox,Recent,clean vehicle,LowMileage,silver,georgia,usa,3 days left
+250,LowPrice,ford,door,Recent,clean vehicle,MediumMileage,white,texas,usa,FewDaysLeft
+251,LowPrice,ford,chassis,Old,clean vehicle,HighMileage,white,florida,usa,FewDaysLeft
+252,MidPrice,chevrolet,equinox,Recent,clean vehicle,LowMileage,silver,georgia,usa,3 days left
+253,LowPrice,ford,mpv,Recent,clean vehicle,LowMileage,silver,texas,usa,FewDaysLeft
+254,VeryLowPrice,ford,chassis,VeryOld,clean vehicle,VeryHighMileage,no_color,florida,usa,2 hours left
+255,HighPrice,chevrolet,door,Recent,clean vehicle,LowMileage,red,georgia,usa,FewDaysLeft
+256,VeryLowPrice,ford,mpv,Recent,clean vehicle,LowMileage,silver,texas,usa,FewDaysLeft
+257,MidPrice,dodge,pickup,Old,clean vehicle,MediumMileage,silver,pennsylvania,usa,3 days left
+258,LowPrice,chevrolet,door,Recent,clean vehicle,MediumMileage,brown,nebraska,usa,5 hours left
+259,MidPrice,ford,door,Recent,clean vehicle,MediumMileage,white,texas,usa,FewDaysLeft
+260,MidPrice,ford,door,Moderate,clean vehicle,HighMileage,gray,arizona,usa,HoursLeft
+261,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,white,ontario,canada,ManyDaysLeft
+262,LowPrice,ford,door,Recent,clean vehicle,MediumMileage,white,texas,usa,FewDaysLeft
+263,VeryLowPrice,ford,van,VeryOld,clean vehicle,HighMileage,white,florida,usa,2 hours left
+264,LowPrice,ford,door,Recent,clean vehicle,MediumMileage,gray,texas,usa,FewDaysLeft
+265,MidPrice,ford,drw,Moderate,clean vehicle,MediumMileage,white,pennsylvania,usa,FewDaysLeft
+266,MidPrice,chevrolet,malibu,Recent,clean vehicle,VeryLowMileage,white,washington,usa,FewDaysLeft
+267,LowPrice,ford,door,Recent,clean vehicle,LowMileage,white,texas,usa,FewDaysLeft
+268,MidPrice,ford,fiesta,Recent,clean vehicle,VeryLowMileage,black,missouri,usa,4 days left
+269,HighPrice,chevrolet,van,Recent,clean vehicle,VeryLowMileage,white,washington,usa,FewDaysLeft
+270,MidPrice,ford,doors,Recent,clean vehicle,LowMileage,gray,texas,usa,FewDaysLeft
+271,MidPrice,ford,fiesta,Recent,clean vehicle,VeryLowMileage,silver,missouri,usa,4 days left
+272,HighPrice,chevrolet,van,Recent,clean vehicle,VeryLowMileage,white,washington,usa,FewDaysLeft
+273,LowPrice,ford,door,Recent,clean vehicle,LowMileage,gray,texas,usa,FewDaysLeft
+274,MidPrice,ford,fiesta,Recent,clean vehicle,LowMileage,gray,missouri,usa,4 days left
+275,MidPrice,chevrolet,door,Moderate,clean vehicle,HighMileage,gray,washington,usa,FewDaysLeft
+276,LowPrice,ford,door,Recent,clean vehicle,LowMileage,white,texas,usa,FewDaysLeft
+277,LuxuryPrice,dodge,challenger,Recent,clean vehicle,VeryLowMileage,blue,ohio,usa,21 hours left
+278,MidPrice,chevrolet,impala,Recent,clean vehicle,LowMileage,white,texas,usa,21 hours left
+279,MidPrice,ford,doors,Recent,clean vehicle,VeryLowMileage,white,florida,usa,18 hours left
+280,HighPrice,dodge,durango,Recent,clean vehicle,LowMileage,white,ohio,usa,21 hours left
+281,MidPrice,chevrolet,impala,Recent,clean vehicle,LowMileage,black,texas,usa,21 hours left
+282,MidPrice,ford,cab,Recent,clean vehicle,LowMileage,white,texas,usa,FewDaysLeft
+283,HighPrice,dodge,durango,Recent,clean vehicle,LowMileage,red,ohio,usa,21 hours left
+284,VeryLowPrice,dodge,door,Old,salvage insurance,HighMileage,dark blue,minnesota,usa,17 hours left
+285,,ford,door,VeryOld,salvage insurance,HighMileage,black,oklahoma,usa,17 hours left
+286,LowPrice,ford,doors,Recent,clean vehicle,VeryLowMileage,gray,florida,usa,17 hours left
+287,LowPrice,hyundai,door,Recent,clean vehicle,LowMileage,white,connecticut,usa,5 hours left
+288,VeryLowPrice,kia,door,Moderate,clean vehicle,MediumMileage,silver,missouri,usa,9 days left
+289,LowPrice,jeep,mpv,Recent,clean vehicle,VeryLowMileage,black,georgia,usa,17 hours left
+290,,mazda,door,Old,salvage insurance,MediumMileage,gray,indiana,usa,16 hours left
+291,MidPrice,kia,soul,Recent,clean vehicle,LowMileage,silver,california,usa,ManyDaysLeft
+292,MidPrice,kia,sorento,Recent,clean vehicle,MediumMileage,gray,north carolina,usa,3 days left
+293,,chevrolet,pickup,VeryOld,salvage insurance,VeryHighMileage,gray,texas,usa,17 hours left
+294,VeryLowPrice,ford,door,Recent,salvage insurance,MediumMileage,gray,virginia,usa,FewDaysLeft
+295,LowPrice,ford,doors,Recent,clean vehicle,VeryLowMileage,gray,florida,usa,17 hours left
+296,LowPrice,hyundai,elantra,Recent,clean vehicle,LowMileage,red,connecticut,usa,5 hours left
+297,,honda,door,VeryOld,salvage insurance,HighMileage,white,arkansas,usa,17 hours left
+298,VeryLowPrice,jeep,mpv,Recent,clean vehicle,VeryLowMileage,green,georgia,usa,17 hours left
+299,MidPrice,infiniti,mpv,Recent,clean vehicle,LowMileage,blue,florida,usa,HoursLeft
+300,VeryLowPrice,chevrolet,door,Moderate,salvage insurance,LowMileage,black,arkansas,usa,17 hours left
+301,VeryLowPrice,chevrolet,door,Old,salvage insurance,HighMileage,blue,texas,usa,18 hours left
+302,VeryLowPrice,ford,wagon,Old,clean vehicle,LowMileage,no_color,florida,usa,23 hours left
+303,HighPrice,ford,door,Recent,clean vehicle,MediumMileage,red,michigan,usa,FewDaysLeft
+304,VeryLowPrice,ford,door,Recent,salvage insurance,MediumMileage,black,california,usa,19 hours left
+305,,ford,door,VeryOld,salvage insurance,VeryHighMileage,gold,kansas,usa,8 days left
+306,LowPrice,gmc,mpv,Recent,clean vehicle,LowMileage,black,virginia,usa,17 hours left
+307,MidPrice,jeep,mpv,Recent,clean vehicle,VeryLowMileage,red,michigan,usa,FewDaysLeft
+308,MidPrice,infiniti,mpv,Recent,clean vehicle,LowMileage,black,florida,usa,HoursLeft
+309,,chevrolet,door,VeryOld,salvage insurance,,maroon,wyoming,usa,18 hours left
+310,,chevrolet,door,VeryOld,salvage insurance,HighMileage,gray,texas,usa,18 hours left
+311,LowPrice,chevrolet,pickup,Old,clean vehicle,VeryHighMileage,silver,florida,usa,HoursLeft
+312,HighPrice,ford,f-150,Recent,clean vehicle,LowMileage,black,michigan,usa,HoursLeft
+313,,ford,van,VeryOld,salvage insurance,HighMileage,blue,california,usa,19 hours left
+314,,ford,door,Moderate,salvage insurance,MediumMileage,black,minnesota,usa,17 hours left
+315,LowPrice,gmc,mpv,Recent,clean vehicle,LowMileage,silver,virginia,usa,17 hours left
+316,MidPrice,jeep,mpv,Recent,clean vehicle,VeryLowMileage,orange,michigan,usa,FewDaysLeft
+317,LowPrice,jeep,mpv,Recent,clean vehicle,LowMileage,red,florida,usa,HoursLeft
+318,,chevrolet,door,Old,salvage insurance,MediumMileage,black,colorado,usa,18 hours left
+319,VeryLowPrice,chevrolet,pickup,Old,salvage insurance,HighMileage,white,colorado,usa,18 hours left
+320,VeryLowPrice,dodge,door,Old,clean vehicle,MediumMileage,red,florida,usa,HoursLeft
+321,HighPrice,ford,door,Recent,clean vehicle,LowMileage,black,michigan,usa,FewDaysLeft
+322,,ford,chassis,VeryOld,salvage insurance,,green,california,usa,19 hours left
+323,,ford,door,VeryOld,salvage insurance,VeryHighMileage,green,minnesota,usa,17 hours left
+324,LowPrice,gmc,mpv,Recent,clean vehicle,LowMileage,silver,virginia,usa,17 hours left
+325,VeryLowPrice,heartland,pioneer,Recent,clean vehicle,VeryLowMileage,gray,pennsylvania,usa,7 days left
+326,MidPrice,infiniti,mpv,Recent,clean vehicle,LowMileage,brown,florida,usa,HoursLeft
+327,VeryLowPrice,chevrolet,door,Moderate,salvage insurance,MediumMileage,white,colorado,usa,18 hours left
+328,VeryLowPrice,chrysler,van,Old,clean vehicle,HighMileage,red,florida,usa,23 hours left
+329,HighPrice,ford,door,Recent,clean vehicle,LowMileage,gray,michigan,usa,FewDaysLeft
+330,,ford,door,VeryOld,salvage insurance,VeryHighMileage,green,california,usa,19 hours left
+331,,ford,door,Old,salvage insurance,VeryHighMileage,red,illinois,usa,17 hours left
+332,LowPrice,gmc,mpv,Recent,clean vehicle,MediumMileage,black,virginia,usa,17 hours left
+333,VeryLowPrice,heartland,trail,Moderate,clean vehicle,VeryLowMileage,white,pennsylvania,usa,7 days left
+334,MidPrice,infiniti,mpv,Recent,clean vehicle,VeryLowMileage,gray,florida,usa,HoursLeft
+335,VeryLowPrice,chevrolet,door,Moderate,salvage insurance,MediumMileage,red,colorado,usa,18 hours left
+336,HighPrice,chevrolet,traverse,Recent,clean vehicle,LowMileage,black,missouri,usa,HoursLeft
+337,VeryLowPrice,chrysler,door,Old,clean vehicle,MediumMileage,gold,florida,usa,23 hours left
+338,HighPrice,ford,door,Recent,clean vehicle,LowMileage,black,michigan,usa,HoursLeft
+339,,ford,door,VeryOld,salvage insurance,VeryHighMileage,black,south carolina,usa,FewDaysLeft
+340,VeryLowPrice,ford,door,VeryOld,salvage insurance,VeryHighMileage,gray,illinois,usa,17 hours left
+341,LowPrice,gmc,mpv,Recent,clean vehicle,LowMileage,black,virginia,usa,17 hours left
+342,LowPrice,heartland,country,Moderate,clean vehicle,VeryLowMileage,gray,pennsylvania,usa,7 days left
+343,MidPrice,infiniti,mpv,Recent,clean vehicle,LowMileage,white,florida,usa,HoursLeft
+344,,chevrolet,door,Old,salvage insurance,HighMileage,red,colorado,usa,18 hours left
+345,VeryLowPrice,ford,door,Moderate,clean vehicle,MediumMileage,white,georgia,usa,FewDaysLeft
+346,HighPrice,ford,door,Recent,clean vehicle,LowMileage,black,michigan,usa,HoursLeft
+347,,gmc,door,VeryOld,salvage insurance,VeryHighMileage,gold,south carolina,usa,FewDaysLeft
+348,LowPrice,gmc,mpv,Recent,clean vehicle,LowMileage,black,virginia,usa,17 hours left
+349,,heartland,sundance,Old,clean vehicle,VeryLowMileage,white,pennsylvania,usa,7 days left
+350,VeryLowPrice,jaguar,doors,Recent,clean vehicle,LowMileage,black,florida,usa,HoursLeft
+351,,chevrolet,door,Old,salvage insurance,HighMileage,gray,california,usa,19 hours left
+352,LowPrice,ford,door,Moderate,clean vehicle,HighMileage,black,georgia,usa,FewDaysLeft
+353,MidPrice,ford,f-150,Recent,clean vehicle,MediumMileage,black,michigan,usa,HoursLeft
+354,,ford,pickup,Old,salvage insurance,HighMileage,blue,tennessee,usa,FewDaysLeft
+355,,ford,door,Old,salvage insurance,HighMileage,black,illinois,usa,17 hours left
+356,LowPrice,gmc,mpv,Recent,clean vehicle,MediumMileage,blue,virginia,usa,17 hours left
+357,VeryLowPrice,heartland,country,Old,clean vehicle,VeryLowMileage,white,pennsylvania,usa,7 days left
+358,LowPrice,jeep,mpv,Recent,clean vehicle,LowMileage,red,florida,usa,HoursLeft
+359,VeryLowPrice,chevrolet,door,Old,salvage insurance,HighMileage,white,california,usa,8 days left
+360,VeryLowPrice,ford,door,Moderate,clean vehicle,HighMileage,white,georgia,usa,FewDaysLeft
+361,LuxuryPrice,ford,door,Recent,clean vehicle,LowMileage,black,michigan,usa,FewDaysLeft
+362,VeryLowPrice,ford,pickup,VeryOld,salvage insurance,VeryHighMileage,white,georgia,usa,FewDaysLeft
+363,VeryLowPrice,ford,pk,VeryOld,salvage insurance,VeryHighMileage,red,illinois,usa,17 hours left
+364,LowPrice,gmc,mpv,Recent,clean vehicle,VeryLowMileage,gray,virginia,usa,17 hours left
+365,MidPrice,jeep,mpv,Recent,clean vehicle,VeryLowMileage,black,michigan,usa,FewDaysLeft
+366,LowPrice,hyundai,mpv,Recent,clean vehicle,LowMileage,blue,florida,usa,HoursLeft
+367,VeryLowPrice,chevrolet,door,VeryOld,salvage insurance,VeryHighMileage,black,south carolina,usa,FewDaysLeft
+368,VeryLowPrice,ford,door,Moderate,clean vehicle,MediumMileage,gray,georgia,usa,FewDaysLeft
+369,HighPrice,ford,door,Recent,clean vehicle,MediumMileage,white,michigan,usa,HoursLeft
+370,,ford,door,VeryOld,salvage insurance,HighMileage,green,wisconsin,usa,FewDaysLeft
+371,,ford,door,VeryOld,salvage insurance,HighMileage,white,illinois,usa,17 hours left
+372,LowPrice,gmc,mpv,Recent,clean vehicle,LowMileage,gray,virginia,usa,17 hours left
+373,MidPrice,infiniti,mpv,Recent,clean vehicle,LowMileage,gray,florida,usa,HoursLeft
+374,VeryLowPrice,acura,door,Old,salvage insurance,MediumMileage,gray,michigan,usa,FewDaysLeft
+375,VeryLowPrice,bmw,door,Moderate,salvage insurance,LowMileage,white,florida,usa,FewDaysLeft
+376,VeryLowPrice,ford,door,Moderate,clean vehicle,LowMileage,gold,georgia,usa,FewDaysLeft
+377,HighPrice,ford,door,Recent,clean vehicle,MediumMileage,blue,michigan,usa,FewDaysLeft
+378,VeryLowPrice,gmc,door,Old,salvage insurance,HighMileage,black,michigan,usa,FewDaysLeft
+379,MidPrice,honda,van,Recent,clean vehicle,MediumMileage,gray,new jersey,usa,2 hours left
+380,LuxuryPrice,harley-davidson,road/street,Recent,clean vehicle,VeryLowMileage,black,virginia,usa,18 hours left
+381,LowPrice,honda,door,Old,clean vehicle,VeryHighMileage,no_color,pennsylvania,usa,3 days left
+382,MidPrice,infiniti,mpv,Recent,clean vehicle,VeryLowMileage,gray,florida,usa,HoursLeft
+383,VeryLowPrice,chevrolet,door,Old,salvage insurance,HighMileage,gray,virginia,usa,FewDaysLeft
+384,MidPrice,ford,door,Moderate,clean vehicle,MediumMileage,white,georgia,usa,FewDaysLeft
+385,HighPrice,ford,door,Recent,clean vehicle,MediumMileage,white,michigan,usa,FewDaysLeft
+386,VeryLowPrice,gmc,door,VeryOld,salvage insurance,HighMileage,white,michigan,usa,FewDaysLeft
+387,VeryLowPrice,ford,pickup,Old,salvage insurance,VeryHighMileage,brown,mississippi,usa,8 days left
+388,VeryLowPrice,honda,mpv,Recent,clean vehicle,MediumMileage,black,virginia,usa,17 hours left
+389,VeryLowPrice,hyundai,doors,Recent,clean vehicle,LowMileage,silver,florida,usa,HoursLeft
+390,VeryLowPrice,acura,door,Old,clean vehicle,HighMileage,black,texas,usa,2 hours left
+391,,cadillac,coupe,VeryOld,salvage insurance,MediumMileage,white,virginia,usa,9 days left
+392,VeryLowPrice,ford,door,Moderate,clean vehicle,MediumMileage,silver,georgia,usa,FewDaysLeft
+393,LuxuryPrice,ford,door,Recent,clean vehicle,LowMileage,white,michigan,usa,HoursLeft
+394,VeryLowPrice,ford,door,Old,salvage insurance,HighMileage,gray,michigan,usa,FewDaysLeft
+395,VeryLowPrice,ford,door,VeryOld,salvage insurance,VeryHighMileage,brown,arkansas,usa,17 hours left
+396,LowPrice,honda,door,Moderate,clean vehicle,MediumMileage,silver,virginia,usa,FewDaysLeft
+397,VeryLowPrice,jeep,door,Moderate,clean vehicle,MediumMileage,white,new york,usa,FewDaysLeft
+398,VeryLowPrice,jeep,door,VeryOld,salvage insurance,VeryHighMileage,black,florida,usa,16 hours left
+399,LuxuryPrice,bmw,series,Recent,clean vehicle,VeryLowMileage,black,california,usa,7 days left
+400,,buick,door,Old,salvage insurance,HighMileage,blue,virginia,usa,9 days left
+401,MidPrice,bmw,series,Moderate,clean vehicle,LowMileage,blue,new jersey,usa,FewDaysLeft
+402,LowPrice,ford,door,Moderate,clean vehicle,MediumMileage,black,georgia,usa,FewDaysLeft
+403,LuxuryPrice,ford,door,Recent,clean vehicle,LowMileage,black,michigan,usa,FewDaysLeft
+404,VeryLowPrice,ford,door,Old,salvage insurance,MediumMileage,white,michigan,usa,FewDaysLeft
+405,VeryLowPrice,ford,door,,salvage insurance,LowMileage,white,arkansas,usa,17 hours left
+406,LowPrice,honda,van,Moderate,clean vehicle,MediumMileage,gray,virginia,usa,FewDaysLeft
+407,LowPrice,jeep,door,Moderate,clean vehicle,MediumMileage,gray,new york,usa,FewDaysLeft
+408,VeryLowPrice,jeep,door,VeryOld,salvage insurance,HighMileage,green,maryland,usa,16 hours left
+409,VeryLowPrice,audi,door,Old,salvage insurance,HighMileage,black,texas,usa,17 hours left
+410,,chevrolet,door,VeryOld,salvage insurance,VeryHighMileage,green,arizona,usa,FewDaysLeft
+411,VeryLowPrice,bmw,coupe,Old,salvage insurance,MediumMileage,white,georgia,usa,FewDaysLeft
+412,HighPrice,bmw,series,Recent,clean vehicle,LowMileage,blue,california,usa,21 hours left
+413,LowPrice,ford,door,Moderate,clean vehicle,LowMileage,silver,georgia,usa,FewDaysLeft
+414,LuxuryPrice,ford,srw,Recent,clean vehicle,LowMileage,blue,washington,usa,21 hours left
+415,VeryLowPrice,ford,door,Moderate,salvage insurance,LowMileage,silver,michigan,usa,FewDaysLeft
+416,VeryLowPrice,honda,door,Moderate,clean vehicle,MediumMileage,white,virginia,usa,FewDaysLeft
+417,LowPrice,hyundai,doors,Moderate,clean vehicle,HighMileage,phantom black,new york,usa,5 days left
+418,VeryLowPrice,honda,doors,Moderate,clean vehicle,HighMileage,blue,new york,usa,FewDaysLeft
+419,,kia,wagon,Old,salvage insurance,HighMileage,silver,indiana,usa,16 hours left
+420,,audi,door,VeryOld,salvage insurance,HighMileage,black,california,usa,19 hours left
+421,,bmw,door,VeryOld,salvage insurance,VeryHighMileage,gray,utah,usa,FewDaysLeft
+422,VeryLowPrice,gmc,door,Moderate,clean vehicle,HighMileage,black,utah,usa,19 hours left
+423,MidPrice,infiniti,mpv,Recent,clean vehicle,LowMileage,white,texas,usa,17 hours left
+424,VeryLowPrice,hyundai,doors,Recent,clean vehicle,LowMileage,red,ohio,usa,FewDaysLeft
+425,HighPrice,lincoln,nautilus,Recent,clean vehicle,VeryLowMileage,black,california,usa,1 days left
+426,LuxuryPrice,lexus,gx,Recent,clean vehicle,VeryLowMileage,silver,florida,usa,FewDaysLeft
+427,VeryLowPrice,nissan,doors,Recent,clean vehicle,LowMileage,gray,california,usa,HoursLeft
+428,LowPrice,nissan,mpv,Recent,clean vehicle,LowMileage,blue,new jersey,usa,17 hours left
+429,MidPrice,audi,q5,Recent,clean vehicle,MediumMileage,blue,texas,usa,3 days left
+430,VeryLowPrice,chevrolet,coupe,Old,salvage insurance,HighMileage,yellow,minnesota,usa,FewDaysLeft
+431,HighPrice,cadillac,door,Moderate,clean vehicle,LowMileage,white,wisconsin,usa,FewDaysLeft
+432,VeryLowPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,brown,florida,usa,HoursLeft
+433,HighPrice,ford,f-150,Recent,clean vehicle,LowMileage,gray,michigan,usa,FewDaysLeft
+434,LowPrice,ford,door,Recent,salvage insurance,LowMileage,red,arkansas,usa,17 hours left
+435,,ford,door,VeryOld,salvage insurance,HighMileage,red,maryland,usa,16 hours left
+436,LowPrice,gmc,door,Moderate,clean vehicle,MediumMileage,white,utah,usa,19 hours left
+437,MidPrice,infiniti,mpv,Recent,clean vehicle,VeryLowMileage,black,texas,usa,17 hours left
+438,VeryLowPrice,hyundai,doors,Recent,clean vehicle,LowMileage,silver,ohio,usa,FewDaysLeft
+439,HighPrice,mercedes-benz,gle,Recent,clean vehicle,VeryLowMileage,white,california,usa,1 days left
+440,MidPrice,kia,sportage,Recent,clean vehicle,MediumMileage,silver,new jersey,usa,2 hours left
+441,VeryLowPrice,nissan,doors,Recent,clean vehicle,LowMileage,blue,california,usa,HoursLeft
+442,VeryLowPrice,nissan,doors,Recent,clean vehicle,LowMileage,gray,new jersey,usa,17 hours left
+443,,chevrolet,coupe,Old,salvage insurance,VeryHighMileage,yellow,illinois,usa,17 hours left
+444,HighPrice,audi,5,Moderate,clean vehicle,LowMileage,black,wisconsin,usa,FewDaysLeft
+445,VeryLowPrice,ford,door,Moderate,clean vehicle,MediumMileage,black,florida,usa,23 hours left
+446,HighPrice,ford,door,Recent,clean vehicle,MediumMileage,red,michigan,usa,HoursLeft
+447,VeryLowPrice,ford,pickup,VeryOld,salvage insurance,VeryHighMileage,gold,arkansas,usa,17 hours left
+448,LowPrice,gmc,door,Moderate,clean vehicle,HighMileage,white,utah,usa,19 hours left
+449,MidPrice,infiniti,mpv,Recent,clean vehicle,VeryLowMileage,white,texas,usa,17 hours left
+450,VeryLowPrice,hyundai,mpv,Recent,clean vehicle,LowMileage,silver,ohio,usa,FewDaysLeft
+451,HighPrice,land,sport,Recent,clean vehicle,LowMileage,black,california,usa,1 days left
+452,HighPrice,land,discovery,Recent,clean vehicle,LowMileage,black,florida,usa,FewDaysLeft
+453,MidPrice,mercedes-benz,doors,Recent,clean vehicle,LowMileage,white,california,usa,HoursLeft
+454,VeryLowPrice,nissan,doors,Recent,clean vehicle,LowMileage,gray,new jersey,usa,17 hours left
+455,,chevrolet,door,Old,salvage insurance,VeryHighMileage,silver,texas,usa,17 hours left
+456,VeryLowPrice,chrysler,door,Moderate,clean vehicle,MediumMileage,gold,florida,usa,HoursLeft
+457,HighPrice,ford,f-150,Recent,clean vehicle,LowMileage,red,michigan,usa,FewDaysLeft
+458,VeryLowPrice,gmc,door,Recent,salvage insurance,LowMileage,black,arkansas,usa,17 hours left
+459,LowPrice,gmc,door,Moderate,clean vehicle,HighMileage,white,utah,usa,19 hours left
+460,MidPrice,infiniti,mpv,Recent,clean vehicle,VeryLowMileage,beige,texas,usa,17 hours left
+461,LowPrice,jeep,mpv,Recent,clean vehicle,LowMileage,silver,ohio,usa,FewDaysLeft
+462,HighPrice,land,sport,Recent,clean vehicle,LowMileage,black,california,usa,1 days left
+463,LowPrice,hyundai,door,Moderate,clean vehicle,MediumMileage,red,pennsylvania,usa,7 days left
+464,VeryLowPrice,nissan,doors,Recent,clean vehicle,LowMileage,gray,california,usa,HoursLeft
+465,VeryLowPrice,nissan,doors,Recent,clean vehicle,LowMileage,white,new jersey,usa,17 hours left
+466,VeryLowPrice,chevrolet,door,Old,salvage insurance,VeryHighMileage,black,texas,usa,17 hours left
+467,MidPrice,bmw,door,Moderate,clean vehicle,LowMileage,silver,illinois,usa,21 hours left
+468,MidPrice,chevrolet,cab,Moderate,clean vehicle,MediumMileage,blue,florida,usa,23 hours left
+469,HighPrice,ford,f-150,Recent,clean vehicle,LowMileage,black,michigan,usa,HoursLeft
+470,VeryLowPrice,ford,pk,Old,salvage insurance,HighMileage,gray,oklahoma,usa,17 hours left
+471,HighPrice,gmc,acadia,Recent,clean vehicle,LowMileage,gray,new jersey,usa,2 hours left
+472,LowPrice,gmc,cab,Moderate,clean vehicle,MediumMileage,white,utah,usa,19 hours left
+473,MidPrice,jeep,mpv,Recent,clean vehicle,VeryLowMileage,red,michigan,usa,FewDaysLeft
+474,VeryLowPrice,jeep,mpv,Recent,clean vehicle,LowMileage,silver,ohio,usa,FewDaysLeft
+475,HighPrice,land,sport,Recent,clean vehicle,LowMileage,black,california,usa,FewDaysLeft
+476,HighPrice,maserati,ghibli,Recent,clean vehicle,LowMileage,black,florida,usa,FewDaysLeft
+477,VeryLowPrice,nissan,doors,Recent,clean vehicle,LowMileage,white,california,usa,HoursLeft
+478,VeryLowPrice,nissan,doors,Recent,clean vehicle,LowMileage,silver,new jersey,usa,17 hours left
+479,VeryLowPrice,chevrolet,door,Moderate,salvage insurance,MediumMileage,white,arkansas,usa,17 hours left
+480,VeryLowPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,black,florida,usa,HoursLeft
+481,HighPrice,ford,door,Recent,clean vehicle,VeryLowMileage,black,michigan,usa,HoursLeft
+482,VeryLowPrice,ford,door,Moderate,salvage insurance,MediumMileage,silver,oklahoma,usa,17 hours left
+483,HighPrice,gmc,1500,Recent,clean vehicle,VeryLowMileage,black,pennsylvania,usa,1 days left
+484,VeryLowPrice,gmc,mpv,Old,clean vehicle,MediumMileage,white,utah,usa,19 hours left
+485,MidPrice,jeep,mpv,Recent,clean vehicle,VeryLowMileage,yellow,michigan,usa,FewDaysLeft
+486,VeryLowPrice,hyundai,mpv,Recent,clean vehicle,LowMileage,red,ohio,usa,FewDaysLeft
+487,HighPrice,mercedes-benz,glc,Recent,clean vehicle,LowMileage,white,california,usa,1 days left
+488,HighPrice,mercedes-benz,e-class,Recent,clean vehicle,LowMileage,blue,florida,usa,FewDaysLeft
+489,LowPrice,nissan,cab,Recent,clean vehicle,LowMileage,gray,california,usa,HoursLeft
+490,VeryLowPrice,peterbilt,truck,Moderate,salvage insurance,,gold,florida,usa,17 hours left
+491,VeryLowPrice,nissan,doors,Recent,clean vehicle,LowMileage,black,new jersey,usa,17 hours left
+492,VeryLowPrice,chevrolet,van,Old,salvage insurance,HighMileage,white,arkansas,usa,17 hours left
+493,VeryLowPrice,chevrolet,cutaway,Old,clean vehicle,MediumMileage,white,wisconsin,usa,21 hours left
+494,LowPrice,chevrolet,utility,Moderate,clean vehicle,MediumMileage,black,florida,usa,HoursLeft
+495,HighPrice,ford,f-150,Recent,clean vehicle,VeryLowMileage,black,michigan,usa,9 minutes
+496,,ford,pickup,VeryOld,salvage insurance,VeryHighMileage,red,oklahoma,usa,17 hours left
+497,HighPrice,gmc,limited,Recent,clean vehicle,VeryLowMileage,black,pennsylvania,usa,1 days left
+498,VeryLowPrice,honda,doors,Recent,clean vehicle,LowMileage,blue,virginia,usa,FewDaysLeft
+499,MidPrice,jeep,mpv,Recent,clean vehicle,VeryLowMileage,gray,michigan,usa,FewDaysLeft
+500,LowPrice,jeep,mpv,Recent,clean vehicle,LowMileage,silver,ohio,usa,FewDaysLeft
+501,HighPrice,mercedes-benz,gle,Recent,clean vehicle,LowMileage,white,california,usa,1 days left
+502,LuxuryPrice,mercedes-benz,sl-class,Recent,clean vehicle,LowMileage,silver,florida,usa,FewDaysLeft
+503,MidPrice,lexus,mpv,Recent,clean vehicle,LowMileage,black,california,usa,HoursLeft
+504,VeryLowPrice,peterbilt,truck,Moderate,salvage insurance,,blue,florida,usa,17 hours left
+505,MidPrice,ram,door,Recent,clean vehicle,LowMileage,white,new jersey,usa,17 hours left
+506,,chevrolet,door,Moderate,salvage insurance,HighMileage,orange,oklahoma,usa,17 hours left
+507,VeryLowPrice,chevrolet,door,VeryOld,clean vehicle,HighMileage,gray,wisconsin,usa,21 hours left
+508,VeryLowPrice,dodge,door,Moderate,clean vehicle,VeryLowMileage,black,georgia,usa,FewDaysLeft
+509,HighPrice,ford,door,Recent,clean vehicle,LowMileage,gray,michigan,usa,FewDaysLeft
+510,,ford,door,Old,salvage insurance,MediumMileage,silver,oklahoma,usa,17 hours left
+511,LowPrice,gmc,mpv,Recent,clean vehicle,LowMileage,black,virginia,usa,FewDaysLeft
+512,MidPrice,jeep,mpv,Recent,clean vehicle,VeryLowMileage,white,michigan,usa,FewDaysLeft
+513,VeryLowPrice,hyundai,mpv,Recent,clean vehicle,LowMileage,white,ohio,usa,FewDaysLeft
+514,,lincoln,door,VeryOld,salvage insurance,MediumMileage,green,minnesota,usa,17 hours left
+515,VeryLowPrice,nissan,mpv,Recent,clean vehicle,LowMileage,blue,california,usa,HoursLeft
+516,,peterbilt,truck,Old,salvage insurance,,blue,florida,usa,17 hours left
+517,VeryLowPrice,nissan,doors,Recent,clean vehicle,LowMileage,gray,new jersey,usa,17 hours left
+518,VeryLowPrice,chevrolet,door,Old,salvage insurance,HighMileage,blue,texas,usa,17 hours left
+519,LowPrice,chevrolet,pickup,VeryOld,clean vehicle,HighMileage,gray,wisconsin,usa,21 hours left
+520,VeryLowPrice,dodge,door,Moderate,clean vehicle,MediumMileage,red,georgia,usa,FewDaysLeft
+521,HighPrice,ford,f-150,Recent,clean vehicle,VeryLowMileage,red,michigan,usa,FewDaysLeft
+522,,ford,door,Old,salvage insurance,HighMileage,red,oklahoma,usa,17 hours left
+523,LowPrice,honda,door,Recent,clean vehicle,LowMileage,white,virginia,usa,FewDaysLeft
+524,MidPrice,jeep,mpv,Recent,clean vehicle,VeryLowMileage,red,michigan,usa,FewDaysLeft
+525,VeryLowPrice,hyundai,doors,Recent,clean vehicle,LowMileage,gray,ohio,usa,FewDaysLeft
+526,MidPrice,mazda,cx-3,Recent,clean vehicle,LowMileage,gray,florida,usa,FewDaysLeft
+527,VeryLowPrice,kia,door,Recent,clean vehicle,LowMileage,black,california,usa,HoursLeft
+528,VeryLowPrice,peterbilt,truck,Old,salvage insurance,,color:,georgia,usa,17 hours left
+529,VeryLowPrice,nissan,doors,Recent,clean vehicle,LowMileage,white,new jersey,usa,17 hours left
+530,,chevrolet,door,VeryOld,salvage insurance,HighMileage,gray,texas,usa,17 hours left
+531,VeryLowPrice,chevrolet,pickup,VeryOld,clean vehicle,,red,wisconsin,usa,21 hours left
+532,VeryLowPrice,ford,door,Old,clean vehicle,HighMileage,white,florida,usa,HoursLeft
+533,HighPrice,ford,door,Recent,clean vehicle,LowMileage,red,michigan,usa,21 hours left
+534,VeryLowPrice,ford,door,Old,salvage insurance,HighMileage,blue,oklahoma,usa,17 hours left
+535,LowPrice,honda,doors,Recent,clean vehicle,VeryLowMileage,black,virginia,usa,FewDaysLeft
+536,MidPrice,jeep,mpv,Recent,clean vehicle,VeryLowMileage,yellow,michigan,usa,FewDaysLeft
+537,VeryLowPrice,hyundai,mpv,Recent,clean vehicle,LowMileage,gray,ohio,usa,FewDaysLeft
+538,MidPrice,mercedes-benz,door,Moderate,clean vehicle,LowMileage,gray,florida,usa,FewDaysLeft
+539,VeryLowPrice,nissan,door,Moderate,clean vehicle,MediumMileage,black,california,usa,HoursLeft
+540,VeryLowPrice,nissan,doors,Recent,clean vehicle,LowMileage,silver,new jersey,usa,17 hours left
+541,VeryLowPrice,chevrolet,pickup,Old,salvage insurance,HighMileage,white,colorado,usa,17 hours left
+542,VeryLowPrice,chevrolet,door,VeryOld,clean vehicle,HighMileage,red,wisconsin,usa,21 hours left
+543,LowPrice,chevrolet,coupe,Old,clean vehicle,MediumMileage,yellow,florida,usa,HoursLeft
+544,HighPrice,ford,door,Recent,clean vehicle,LowMileage,red,michigan,usa,19 hours left
+545,,gmc,door,VeryOld,salvage insurance,,light blue,colorado,usa,18 hours left
+546,HighPrice,gmc,2500hd,Recent,clean vehicle,VeryLowMileage,blue,pennsylvania,usa,1 days left
+547,LowPrice,honda,mpv,Recent,clean vehicle,LowMileage,brown,minnesota,usa,18 hours left
+548,MidPrice,jeep,mpv,Recent,clean vehicle,VeryLowMileage,yellow,michigan,usa,FewDaysLeft
+549,VeryLowPrice,hyundai,door,Moderate,clean vehicle,HighMileage,white,mississippi,usa,FewDaysLeft
+550,MidPrice,mercedes-benz,door,Moderate,clean vehicle,MediumMileage,black,florida,usa,FewDaysLeft
+551,VeryLowPrice,hyundai,door,Moderate,clean vehicle,MediumMileage,gray,california,usa,HoursLeft
+552,VeryLowPrice,nissan,doors,Recent,clean vehicle,LowMileage,gray,new jersey,usa,17 hours left
+553,MidPrice,chevrolet,door,Recent,clean vehicle,LowMileage,black,pennsylvania,usa,FewDaysLeft
+554,HighPrice,ford,f-150,Recent,clean vehicle,VeryLowMileage,gray,michigan,usa,19 hours left
+555,LowPrice,chevrolet,door,Recent,clean vehicle,LowMileage,black,pennsylvania,usa,FewDaysLeft
+556,HighPrice,ford,f-150,Recent,clean vehicle,VeryLowMileage,white,michigan,usa,19 hours left
+557,MidPrice,chevrolet,door,Recent,clean vehicle,MediumMileage,white,pennsylvania,usa,FewDaysLeft
+558,HighPrice,ford,f-150,Recent,clean vehicle,VeryLowMileage,gray,michigan,usa,1 minutes
+559,MidPrice,chevrolet,door,Recent,clean vehicle,MediumMileage,blue,pennsylvania,usa,FewDaysLeft
+560,HighPrice,ford,f-150,Recent,clean vehicle,VeryLowMileage,gray,michigan,usa,19 hours left
+561,MidPrice,chevrolet,door,Recent,clean vehicle,MediumMileage,silver,pennsylvania,usa,FewDaysLeft
+562,HighPrice,ford,f-150,Recent,clean vehicle,VeryLowMileage,gray,michigan,usa,1 minutes
+563,MidPrice,chevrolet,door,Recent,clean vehicle,MediumMileage,black,pennsylvania,usa,FewDaysLeft
+564,HighPrice,ford,f-150,Recent,clean vehicle,VeryLowMileage,white,michigan,usa,19 hours left
+565,MidPrice,chevrolet,door,Recent,clean vehicle,LowMileage,black,pennsylvania,usa,FewDaysLeft
+566,HighPrice,ford,f-150,Recent,clean vehicle,VeryLowMileage,white,michigan,usa,FewDaysLeft
+567,MidPrice,chevrolet,door,Recent,clean vehicle,MediumMileage,black,pennsylvania,usa,FewDaysLeft
+568,HighPrice,ford,f-150,Recent,clean vehicle,VeryLowMileage,red,michigan,usa,1 minutes
+569,MidPrice,chevrolet,impala,Recent,clean vehicle,LowMileage,white,new jersey,usa,7 hours left
+570,HighPrice,ford,f-150,Recent,clean vehicle,VeryLowMileage,silver,michigan,usa,19 hours left
+571,MidPrice,chevrolet,van,Recent,clean vehicle,LowMileage,white,pennsylvania,usa,FewDaysLeft
+572,HighPrice,ford,f-150,Recent,clean vehicle,VeryLowMileage,white,michigan,usa,FewDaysLeft
+573,VeryLowPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,gray,pennsylvania,usa,21 hours left
+574,HighPrice,ford,f-150,Recent,clean vehicle,VeryLowMileage,silver,michigan,usa,19 hours left
+575,LowPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,gray,pennsylvania,usa,21 hours left
+576,HighPrice,ford,f-150,Recent,clean vehicle,VeryLowMileage,silver,michigan,usa,19 hours left
+577,LowPrice,chevrolet,colorado,Moderate,clean vehicle,MediumMileage,white,pennsylvania,usa,FewDaysLeft
+578,HighPrice,ford,f-150,Recent,clean vehicle,VeryLowMileage,silver,michigan,usa,FewDaysLeft
+579,LowPrice,chevrolet,van,Moderate,clean vehicle,MediumMileage,white,pennsylvania,usa,FewDaysLeft
+580,HighPrice,ford,f-150,Recent,clean vehicle,VeryLowMileage,red,michigan,usa,1 minutes
+581,VeryLowPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,white,pennsylvania,usa,21 hours left
+582,HighPrice,ford,f-150,Recent,clean vehicle,VeryLowMileage,white,michigan,usa,1 minutes
+583,VeryLowPrice,chevrolet,sonic,Moderate,clean vehicle,MediumMileage,black,pennsylvania,usa,21 hours left
+584,HighPrice,ford,f-150,Recent,clean vehicle,VeryLowMileage,white,michigan,usa,1 minutes
+585,MidPrice,chevrolet,sonic,Recent,clean vehicle,VeryLowMileage,black,illinois,usa,FewDaysLeft
+586,HighPrice,ford,f-150,Recent,clean vehicle,VeryLowMileage,black,michigan,usa,FewDaysLeft
+587,MidPrice,chevrolet,colorado,Recent,clean vehicle,VeryLowMileage,white,illinois,usa,FewDaysLeft
+588,HighPrice,ford,f-150,Recent,clean vehicle,VeryLowMileage,silver,michigan,usa,19 hours left
+589,LowPrice,chevrolet,door,Recent,clean vehicle,MediumMileage,black,florida,usa,SeveralDaysLeft
+590,HighPrice,ford,f-150,Recent,clean vehicle,LowMileage,silver,michigan,usa,19 hours left
+591,HighPrice,chevrolet,corvette,Moderate,clean vehicle,LowMileage,black,florida,usa,16 hours left
+592,HighPrice,ford,f-150,Recent,clean vehicle,LowMileage,white,michigan,usa,1 minutes
+593,MidPrice,chevrolet,door,Moderate,clean vehicle,LowMileage,red,florida,usa,HoursLeft
+594,HighPrice,ford,f-150,Recent,clean vehicle,LowMileage,white,michigan,usa,1 minutes
+595,MidPrice,acura,mdx,Moderate,clean vehicle,MediumMileage,silver,florida,usa,1 days left
+596,HighPrice,ford,f-150,Recent,clean vehicle,LowMileage,silver,michigan,usa,19 hours left
+597,HighPrice,bmw,series,Recent,clean vehicle,LowMileage,no_color,texas,usa,1 days left
+598,HighPrice,ford,f-150,Recent,clean vehicle,LowMileage,red,michigan,usa,1 minutes
+599,MidPrice,buick,encore,Recent,clean vehicle,VeryLowMileage,red,texas,usa,5 hours left
+600,HighPrice,ford,f-150,Recent,clean vehicle,VeryLowMileage,white,michigan,usa,1 minutes
+601,HighPrice,ford,f-150,Recent,clean vehicle,LowMileage,white,michigan,usa,1 minutes
+602,HighPrice,ford,f-150,Recent,clean vehicle,LowMileage,black,michigan,usa,16 minutes
+603,HighPrice,ford,f-150,Recent,clean vehicle,LowMileage,white,michigan,usa,1 minutes
+604,HighPrice,ford,f-150,Recent,clean vehicle,LowMileage,white,michigan,usa,1 minutes
+605,HighPrice,buick,enclave,Recent,clean vehicle,VeryLowMileage,gray,wisconsin,usa,21 hours left
+606,HighPrice,ford,flex,Recent,clean vehicle,VeryLowMileage,blue,michigan,usa,21 hours left
+607,HighPrice,ford,flex,Recent,clean vehicle,LowMileage,silver,michigan,usa,FewDaysLeft
+608,HighPrice,cadillac,xt5,Recent,clean vehicle,VeryLowMileage,black,wisconsin,usa,21 hours left
+609,HighPrice,ford,flex,Recent,clean vehicle,VeryLowMileage,black,michigan,usa,21 hours left
+610,HighPrice,ford,flex,Recent,clean vehicle,VeryLowMileage,black,michigan,usa,21 hours left
+611,HighPrice,ford,flex,Recent,clean vehicle,VeryLowMileage,black,michigan,usa,FewDaysLeft
+612,HighPrice,ford,f-150,Recent,clean vehicle,LowMileage,gray,michigan,usa,1 minutes
+613,HighPrice,ford,flex,Recent,clean vehicle,VeryLowMileage,red,michigan,usa,21 hours left
+614,HighPrice,ford,f-150,Recent,clean vehicle,LowMileage,white,michigan,usa,1 minutes
+615,HighPrice,bmw,series,Recent,clean vehicle,LowMileage,blue,wisconsin,usa,21 hours left
+616,HighPrice,ford,flex,Recent,clean vehicle,VeryLowMileage,white,michigan,usa,21 hours left
+617,HighPrice,buick,door,Recent,clean vehicle,LowMileage,red,wisconsin,usa,FewDaysLeft
+618,HighPrice,ford,f-150,Recent,clean vehicle,LowMileage,silver,michigan,usa,HoursLeft
+619,HighPrice,ford,flex,Recent,clean vehicle,VeryLowMileage,red,michigan,usa,21 hours left
+620,HighPrice,ford,flex,Recent,clean vehicle,VeryLowMileage,gray,michigan,usa,FewDaysLeft
+621,HighPrice,buick,door,Recent,clean vehicle,VeryLowMileage,silver,wisconsin,usa,FewDaysLeft
+622,MidPrice,ford,fusion,Recent,clean vehicle,VeryLowMileage,gray,michigan,usa,HoursLeft
+623,MidPrice,kia,sorento,Recent,clean vehicle,LowMileage,black,connecticut,usa,5 hours left
+624,HighPrice,buick,door,Recent,clean vehicle,VeryLowMileage,green,illinois,usa,21 hours left
+625,HighPrice,ford,flex,Recent,clean vehicle,VeryLowMileage,gray,michigan,usa,FewDaysLeft
+626,MidPrice,kia,door,Recent,clean vehicle,LowMileage,no_color,connecticut,usa,5 hours left
+627,MidPrice,bmw,x3,Recent,clean vehicle,MediumMileage,black,wisconsin,usa,FewDaysLeft
+628,HighPrice,ford,flex,Recent,clean vehicle,VeryLowMileage,black,michigan,usa,21 hours left
+629,MidPrice,kia,sorento,Recent,clean vehicle,LowMileage,red,connecticut,usa,5 hours left
+630,MidPrice,ford,fusion,Recent,clean vehicle,VeryLowMileage,black,michigan,usa,HoursLeft
+631,HighPrice,kia,sorento,Recent,clean vehicle,LowMileage,gray,connecticut,usa,5 hours left
+632,HighPrice,ford,mustang,Recent,clean vehicle,VeryLowMileage,gray,michigan,usa,19 hours left
+633,MidPrice,chevrolet,equinox,Recent,clean vehicle,LowMileage,blue,wisconsin,usa,21 hours left
+634,HighPrice,chevrolet,cutaway,Recent,clean vehicle,VeryLowMileage,white,illinois,usa,21 hours left
+635,MidPrice,chevrolet,door,Recent,clean vehicle,LowMileage,blue,wisconsin,usa,21 hours left
+636,HighPrice,chevrolet,door,Recent,clean vehicle,LowMileage,silver,wisconsin,usa,21 hours left
+637,MidPrice,chevrolet,door,Recent,clean vehicle,LowMileage,white,wisconsin,usa,21 hours left
+638,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,no_color,wisconsin,usa,21 hours left
+639,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,red,wisconsin,usa,21 hours left
+640,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,no_color,wisconsin,usa,21 hours left
+641,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,silver,new jersey,usa,3 days left
+642,HighPrice,chevrolet,door,Recent,clean vehicle,LowMileage,blue,wisconsin,usa,21 hours left
+643,HighPrice,chevrolet,door,Recent,clean vehicle,MediumMileage,black,wisconsin,usa,21 hours left
+644,MidPrice,chevrolet,door,Recent,clean vehicle,LowMileage,red,wisconsin,usa,21 hours left
+645,LuxuryPrice,chevrolet,corvette,Recent,clean vehicle,VeryLowMileage,white,illinois,usa,21 hours left
+646,HighPrice,chevrolet,corvette,Recent,clean vehicle,VeryLowMileage,black,illinois,usa,FewDaysLeft
+647,LowPrice,chevrolet,malibu,Recent,clean vehicle,MediumMileage,gray,wisconsin,usa,21 hours left
+648,HighPrice,chevrolet,door,Recent,clean vehicle,LowMileage,white,wisconsin,usa,21 hours left
+649,HighPrice,chevrolet,door,Recent,clean vehicle,VeryLowMileage,no_color,wisconsin,usa,21 hours left
+650,MidPrice,chevrolet,door,Recent,clean vehicle,LowMileage,gray,wisconsin,usa,21 hours left
+651,MidPrice,chevrolet,door,Recent,clean vehicle,LowMileage,white,wisconsin,usa,21 hours left
+652,HighPrice,chevrolet,3500,Recent,clean vehicle,LowMileage,red,wisconsin,usa,21 hours left
+653,HighPrice,chevrolet,door,Recent,clean vehicle,LowMileage,gray,wisconsin,usa,21 hours left
+654,MidPrice,chevrolet,trax,Recent,clean vehicle,VeryLowMileage,white,wisconsin,usa,FewDaysLeft
+655,LowPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,no_color,wisconsin,usa,21 hours left
+656,HighPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,gold,wisconsin,usa,FewDaysLeft
+657,HighPrice,chevrolet,trax,Recent,clean vehicle,VeryLowMileage,gray,california,usa,21 hours left
+658,HighPrice,chevrolet,1500,Recent,clean vehicle,VeryLowMileage,no_color,california,usa,FewDaysLeft
+659,MidPrice,chevrolet,equinox,Recent,clean vehicle,LowMileage,silver,california,usa,21 hours left
+660,HighPrice,chevrolet,1500,Recent,clean vehicle,VeryLowMileage,silver,california,usa,21 hours left
+661,HighPrice,chevrolet,traverse,Recent,clean vehicle,LowMileage,black,missouri,usa,19 hours left
+662,MidPrice,chevrolet,trax,Recent,clean vehicle,LowMileage,black,california,usa,21 hours left
+663,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,silver,california,usa,21 hours left
+664,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,white,california,usa,21 hours left
+665,MidPrice,chevrolet,passenger,Recent,clean vehicle,LowMileage,white,california,usa,21 hours left
+666,MidPrice,chevrolet,volt,Recent,clean vehicle,LowMileage,no_color,california,usa,21 hours left
+667,LuxuryPrice,chevrolet,corvette,Recent,clean vehicle,VeryLowMileage,red,california,usa,FewDaysLeft
+668,HighPrice,chevrolet,door,Moderate,clean vehicle,LowMileage,white,california,usa,21 hours left
+669,MidPrice,chevrolet,passenger,Recent,clean vehicle,LowMileage,white,texas,usa,1 days left
+670,HighPrice,chevrolet,tahoe,Recent,clean vehicle,LowMileage,blue,oklahoma,usa,21 hours left
+671,HighPrice,chevrolet,tahoe,Recent,clean vehicle,LowMileage,silver,oklahoma,usa,21 hours left
+672,HighPrice,chevrolet,suburban,Recent,clean vehicle,LowMileage,gray,oklahoma,usa,21 hours left
+673,HighPrice,chevrolet,camaro,Recent,clean vehicle,LowMileage,gray,oklahoma,usa,21 hours left
+674,HighPrice,chevrolet,van,Recent,clean vehicle,VeryLowMileage,white,oklahoma,usa,21 hours left
+675,HighPrice,chevrolet,van,Recent,clean vehicle,VeryLowMileage,white,oklahoma,usa,21 hours left
+676,HighPrice,chevrolet,van,Recent,clean vehicle,VeryLowMileage,white,oklahoma,usa,21 hours left
+677,MidPrice,chevrolet,malibu,Recent,clean vehicle,LowMileage,silver,oklahoma,usa,21 hours left
+678,HighPrice,chevrolet,suburban,Recent,clean vehicle,LowMileage,black,oklahoma,usa,21 hours left
+679,MidPrice,chevrolet,colorado,Recent,clean vehicle,MediumMileage,green,oregon,usa,34 minutes
+680,MidPrice,chevrolet,2500,Recent,clean vehicle,MediumMileage,white,oregon,usa,34 minutes
+681,MidPrice,chevrolet,2500,Recent,clean vehicle,MediumMileage,white,oregon,usa,34 minutes
+682,MidPrice,chevrolet,1500,Recent,clean vehicle,MediumMileage,white,oregon,usa,34 minutes
+683,HighPrice,chevrolet,door,Recent,clean vehicle,MediumMileage,white,oregon,usa,34 minutes
+684,MidPrice,chevrolet,door,Moderate,clean vehicle,HighMileage,white,oregon,usa,34 minutes
+685,HighPrice,chevrolet,tahoe,Recent,clean vehicle,LowMileage,gray,oklahoma,usa,21 hours left
+686,MidPrice,chevrolet,malibu,Recent,clean vehicle,LowMileage,black,oklahoma,usa,21 hours left
+687,MidPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,gray,oklahoma,usa,21 hours left
+688,MidPrice,chevrolet,malibu,Recent,clean vehicle,LowMileage,white,oklahoma,usa,21 hours left
+689,LowPrice,chevrolet,spark,Recent,clean vehicle,LowMileage,red,oklahoma,usa,21 hours left
+690,MidPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,white,oklahoma,usa,21 hours left
+691,MidPrice,chevrolet,malibu,Recent,clean vehicle,LowMileage,gray,oklahoma,usa,21 hours left
+692,MidPrice,chevrolet,door,Recent,clean vehicle,LowMileage,white,oklahoma,usa,21 hours left
+693,LowPrice,chevrolet,door,Recent,clean vehicle,LowMileage,blue,oklahoma,usa,21 hours left
+694,HighPrice,chevrolet,1500,Recent,clean vehicle,MediumMileage,white,oklahoma,usa,21 hours left
+695,MidPrice,chevrolet,equinox,Recent,clean vehicle,LowMileage,white,new york,usa,18 hours left
+696,MidPrice,chevrolet,door,Moderate,clean vehicle,LowMileage,white,oklahoma,usa,21 hours left
+697,MidPrice,chevrolet,door,Moderate,clean vehicle,HighMileage,red,florida,usa,FewDaysLeft
+698,HighPrice,chevrolet,2500,Recent,clean vehicle,LowMileage,white,pennsylvania,usa,21 hours left
+699,HighPrice,chevrolet,2500,Recent,clean vehicle,MediumMileage,white,pennsylvania,usa,21 hours left
+700,HighPrice,chevrolet,2500,Recent,clean vehicle,LowMileage,white,pennsylvania,usa,21 hours left
+701,LowPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,gray,pennsylvania,usa,21 hours left
+702,VeryLowPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,blue,pennsylvania,usa,21 hours left
+703,LowPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,silver,texas,usa,6 hours left
+704,MidPrice,chevrolet,1500,Moderate,clean vehicle,HighMileage,white,texas,usa,7 hours left
+705,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,gray,nebraska,usa,21 hours left
+706,HighPrice,chevrolet,van,Recent,clean vehicle,LowMileage,white,missouri,usa,21 hours left
+707,VeryLowPrice,chevrolet,door,Moderate,clean vehicle,HighMileage,gray,texas,usa,9 days left
+708,HighPrice,chevrolet,colorado,Recent,clean vehicle,MediumMileage,red,indiana,usa,FewDaysLeft
+709,HighPrice,chevrolet,suburban,Recent,clean vehicle,LowMileage,black,missouri,usa,21 hours left
+710,MidPrice,chevrolet,volt,Recent,clean vehicle,LowMileage,black,oklahoma,usa,21 hours left
+711,HighPrice,chevrolet,door,Recent,clean vehicle,MediumMileage,black,missouri,usa,FewDaysLeft
+712,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,black,missouri,usa,FewDaysLeft
+713,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,silver,missouri,usa,FewDaysLeft
+714,LowPrice,chevrolet,trax,Recent,clean vehicle,MediumMileage,silver,west virginia,usa,FewDaysLeft
+715,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,white,west virginia,usa,21 hours left
+716,MidPrice,chevrolet,trax,Recent,clean vehicle,LowMileage,red,west virginia,usa,FewDaysLeft
+717,MidPrice,chevrolet,door,Recent,clean vehicle,MediumMileage,silver,west virginia,usa,FewDaysLeft
+718,MidPrice,chevrolet,equinox,Recent,clean vehicle,VeryLowMileage,gold,west virginia,usa,FewDaysLeft
+719,HighPrice,chevrolet,traverse,Recent,clean vehicle,VeryLowMileage,white,west virginia,usa,FewDaysLeft
+720,MidPrice,chevrolet,trax,Recent,clean vehicle,VeryLowMileage,white,west virginia,usa,FewDaysLeft
+721,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,black,west virginia,usa,FewDaysLeft
+722,LowPrice,chevrolet,door,Recent,clean vehicle,LowMileage,blue,missouri,usa,21 hours left
+723,LowPrice,chevrolet,door,Recent,clean vehicle,LowMileage,blue,missouri,usa,21 hours left
+724,HighPrice,chevrolet,door,Recent,clean vehicle,LowMileage,white,oklahoma,usa,21 hours left
+725,LowPrice,chevrolet,colorado,Moderate,clean vehicle,MediumMileage,white,west virginia,usa,FewDaysLeft
+726,MidPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,red,west virginia,usa,FewDaysLeft
+727,VeryLowPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,silver,west virginia,usa,FewDaysLeft
+728,HighPrice,chevrolet,1500,Moderate,clean vehicle,MediumMileage,brown,missouri,usa,FewDaysLeft
+729,MidPrice,chevrolet,equinox,Recent,clean vehicle,VeryLowMileage,black,nevada,usa,FewDaysLeft
+730,HighPrice,chevrolet,traverse,Recent,clean vehicle,LowMileage,silver,nevada,usa,FewDaysLeft
+731,HighPrice,chevrolet,impala,Recent,clean vehicle,VeryLowMileage,silver,nevada,usa,6 hours left
+732,VeryLowPrice,chevrolet,cruze,Moderate,clean vehicle,MediumMileage,white,illinois,usa,21 hours left
+733,VeryLowPrice,chevrolet,door,Moderate,clean vehicle,HighMileage,no_color,illinois,usa,21 hours left
+734,HighPrice,chevrolet,suburban,Recent,clean vehicle,LowMileage,silver,nevada,usa,FewDaysLeft
+735,HighPrice,chevrolet,suburban,Recent,clean vehicle,LowMileage,silver,nevada,usa,FewDaysLeft
+736,HighPrice,chevrolet,ld,Recent,clean vehicle,LowMileage,white,nevada,usa,FewDaysLeft
+737,HighPrice,chevrolet,suburban,Recent,clean vehicle,LowMileage,silver,nevada,usa,FewDaysLeft
+738,HighPrice,chevrolet,tahoe,Recent,clean vehicle,LowMileage,black,nevada,usa,FewDaysLeft
+739,HighPrice,chevrolet,suburban,Recent,clean vehicle,LowMileage,white,nevada,usa,FewDaysLeft
+740,MidPrice,chevrolet,impala,Recent,clean vehicle,VeryLowMileage,blue,nevada,usa,9 minutes
+741,MidPrice,chevrolet,malibu,Recent,clean vehicle,LowMileage,black,nevada,usa,1 hours left
+742,HighPrice,chevrolet,suburban,Recent,clean vehicle,LowMileage,black,nevada,usa,FewDaysLeft
+743,HighPrice,chevrolet,suburban,Recent,clean vehicle,LowMileage,silver,nevada,usa,FewDaysLeft
+744,HighPrice,chevrolet,suburban,Recent,clean vehicle,LowMileage,silver,nevada,usa,FewDaysLeft
+745,HighPrice,chevrolet,suburban,Recent,clean vehicle,LowMileage,gray,nevada,usa,FewDaysLeft
+746,HighPrice,chevrolet,suburban,Recent,clean vehicle,LowMileage,silver,nevada,usa,FewDaysLeft
+747,HighPrice,chevrolet,suburban,Recent,clean vehicle,LowMileage,white,nevada,usa,FewDaysLeft
+748,HighPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,black,new york,usa,18 hours left
+749,HighPrice,chevrolet,suburban,Recent,clean vehicle,LowMileage,silver,nevada,usa,FewDaysLeft
+750,HighPrice,chevrolet,suburban,Recent,clean vehicle,LowMileage,white,nevada,usa,FewDaysLeft
+751,HighPrice,chevrolet,camaro,Recent,clean vehicle,LowMileage,white,nevada,usa,Listing Expired
+752,MidPrice,chevrolet,door,Recent,clean vehicle,MediumMileage,gray,new jersey,usa,18 hours left
+753,MidPrice,chevrolet,van,Recent,clean vehicle,MediumMileage,white,new jersey,usa,18 hours left
+754,MidPrice,chevrolet,van,Recent,clean vehicle,MediumMileage,white,new jersey,usa,18 hours left
+755,MidPrice,chevrolet,equinox,Recent,clean vehicle,MediumMileage,white,florida,usa,Listing Expired
+756,MidPrice,chevrolet,equinox,Recent,clean vehicle,MediumMileage,white,florida,usa,Listing Expired
+757,LowPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,white,nevada,usa,Listing Expired
+758,VeryLowPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,white,california,usa,5 hours left
+759,HighPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,black,nevada,usa,Listing Expired
+760,MidPrice,chevrolet,traverse,Recent,clean vehicle,MediumMileage,gray,new york,usa,18 hours left
+761,MidPrice,chevrolet,traverse,Recent,clean vehicle,LowMileage,white,new york,usa,18 hours left
+762,LowPrice,chevrolet,van,Moderate,clean vehicle,MediumMileage,white,nevada,usa,9 minutes
+763,VeryLowPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,black,nevada,usa,FewDaysLeft
+764,HighPrice,chevrolet,van,Recent,clean vehicle,VeryLowMileage,white,texas,usa,FewDaysLeft
+765,HighPrice,chevrolet,van,Recent,clean vehicle,VeryLowMileage,white,texas,usa,FewDaysLeft
+766,HighPrice,chevrolet,van,Recent,clean vehicle,VeryLowMileage,white,texas,usa,FewDaysLeft
+767,HighPrice,chevrolet,van,Recent,clean vehicle,VeryLowMileage,white,texas,usa,FewDaysLeft
+768,MidPrice,chevrolet,malibu,Recent,clean vehicle,LowMileage,white,texas,usa,FewDaysLeft
+769,HighPrice,chevrolet,3500,Recent,clean vehicle,MediumMileage,white,texas,usa,FewDaysLeft
+770,HighPrice,chevrolet,tahoe,Moderate,clean vehicle,HighMileage,white,texas,usa,FewDaysLeft
+771,HighPrice,chevrolet,door,Recent,clean vehicle,MediumMileage,white,texas,usa,FewDaysLeft
+772,HighPrice,chevrolet,tahoe,Moderate,clean vehicle,MediumMileage,gray,texas,usa,FewDaysLeft
+773,LowPrice,chevrolet,1500,Moderate,clean vehicle,HighMileage,white,texas,usa,FewDaysLeft
+774,MidPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,silver,texas,usa,FewDaysLeft
+775,LowPrice,chevrolet,door,Moderate,clean vehicle,HighMileage,white,texas,usa,FewDaysLeft
+776,MidPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,black,texas,usa,FewDaysLeft
+777,MidPrice,chevrolet,equinox,Recent,clean vehicle,VeryLowMileage,white,florida,usa,6 hours left
+778,HighPrice,chevrolet,1500,Recent,clean vehicle,VeryLowMileage,blue,kansas,usa,FewDaysLeft
+779,HighPrice,chevrolet,camaro,Recent,clean vehicle,VeryLowMileage,gray,kansas,usa,FewDaysLeft
+780,MidPrice,chevrolet,colorado,Recent,clean vehicle,MediumMileage,white,new jersey,usa,18 hours left
+781,MidPrice,chevrolet,1500,Recent,clean vehicle,MediumMileage,white,new jersey,usa,18 hours left
+782,MidPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,white,new jersey,usa,18 hours left
+783,MidPrice,chevrolet,1500,Recent,clean vehicle,LowMileage,white,new jersey,usa,18 hours left
+784,MidPrice,chevrolet,equinox,Recent,clean vehicle,LowMileage,black,north carolina,usa,FewDaysLeft
+785,MidPrice,chevrolet,equinox,Recent,clean vehicle,LowMileage,white,north carolina,usa,FewDaysLeft
+786,MidPrice,chevrolet,equinox,Recent,clean vehicle,LowMileage,charcoal,north carolina,usa,FewDaysLeft
+787,MidPrice,chevrolet,equinox,Recent,clean vehicle,LowMileage,charcoal,north carolina,usa,FewDaysLeft
+788,MidPrice,chevrolet,equinox,Recent,clean vehicle,LowMileage,charcoal,north carolina,usa,FewDaysLeft
+789,MidPrice,chevrolet,equinox,Recent,clean vehicle,LowMileage,charcoal,north carolina,usa,FewDaysLeft
+790,MidPrice,chevrolet,passenger,Recent,clean vehicle,LowMileage,white,north carolina,usa,FewDaysLeft
+791,MidPrice,chevrolet,impala,Recent,clean vehicle,LowMileage,red,north carolina,usa,FewDaysLeft
+792,MidPrice,chevrolet,impala,Recent,clean vehicle,LowMileage,silver,north carolina,usa,FewDaysLeft
+793,MidPrice,chevrolet,impala,Recent,clean vehicle,LowMileage,charcoal,north carolina,usa,FewDaysLeft
+794,MidPrice,chevrolet,impala,Recent,clean vehicle,LowMileage,silver,north carolina,usa,FewDaysLeft
+795,MidPrice,chevrolet,impala,Recent,clean vehicle,LowMileage,charcoal,north carolina,usa,FewDaysLeft
+796,LowPrice,chevrolet,cruze,Recent,clean vehicle,LowMileage,red,north carolina,usa,FewDaysLeft
+797,LowPrice,chevrolet,impala,Recent,clean vehicle,MediumMileage,black,north carolina,usa,FewDaysLeft
+798,MidPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,silver,new jersey,usa,18 hours left
+799,LowPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,white,north carolina,usa,FewDaysLeft
+800,MidPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,gray,north carolina,usa,FewDaysLeft
+801,HighPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,black,florida,usa,2 hours left
+802,LowPrice,chevrolet,door,Moderate,clean vehicle,HighMileage,white,florida,usa,1 hours left
+803,HighPrice,chevrolet,ld,Recent,clean vehicle,LowMileage,red,indiana,usa,FewDaysLeft
+804,HighPrice,chevrolet,ld,Recent,clean vehicle,LowMileage,black,indiana,usa,FewDaysLeft
+805,VeryLowPrice,chevrolet,door,Moderate,clean vehicle,MediumMileage,gray,new jersey,usa,7 days left
+806,HighPrice,chevrolet,colorado,Recent,clean vehicle,VeryLowMileage,silver,indiana,usa,FewDaysLeft
+807,MidPrice,chevrolet,impala,Recent,clean vehicle,LowMileage,silver,indiana,usa,FewDaysLeft
+808,HighPrice,dodge,charger,Recent,clean vehicle,LowMileage,silver,wisconsin,usa,FewDaysLeft
+809,HighPrice,dodge,charger,Recent,clean vehicle,LowMileage,gray,wisconsin,usa,4 days left
+810,LowPrice,dodge,door,Moderate,clean vehicle,MediumMileage,gray,wisconsin,usa,1 days left
+811,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,gray,nebraska,usa,5 hours left
+812,MidPrice,dodge,journey,Recent,clean vehicle,LowMileage,silver,nebraska,usa,5 hours left
+813,HighPrice,dodge,charger,Recent,clean vehicle,LowMileage,white,ontario,canada,ManyDaysLeft
+814,HighPrice,dodge,charger,Recent,clean vehicle,LowMileage,orange,ontario,canada,ManyDaysLeft
+815,HighPrice,dodge,charger,Recent,clean vehicle,LowMileage,white,ontario,canada,ManyDaysLeft
+816,HighPrice,dodge,charger,Recent,clean vehicle,LowMileage,white,ontario,canada,ManyDaysLeft
+817,HighPrice,dodge,charger,Recent,clean vehicle,LowMileage,white,ontario,canada,ManyDaysLeft
+818,HighPrice,dodge,charger,Recent,clean vehicle,LowMileage,red,ontario,canada,ManyDaysLeft
+819,HighPrice,dodge,challenger,Recent,clean vehicle,LowMileage,white,washington,usa,FewDaysLeft
+820,HighPrice,dodge,charger,Recent,clean vehicle,LowMileage,black,washington,usa,FewDaysLeft
+821,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,gray,washington,usa,FewDaysLeft
+822,LowPrice,dodge,door,Moderate,clean vehicle,HighMileage,blue,washington,usa,FewDaysLeft
+823,HighPrice,dodge,durango,Recent,clean vehicle,VeryLowMileage,no_color,texas,usa,21 hours left
+824,HighPrice,dodge,challenger,Recent,clean vehicle,VeryLowMileage,gray,texas,usa,21 hours left
+825,MidPrice,dodge,journey,Recent,clean vehicle,VeryLowMileage,gray,north carolina,usa,21 hours left
+826,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,white,north carolina,usa,21 hours left
+827,HighPrice,dodge,challenger,Recent,clean vehicle,LowMileage,no_color,arizona,usa,21 hours left
+828,MidPrice,dodge,journey,Recent,clean vehicle,VeryLowMileage,gray,texas,usa,21 hours left
+829,MidPrice,dodge,door,Recent,clean vehicle,LowMileage,blue,colorado,usa,21 hours left
+830,HighPrice,dodge,challenger,Moderate,clean vehicle,VeryLowMileage,white,arizona,usa,FewDaysLeft
+831,HighPrice,dodge,challenger,Moderate,clean vehicle,VeryLowMileage,no_color,arizona,usa,21 hours left
+832,MidPrice,dodge,journey,Recent,clean vehicle,LowMileage,silver,texas,usa,FewDaysLeft
+833,MidPrice,dodge,charger,Recent,clean vehicle,LowMileage,black,florida,usa,1 days left
+834,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,white,california,usa,1 days left
+835,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,white,california,usa,1 days left
+836,VeryLowPrice,dodge,door,Moderate,clean vehicle,MediumMileage,white,texas,usa,19 hours left
+837,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,black,florida,usa,FewDaysLeft
+838,LowPrice,dodge,door,Recent,clean vehicle,MediumMileage,gray,california,usa,FewDaysLeft
+839,LowPrice,dodge,door,Moderate,clean vehicle,MediumMileage,blue,florida,usa,1 days left
+840,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,no_color,pennsylvania,usa,21 hours left
+841,LowPrice,dodge,journey,Recent,clean vehicle,MediumMileage,black,pennsylvania,usa,21 hours left
+842,LowPrice,dodge,door,Recent,clean vehicle,MediumMileage,black,pennsylvania,usa,21 hours left
+843,MidPrice,dodge,challenger,Recent,clean vehicle,LowMileage,gray,new jersey,usa,Listing Expired
+844,LowPrice,dodge,journey,Recent,clean vehicle,MediumMileage,white,florida,usa,13 days left
+845,HighPrice,dodge,charger,Recent,clean vehicle,LowMileage,orange,florida,usa,FewDaysLeft
+846,MidPrice,dodge,door,Recent,clean vehicle,MediumMileage,white,pennsylvania,usa,21 hours left
+847,LowPrice,dodge,door,Recent,clean vehicle,MediumMileage,silver,pennsylvania,usa,FewDaysLeft
+848,LowPrice,dodge,door,Moderate,clean vehicle,HighMileage,gray,pennsylvania,usa,21 hours left
+849,HighPrice,dodge,caravan,Recent,clean vehicle,LowMileage,black,illinois,usa,HoursLeft
+850,HighPrice,dodge,durango,Recent,clean vehicle,LowMileage,silver,illinois,usa,HoursLeft
+851,HighPrice,dodge,durango,Recent,clean vehicle,LowMileage,black,illinois,usa,24 hours left
+852,HighPrice,dodge,durango,Recent,clean vehicle,LowMileage,white,illinois,usa,1 days left
+853,LowPrice,dodge,door,Moderate,clean vehicle,HighMileage,white,minnesota,usa,5 hours left
+854,HighPrice,dodge,charger,Recent,clean vehicle,VeryLowMileage,black,texas,usa,19 hours left
+855,HighPrice,dodge,charger,Recent,clean vehicle,VeryLowMileage,silver,michigan,usa,21 hours left
+856,VeryLowPrice,dodge,van,Moderate,clean vehicle,MediumMileage,gray,texas,usa,19 hours left
+857,HighPrice,dodge,charger,Recent,clean vehicle,VeryLowMileage,silver,michigan,usa,21 hours left
+858,HighPrice,dodge,charger,Recent,clean vehicle,LowMileage,gray,michigan,usa,21 hours left
+859,HighPrice,dodge,journey,Recent,clean vehicle,VeryLowMileage,gray,wisconsin,usa,21 hours left
+860,HighPrice,dodge,challenger,Recent,clean vehicle,VeryLowMileage,gray,wisconsin,usa,FewDaysLeft
+861,MidPrice,dodge,journey,Recent,clean vehicle,LowMileage,white,wisconsin,usa,21 hours left
+862,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,silver,wisconsin,usa,21 hours left
+863,HighPrice,dodge,charger,Recent,clean vehicle,VeryLowMileage,blue,wisconsin,usa,FewDaysLeft
+864,LowPrice,dodge,door,Moderate,clean vehicle,MediumMileage,white,minnesota,usa,SeveralDaysLeft
+865,MidPrice,dodge,journey,Recent,clean vehicle,VeryLowMileage,green,wisconsin,usa,21 hours left
+866,LuxuryPrice,dodge,challenger,Recent,clean vehicle,VeryLowMileage,no_color,illinois,usa,21 hours left
+867,VeryLowPrice,dodge,door,Moderate,clean vehicle,MediumMileage,orange,minnesota,usa,SeveralDaysLeft
+868,MidPrice,dodge,door,Recent,clean vehicle,LowMileage,black,new jersey,usa,7 hours left
+869,HighPrice,dodge,challenger,Recent,clean vehicle,VeryLowMileage,gray,arizona,usa,FewDaysLeft
+870,LuxuryPrice,dodge,charger,Recent,clean vehicle,VeryLowMileage,blue,illinois,usa,FewDaysLeft
+871,MidPrice,dodge,charger,Recent,clean vehicle,VeryLowMileage,black,arizona,usa,FewDaysLeft
+872,HighPrice,dodge,challenger,Recent,clean vehicle,LowMileage,no_color,illinois,usa,FewDaysLeft
+873,HighPrice,dodge,challenger,Recent,clean vehicle,VeryLowMileage,red,illinois,usa,FewDaysLeft
+874,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,white,georgia,usa,8 days left
+875,HighPrice,dodge,door,Moderate,clean vehicle,LowMileage,red,wisconsin,usa,21 hours left
+876,MidPrice,dodge,journey,Recent,clean vehicle,LowMileage,gray,wisconsin,usa,HoursLeft
+877,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,no_color,wisconsin,usa,21 hours left
+878,MidPrice,dodge,doors,Moderate,clean vehicle,MediumMileage,gray,massachusetts,usa,8 days left
+879,MidPrice,dodge,doors,Moderate,clean vehicle,LowMileage,black,massachusetts,usa,8 days left
+880,MidPrice,dodge,doors,Moderate,clean vehicle,MediumMileage,black,pennsylvania,usa,8 days left
+881,MidPrice,dodge,doors,Moderate,clean vehicle,MediumMileage,gray,connecticut,usa,8 days left
+882,HighPrice,dodge,doors,Moderate,clean vehicle,VeryLowMileage,toreador red,new york,usa,8 days left
+883,HighPrice,dodge,doors,Moderate,clean vehicle,LowMileage,bright white clearcoat,rhode island,usa,8 days left
+884,MidPrice,dodge,doors,Moderate,clean vehicle,LowMileage,billet silver metallic clearcoat,new jersey,usa,8 days left
+885,MidPrice,dodge,doors,Moderate,clean vehicle,LowMileage,black clearcoat,new york,usa,8 days left
+886,HighPrice,dodge,doors,Moderate,clean vehicle,MediumMileage,jazz blue pearlcoat,new york,usa,8 days left
+887,HighPrice,dodge,doors,Moderate,clean vehicle,LowMileage,silver,new york,usa,8 days left
+888,HighPrice,dodge,doors,Moderate,clean vehicle,LowMileage,bright white clearcoat,new jersey,usa,8 days left
+889,HighPrice,dodge,doors,Moderate,clean vehicle,VeryLowMileage,black clearcoat,new york,usa,8 days left
+890,HighPrice,dodge,doors,Moderate,clean vehicle,VeryLowMileage,billet silver metallic clearcoat,new york,usa,8 days left
+891,MidPrice,dodge,doors,Moderate,clean vehicle,LowMileage,billet silver metallic clearcoat,new jersey,usa,8 days left
+892,HighPrice,dodge,charger,Recent,clean vehicle,VeryLowMileage,gray,texas,usa,4 days left
+893,LowPrice,dodge,journey,Moderate,clean vehicle,MediumMileage,white,wisconsin,usa,21 hours left
+894,HighPrice,dodge,door,Moderate,clean vehicle,VeryLowMileage,black,illinois,usa,21 hours left
+895,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,gray,new jersey,usa,FewDaysLeft
+896,MidPrice,dodge,journey,Recent,clean vehicle,LowMileage,red,florida,usa,23 hours left
+897,HighPrice,dodge,durango,Recent,clean vehicle,LowMileage,gray,missouri,usa,8 days left
+898,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,gray,florida,usa,23 hours left
+899,LowPrice,dodge,journey,Recent,clean vehicle,MediumMileage,black,missouri,usa,7 days left
+900,LowPrice,dodge,door,Moderate,clean vehicle,MediumMileage,white,missouri,usa,8 days left
+901,VeryLowPrice,dodge,door,Moderate,clean vehicle,HighMileage,gray,nevada,usa,HoursLeft
+902,VeryLowPrice,dodge,van,Moderate,salvage insurance,HighMileage,red,tennessee,usa,15 hours left
+903,HighPrice,dodge,charger,Recent,clean vehicle,VeryLowMileage,blue,california,usa,21 hours left
+904,MidPrice,dodge,challenger,Recent,clean vehicle,LowMileage,gray,california,usa,FewDaysLeft
+905,MidPrice,dodge,challenger,Recent,clean vehicle,LowMileage,no_color,california,usa,FewDaysLeft
+906,LowPrice,dodge,door,Recent,clean vehicle,LowMileage,gray,louisiana,usa,8 days left
+907,VeryLowPrice,dodge,door,Moderate,salvage insurance,MediumMileage,white,minnesota,usa,16 hours left
+908,HighPrice,dodge,durango,Recent,clean vehicle,LowMileage,no_color,california,usa,21 hours left
+909,VeryLowPrice,dodge,door,Moderate,clean vehicle,HighMileage,gray,missouri,usa,9 days left
+910,HighPrice,dodge,durango,Recent,clean vehicle,LowMileage,gray,california,usa,8 days left
+911,HighPrice,dodge,charger,Recent,clean vehicle,LowMileage,gray,california,usa,8 days left
+912,HighPrice,dodge,charger,Recent,clean vehicle,LowMileage,gray,california,usa,8 days left
+913,LowPrice,dodge,door,Moderate,clean vehicle,MediumMileage,white,california,usa,FewDaysLeft
+914,MidPrice,dodge,challenger,Recent,clean vehicle,LowMileage,black,california,usa,8 days left
+915,HighPrice,dodge,durango,Recent,clean vehicle,LowMileage,silver,california,usa,8 days left
+916,HighPrice,dodge,challenger,Moderate,clean vehicle,LowMileage,white,california,usa,FewDaysLeft
+917,HighPrice,dodge,durango,Recent,clean vehicle,LowMileage,white,california,usa,8 days left
+918,HighPrice,dodge,durango,Recent,clean vehicle,LowMileage,black,california,usa,8 days left
+919,LowPrice,dodge,door,Recent,clean vehicle,MediumMileage,blue,new jersey,usa,FewDaysLeft
+920,HighPrice,dodge,durango,Recent,clean vehicle,LowMileage,gray,california,usa,8 days left
+921,MidPrice,dodge,door,Moderate,clean vehicle,MediumMileage,no_color,california,usa,21 hours left
+922,HighPrice,dodge,durango,Recent,clean vehicle,LowMileage,white,california,usa,8 days left
+923,HighPrice,dodge,durango,Recent,clean vehicle,LowMileage,silver,california,usa,8 days left
+924,VeryLowPrice,dodge,van,Moderate,clean vehicle,MediumMileage,white,california,usa,FewDaysLeft
+925,HighPrice,dodge,durango,Recent,clean vehicle,LowMileage,silver,california,usa,8 days left
+926,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,gray,california,usa,8 days left
+927,MidPrice,dodge,journey,Recent,clean vehicle,LowMileage,silver,california,usa,8 days left
+928,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,blue,california,usa,8 days left
+929,MidPrice,dodge,challenger,Recent,clean vehicle,LowMileage,gray,texas,usa,1 days left
+930,MidPrice,dodge,caravan,Recent,clean vehicle,VeryLowMileage,white,texas,usa,FewDaysLeft
+931,MidPrice,dodge,caravan,Recent,clean vehicle,VeryLowMileage,white,texas,usa,1 days left
+932,HighPrice,dodge,door,Moderate,clean vehicle,MediumMileage,gray,new jersey,usa,FewDaysLeft
+933,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,black,texas,usa,FewDaysLeft
+934,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,white,california,usa,8 days left
+935,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,black,oklahoma,usa,21 hours left
+936,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,gray,california,usa,8 days left
+937,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,silver,california,usa,8 days left
+938,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,silver,california,usa,8 days left
+939,VeryLowPrice,dodge,door,Moderate,salvage insurance,MediumMileage,white,california,usa,18 hours left
+940,HighPrice,dodge,durango,Recent,clean vehicle,VeryLowMileage,gray,colorado,usa,3 days left
+941,MidPrice,dodge,caravan,Recent,clean vehicle,VeryLowMileage,gray,colorado,usa,3 days left
+942,LowPrice,dodge,door,Moderate,clean vehicle,HighMileage,silver,florida,usa,53 minutes
+943,HighPrice,dodge,challenger,Recent,clean vehicle,VeryLowMileage,gray,virginia,usa,FewDaysLeft
+944,HighPrice,dodge,challenger,Recent,clean vehicle,VeryLowMileage,black,virginia,usa,FewDaysLeft
+945,MidPrice,dodge,journey,Recent,clean vehicle,VeryLowMileage,black,oklahoma,usa,21 hours left
+946,HighPrice,dodge,challenger,Recent,clean vehicle,VeryLowMileage,green,virginia,usa,FewDaysLeft
+947,MidPrice,dodge,journey,Recent,clean vehicle,VeryLowMileage,blue,virginia,usa,FewDaysLeft
+948,MidPrice,dodge,door,Recent,clean vehicle,LowMileage,blue,oklahoma,usa,21 hours left
+949,MidPrice,dodge,journey,Recent,clean vehicle,VeryLowMileage,gray,virginia,usa,FewDaysLeft
+950,VeryLowPrice,dodge,door,Moderate,salvage insurance,VeryHighMileage,gray,michigan,usa,FewDaysLeft
+951,VeryLowPrice,dodge,door,Moderate,salvage insurance,MediumMileage,red,nevada,usa,3 days left
+952,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,red,florida,usa,21 hours left
+953,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,red,florida,usa,21 hours left
+954,LowPrice,dodge,journey,Recent,clean vehicle,LowMileage,silver,florida,usa,FewDaysLeft
+955,HighPrice,dodge,charger,Recent,clean vehicle,LowMileage,white,florida,usa,21 hours left
+956,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,red,florida,usa,21 hours left
+957,MidPrice,dodge,journey,Recent,clean vehicle,LowMileage,orange,virginia,usa,FewDaysLeft
+958,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,white,florida,usa,21 hours left
+959,HighPrice,dodge,durango,Recent,clean vehicle,LowMileage,red,north carolina,usa,21 hours left
+960,HighPrice,dodge,challenger,Recent,clean vehicle,LowMileage,black,north carolina,usa,21 hours left
+961,MidPrice,dodge,journey,Recent,clean vehicle,LowMileage,red,north carolina,usa,21 hours left
+962,MidPrice,dodge,journey,Recent,clean vehicle,LowMileage,white,north carolina,usa,21 hours left
+963,LowPrice,dodge,door,Moderate,clean vehicle,MediumMileage,blue,florida,usa,23 hours left
+964,HighPrice,dodge,durango,Recent,clean vehicle,VeryLowMileage,white,arizona,usa,HoursLeft
+965,MidPrice,dodge,caravan,Recent,clean vehicle,VeryLowMileage,white,arizona,usa,HoursLeft
+966,MidPrice,dodge,caravan,Recent,clean vehicle,VeryLowMileage,gray,arizona,usa,HoursLeft
+967,MidPrice,dodge,caravan,Recent,clean vehicle,VeryLowMileage,black,arizona,usa,HoursLeft
+968,VeryLowPrice,dodge,door,Moderate,clean vehicle,HighMileage,white,texas,usa,7 hours left
+969,MidPrice,dodge,charger,Recent,clean vehicle,VeryLowMileage,red,california,usa,1 days left
+970,HighPrice,dodge,durango,Recent,clean vehicle,VeryLowMileage,black,new jersey,usa,2 hours left
+971,MidPrice,dodge,journey,Recent,clean vehicle,LowMileage,black,pennsylvania,usa,1 days left
+972,MidPrice,dodge,challenger,Recent,clean vehicle,LowMileage,white,west virginia,usa,FewDaysLeft
+973,MidPrice,dodge,journey,Recent,clean vehicle,VeryLowMileage,white,west virginia,usa,FewDaysLeft
+974,HighPrice,dodge,durango,Recent,clean vehicle,LowMileage,gray,nevada,usa,6 hours left
+975,HighPrice,dodge,durango,Recent,clean vehicle,VeryLowMileage,black,nevada,usa,6 hours left
+976,HighPrice,dodge,durango,Recent,clean vehicle,LowMileage,white,nevada,usa,6 hours left
+977,HighPrice,dodge,durango,Recent,clean vehicle,LowMileage,white,nevada,usa,6 hours left
+978,LowPrice,dodge,caravan,Recent,clean vehicle,MediumMileage,silver,florida,usa,4 days left
+979,HighPrice,dodge,challenger,Recent,clean vehicle,VeryLowMileage,gray,south carolina,usa,21 hours left
+980,LowPrice,dodge,door,Moderate,clean vehicle,MediumMileage,white,west virginia,usa,FewDaysLeft
+981,VeryLowPrice,dodge,van,Moderate,clean vehicle,MediumMileage,white,florida,usa,4 days left
+982,VeryLowPrice,dodge,door,Moderate,salvage insurance,HighMileage,gray,illinois,usa,16 hours left
+983,HighPrice,dodge,charger,Recent,clean vehicle,LowMileage,black,pennsylvania,usa,SeveralDaysLeft
+984,MidPrice,dodge,challenger,Recent,clean vehicle,LowMileage,orange,pennsylvania,usa,SeveralDaysLeft
+985,HighPrice,dodge,charger,Recent,clean vehicle,LowMileage,red,pennsylvania,usa,SeveralDaysLeft
+986,HighPrice,dodge,challenger,Recent,clean vehicle,VeryLowMileage,black,pennsylvania,usa,SeveralDaysLeft
+987,LowPrice,dodge,van,Recent,clean vehicle,MediumMileage,white,south carolina,usa,21 hours left
+988,MidPrice,dodge,caravan,Recent,clean vehicle,VeryLowMileage,red,pennsylvania,usa,SeveralDaysLeft
+989,LowPrice,dodge,door,Recent,clean vehicle,MediumMileage,blue,south carolina,usa,21 hours left
+990,MidPrice,dodge,caravan,Recent,clean vehicle,VeryLowMileage,blue,pennsylvania,usa,SeveralDaysLeft
+991,LowPrice,dodge,door,Moderate,clean vehicle,MediumMileage,blue,south carolina,usa,21 hours left
+992,MidPrice,dodge,challenger,Recent,clean vehicle,VeryLowMileage,gray,pennsylvania,usa,SeveralDaysLeft
+993,LowPrice,dodge,van,Moderate,clean vehicle,MediumMileage,blue,missouri,usa,21 hours left
+994,HighPrice,dodge,challenger,Recent,clean vehicle,VeryLowMileage,gray,pennsylvania,usa,SeveralDaysLeft
+995,VeryLowPrice,dodge,door,Moderate,clean vehicle,MediumMileage,silver,south carolina,usa,21 hours left
+996,HighPrice,dodge,door,Moderate,clean vehicle,MediumMileage,black,missouri,usa,21 hours left
+997,HighPrice,dodge,durango,Recent,clean vehicle,VeryLowMileage,silver,pennsylvania,usa,SeveralDaysLeft
+998,HighPrice,dodge,caravan,Recent,clean vehicle,VeryLowMileage,silver,pennsylvania,usa,SeveralDaysLeft
+999,MidPrice,dodge,caravan,Recent,clean vehicle,LowMileage,black,nevada,usa,FewDaysLeft

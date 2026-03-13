@@ -1,0 +1,1001 @@
+Marital Status,Gender,Income,Children,Education,Occupation,Home Owner,Cars,Commute Distance,Region,Age,Purchased Bike
+Married,Female,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,NoCar,0-1 Miles,Europe,MidAge,No
+Married,Male,LowIncome,ThreeChildren,Partial College,Clerical,Yes,OneCar,0-1 Miles,Europe,MidAge,No
+Married,Male,HighIncome,ManyChildren,Partial College,Professional,No,TwoCars,2-5 Miles,Europe,Senior,No
+Single,Male,HighIncome,NoChild,Bachelors,Professional,Yes,OneCar,5-10 Miles,Pacific,MidAge,Yes
+Single,Male,LowIncome,NoChild,Bachelors,Clerical,No,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Female,LowIncome,TwoChildren,Partial College,Manual,Yes,NoCar,1-2 Miles,Europe,MidAge,No
+Single,Male,VeryHighIncome,TwoChildren,High School,Management,Yes,ManyCars,0-1 Miles,Pacific,Adult,Yes
+Married,Male,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,NoCar,0-1 Miles,Europe,MidAge,Yes
+Married,Male,LowIncome,TwoChildren,Partial High School,Clerical,Yes,TwoCars,5-10 Miles,Pacific,Senior,No
+Married,Male,LowIncome,TwoChildren,Partial College,Manual,Yes,OneCar,0-1 Miles,Europe,MidAge,Yes
+Married,Female,LowIncome,ThreeChildren,High School,Skilled Manual,No,TwoCars,1-2 Miles,Pacific,Senior,Yes
+Single,Female,HighIncome,NoChild,Bachelors,Professional,No,ManyCars,10+ Miles,Pacific,Adult,No
+Married,Male,VeryHighIncome,ManyChildren,Partial College,Professional,Yes,ManyCars,0-1 Miles,Europe,Senior,No
+Married,Male,MidIncome,TwoChildren,Partial College,Clerical,Yes,OneCar,1-2 Miles,Europe,Adult,Yes
+Single,Male,MidIncome,OneChild,Partial College,Skilled Manual,No,OneCar,0-1 Miles,Pacific,MidAge,Yes
+Single,Female,LowIncome,TwoChildren,High School,Manual,Yes,OneCar,0-1 Miles,Europe,Adult,Yes
+Single,Male,LowIncome,ThreeChildren,Partial College,Clerical,No,TwoCars,1-2 Miles,Pacific,Senior,Yes
+Married,Female,LowIncome,OneChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,MidAge,No
+Single,Male,MidIncome,TwoChildren,Partial College,Clerical,Yes,OneCar,1-2 Miles,Europe,Adult,Yes
+Single,Male,LowIncome,TwoChildren,Partial High School,Clerical,Yes,TwoCars,5-10 Miles,Pacific,Senior,Yes
+Married,Female,MidIncome,NoChild,Graduate Degree,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Female,HighIncome,NoChild,Bachelors,Professional,Yes,ManyCars,10+ Miles,Pacific,Adult,No
+Single,Male,MidIncome,TwoChildren,Partial College,Clerical,Yes,NoCar,1-2 Miles,Europe,Adult,Yes
+Married,Female,HighIncome,ManyChildren,High School,Management,No,ThreeCars,5-10 Miles,Europe,Senior,No
+Single,Male,MidIncome,TwoChildren,Partial College,Clerical,No,OneCar,0-1 Miles,Europe,Adult,No
+Single,Male,LowIncome,OneChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Old,No
+Single,Male,LowIncome,NoChild,Partial College,Clerical,No,OneCar,0-1 Miles,Europe,Young,Yes
+Single,Female,HighIncome,NoChild,Bachelors,Professional,No,OneCar,5-10 Miles,Pacific,Adult,No
+Married,Male,HighIncome,ManyChildren,Partial College,Skilled Manual,Yes,TwoCars,5-10 Miles,Pacific,MidAge,No
+Single,Female,LowIncome,NoChild,Partial High School,Manual,No,TwoCars,0-1 Miles,Europe,Adult,Yes
+Married,Female,LowIncome,TwoChildren,Partial College,Manual,Yes,NoCar,0-1 Miles,Europe,Old,No
+Married,Male,LowIncome,NoChild,Partial College,Manual,No,OneCar,0-1 Miles,Pacific,Young,Yes
+Single,Female,LowIncome,NoChild,High School,Manual,No,OneCar,5-10 Miles,Europe,Adult,No
+Single,Male,HighIncome,TwoChildren,High School,Skilled Manual,No,TwoCars,1-2 Miles,Pacific,MidAge,Yes
+Single,Male,HighIncome,ManyChildren,Partial College,Professional,No,TwoCars,2-5 Miles,Europe,Old,Yes
+Single,Female,LowIncome,ManyChildren,Partial High School,Manual,No,TwoCars,0-1 Miles,Europe,MidAge,No
+Married,Female,LowIncome,TwoChildren,Partial College,Manual,Yes,OneCar,0-1 Miles,Europe,MidAge,Yes
+Single,Female,LowIncome,NoChild,Partial College,Clerical,No,OneCar,2-5 Miles,Europe,Young,No
+Single,Male,LowIncome,NoChild,High School,Manual,No,OneCar,2-5 Miles,Europe,Young,No
+Single,Female,LowIncome,FourChildren,Partial High School,Manual,Yes,TwoCars,0-1 Miles,Europe,Adult,Yes
+Single,Female,LowIncome,TwoChildren,Partial College,Clerical,No,NoCar,0-1 Miles,Europe,MidAge,No
+Single,Female,MidIncome,TwoChildren,Bachelors,Management,Yes,TwoCars,5-10 Miles,Pacific,Old,Yes
+Married,Female,LowIncome,OneChild,Graduate Degree,Manual,Yes,NoCar,0-1 Miles,Europe,Adult,No
+Married,Female,VeryHighIncome,FourChildren,Partial College,Professional,No,ThreeCars,5-10 Miles,Europe,MidAge,Yes
+Married,Female,LowIncome,ThreeChildren,High School,Manual,Yes,NoCar,0-1 Miles,Europe,MidAge,Yes
+Married,Female,LowIncome,OneChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Old,Yes
+Married,Female,MidIncome,OneChild,Partial College,Skilled Manual,Yes,OneCar,5-10 Miles,Pacific,MidAge,Yes
+Single,Female,MidIncome,TwoChildren,Partial College,Skilled Manual,Yes,TwoCars,5-10 Miles,Pacific,Senior,Yes
+Married,Male,LowIncome,TwoChildren,Partial College,Clerical,No,TwoCars,0-1 Miles,Europe,MidAge,No
+Married,Male,MidIncome,NoChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Female,LowIncome,NoChild,Partial College,Clerical,No,OneCar,0-1 Miles,Europe,Young,No
+Single,Male,HighIncome,NoChild,Bachelors,Professional,No,ManyCars,10+ Miles,Pacific,Adult,No
+Married,Female,LowIncome,OneChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Old,No
+Single,Female,HighIncome,FourChildren,High School,Management,No,ThreeCars,5-10 Miles,Europe,Senior,No
+Single,Female,HighIncome,NoChild,Bachelors,Professional,No,OneCar,5-10 Miles,Pacific,MidAge,No
+Married,Male,HighIncome,FourChildren,High School,Professional,Yes,TwoCars,10+ Miles,Europe,Senior,No
+Married,Male,MidIncome,NoChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Male,VeryHighIncome,FourChildren,Partial College,Professional,No,ManyCars,5-10 Miles,Europe,Old,Yes
+Married,Female,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,NoCar,0-1 Miles,Europe,MidAge,Yes
+Married,Male,MidIncome,TwoChildren,Bachelors,Professional,Yes,OneCar,2-5 Miles,Pacific,Adult,Yes
+Single,Female,LowIncome,OneChild,High School,Manual,No,OneCar,1-2 Miles,Europe,MidAge,No
+Single,Female,LowIncome,TwoChildren,High School,Manual,Yes,NoCar,0-1 Miles,Europe,Adult,No
+Married,Male,MidIncome,TwoChildren,Bachelors,Management,Yes,OneCar,0-1 Miles,Pacific,Senior,Yes
+Single,Male,MidIncome,FourChildren,Bachelors,Professional,Yes,ThreeCars,10+ Miles,Pacific,MidAge,No
+Married,Female,LowIncome,OneChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Male,LowIncome,TwoChildren,Partial College,Clerical,Yes,TwoCars,5-10 Miles,Pacific,Old,No
+Married,Female,MidIncome,NoChild,Graduate Degree,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Male,LowIncome,NoChild,High School,Manual,Yes,OneCar,2-5 Miles,Europe,Adult,Yes
+Single,Female,LowIncome,FourChildren,High School,Manual,Yes,OneCar,0-1 Miles,Europe,MidAge,Yes
+Married,Female,LowIncome,NoChild,Partial High School,Manual,No,TwoCars,0-1 Miles,Europe,Young,No
+Married,Male,VeryHighIncome,NoChild,Partial High School,Professional,Yes,ManyCars,10+ Miles,Pacific,Adult,Yes
+Single,Female,LowIncome,NoChild,Partial High School,Manual,No,TwoCars,0-1 Miles,Europe,Adult,No
+Married,Female,VeryHighIncome,ThreeChildren,High School,Professional,Yes,ManyCars,0-1 Miles,Europe,Senior,No
+Single,Female,LowIncome,NoChild,Partial College,Manual,No,OneCar,2-5 Miles,Europe,Adult,Yes
+Married,Female,LowIncome,ThreeChildren,High School,Skilled Manual,No,TwoCars,1-2 Miles,Pacific,Old,No
+Single,Female,VeryHighIncome,FourChildren,High School,Management,Yes,ManyCars,0-1 Miles,Pacific,Adult,No
+Single,Female,LowIncome,NoChild,Partial High School,Manual,No,TwoCars,1-2 Miles,Europe,Young,No
+Married,Male,HighIncome,NoChild,Bachelors,Professional,Yes,TwoCars,10+ Miles,Pacific,Young,Yes
+Married,Male,HighIncome,TwoChildren,High School,Skilled Manual,No,TwoCars,1-2 Miles,Pacific,MidAge,Yes
+Single,Male,MidIncome,TwoChildren,Bachelors,Management,Yes,TwoCars,5-10 Miles,Pacific,Old,Yes
+Married,Female,LowIncome,FourChildren,Graduate Degree,Clerical,Yes,NoCar,0-1 Miles,Europe,MidAge,Yes
+Single,Female,LowIncome,FourChildren,Partial High School,Manual,Yes,TwoCars,0-1 Miles,Europe,Adult,No
+Married,Male,LowIncome,NoChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,MidAge,Yes
+Single,Male,LowIncome,NoChild,High School,Manual,No,OneCar,2-5 Miles,Europe,Young,No
+Single,Male,MidIncome,TwoChildren,Bachelors,Management,No,OneCar,5-10 Miles,Pacific,Senior,Yes
+Single,Male,LowIncome,NoChild,Partial College,Manual,Yes,OneCar,1-2 Miles,Pacific,Young,Yes
+Single,Male,VeryHighIncome,ThreeChildren,Partial College,Professional,No,ThreeCars,0-1 Miles,Europe,Senior,Yes
+Married,Male,HighIncome,ManyChildren,Bachelors,Professional,Yes,ManyCars,1-2 Miles,Pacific,Adult,No
+Single,Male,LowIncome,NoChild,Partial College,Clerical,No,OneCar,2-5 Miles,Europe,Young,No
+Married,Male,LowIncome,OneChild,High School,Manual,No,OneCar,1-2 Miles,Europe,Adult,Yes
+Single,Female,LowIncome,NoChild,Partial College,Clerical,No,OneCar,0-1 Miles,Europe,Young,Yes
+Single,Male,LowIncome,NoChild,Partial College,Clerical,No,OneCar,0-1 Miles,Europe,Young,Yes
+Single,Female,MidIncome,TwoChildren,Bachelors,Professional,Yes,OneCar,2-5 Miles,Pacific,Adult,Yes
+Single,Female,LowIncome,NoChild,Partial College,Clerical,No,OneCar,2-5 Miles,Europe,Adult,No
+Single,Female,LowIncome,ThreeChildren,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,Pacific,Senior,No
+Single,Female,HighIncome,ManyChildren,Partial College,Professional,Yes,TwoCars,10+ Miles,Europe,Old,No
+Married,Male,LowIncome,OneChild,Partial College,Clerical,Yes,OneCar,0-1 Miles,Europe,MidAge,No
+Married,Male,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,OneCar,0-1 Miles,Europe,MidAge,Yes
+Single,Male,MidIncome,NoChild,Graduate Degree,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Female,LowIncome,ThreeChildren,High School,Manual,Yes,TwoCars,0-1 Miles,Europe,MidAge,No
+Single,Male,LowIncome,TwoChildren,High School,Manual,Yes,NoCar,0-1 Miles,Europe,Adult,No
+Single,Male,MidIncome,ThreeChildren,Bachelors,Professional,No,TwoCars,0-1 Miles,Pacific,MidAge,Yes
+Married,Male,LowIncome,TwoChildren,Partial College,Manual,Yes,NoCar,1-2 Miles,Europe,MidAge,No
+Single,Male,MidIncome,OneChild,Partial College,Skilled Manual,Yes,OneCar,5-10 Miles,Pacific,MidAge,No
+Single,Female,HighIncome,TwoChildren,High School,Professional,Yes,TwoCars,5-10 Miles,Pacific,MidAge,Yes
+Single,Female,LowIncome,NoChild,Partial College,Clerical,No,OneCar,2-5 Miles,Europe,Young,No
+Married,Male,HighIncome,TwoChildren,Partial College,Skilled Manual,Yes,TwoCars,5-10 Miles,Pacific,Senior,Yes
+Single,Female,MidIncome,TwoChildren,Partial College,Skilled Manual,No,TwoCars,1-2 Miles,Pacific,Senior,Yes
+Married,Female,MidIncome,NoChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Male,MidIncome,NoChild,Bachelors,Professional,No,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Female,LowIncome,OneChild,Partial College,Manual,No,NoCar,0-1 Miles,Europe,MidAge,Yes
+Single,Female,HighIncome,NoChild,Bachelors,Professional,No,OneCar,5-10 Miles,Pacific,Adult,No
+Single,Female,MidIncome,TwoChildren,Partial College,Clerical,Yes,TwoCars,1-2 Miles,Europe,Adult,No
+Single,Female,VeryHighIncome,OneChild,Graduate Degree,Management,No,OneCar,0-1 Miles,Pacific,Adult,Yes
+Married,Male,LowIncome,NoChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Pacific,Young,Yes
+Single,Male,LowIncome,NoChild,Graduate Degree,Manual,No,NoCar,0-1 Miles,Europe,Young,Yes
+Married,Female,LowIncome,OneChild,Bachelors,Skilled Manual,Yes,TwoCars,0-1 Miles,Europe,MidAge,No
+Single,Female,LowIncome,TwoChildren,High School,Manual,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Male,HighIncome,ManyChildren,Bachelors,Management,Yes,TwoCars,2-5 Miles,Europe,Old,No
+Single,Female,LowIncome,NoChild,Partial College,Clerical,No,OneCar,2-5 Miles,Europe,Young,No
+Married,Female,MidIncome,TwoChildren,Bachelors,Management,Yes,TwoCars,5-10 Miles,Pacific,Old,Yes
+Married,Male,VeryHighIncome,TwoChildren,High School,Professional,Yes,ManyCars,0-1 Miles,Europe,MidAge,No
+Single,Female,HighIncome,NoChild,Bachelors,Professional,No,ThreeCars,10+ Miles,Pacific,Adult,No
+Single,Female,HighIncome,ThreeChildren,Partial College,Management,No,ManyCars,5-10 Miles,Europe,Senior,No
+Single,Female,MidIncome,NoChild,Bachelors,Clerical,No,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Male,HighIncome,ManyChildren,Bachelors,Professional,Yes,ManyCars,1-2 Miles,Pacific,Adult,No
+Single,Male,LowIncome,NoChild,Partial College,Clerical,Yes,OneCar,2-5 Miles,Europe,Adult,No
+Married,Male,LowIncome,OneChild,Bachelors,Clerical,Yes,OneCar,2-5 Miles,Europe,Adult,No
+Single,Male,LowIncome,TwoChildren,Partial College,Manual,Yes,OneCar,0-1 Miles,Europe,Senior,Yes
+Single,Male,LowIncome,ThreeChildren,High School,Manual,Yes,OneCar,0-1 Miles,Europe,Adult,Yes
+Married,Male,MidIncome,TwoChildren,Bachelors,Professional,Yes,OneCar,2-5 Miles,Pacific,Adult,No
+Married,Male,HighIncome,FourChildren,High School,Management,Yes,ThreeCars,5-10 Miles,Europe,Senior,Yes
+Married,Male,MidIncome,NoChild,Bachelors,Professional,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Male,MidIncome,TwoChildren,Bachelors,Management,Yes,TwoCars,5-10 Miles,Pacific,Old,Yes
+Single,Female,LowIncome,TwoChildren,Partial College,Clerical,Yes,TwoCars,0-1 Miles,Europe,MidAge,No
+Married,Male,LowIncome,TwoChildren,Partial College,Manual,Yes,OneCar,2-5 Miles,Europe,Senior,No
+Single,Female,LowIncome,OneChild,High School,Manual,No,OneCar,5-10 Miles,Europe,Adult,Yes
+Single,Male,LowIncome,TwoChildren,High School,Manual,Yes,TwoCars,0-1 Miles,Europe,MidAge,No
+Married,Female,LowIncome,TwoChildren,Partial High School,Clerical,Yes,TwoCars,5-10 Miles,Pacific,Senior,Yes
+Single,Female,LowIncome,TwoChildren,Partial College,Clerical,No,TwoCars,5-10 Miles,Pacific,Senior,Yes
+Single,Male,MidIncome,NoChild,Bachelors,Professional,No,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Female,LowIncome,NoChild,Partial College,Manual,No,OneCar,0-1 Miles,Pacific,Young,Yes
+Married,Male,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,NoCar,0-1 Miles,Europe,MidAge,Yes
+Married,Female,HighIncome,NoChild,Bachelors,Professional,Yes,ThreeCars,10+ Miles,Pacific,Adult,No
+Single,Male,LowIncome,OneChild,Bachelors,Clerical,Yes,NoCar,1-2 Miles,Europe,Adult,Yes
+Married,Female,MidIncome,TwoChildren,Partial College,Clerical,No,OneCar,0-1 Miles,Europe,Adult,No
+Married,Male,MidIncome,NoChild,Graduate Degree,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Female,MidIncome,NoChild,Bachelors,Professional,No,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Male,LowIncome,FourChildren,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,Pacific,Senior,No
+Single,Male,LowIncome,NoChild,Partial College,Clerical,No,OneCar,1-2 Miles,Europe,Young,No
+Married,Male,MidIncome,OneChild,Partial College,Skilled Manual,Yes,OneCar,5-10 Miles,Pacific,MidAge,Yes
+Single,Male,HighIncome,OneChild,Bachelors,Management,No,ThreeCars,0-1 Miles,Pacific,MidAge,No
+Single,Female,LowIncome,NoChild,Partial High School,Manual,No,TwoCars,1-2 Miles,Europe,Adult,No
+Married,Male,HighIncome,OneChild,Bachelors,Management,Yes,ThreeCars,2-5 Miles,Pacific,MidAge,No
+Single,Male,HighIncome,ManyChildren,Graduate Degree,Management,Yes,ThreeCars,0-1 Miles,Pacific,Adult,No
+Single,Female,LowIncome,FourChildren,Partial High School,Manual,Yes,TwoCars,0-1 Miles,Europe,MidAge,Yes
+Married,Female,VeryHighIncome,ManyChildren,Partial College,Professional,Yes,ManyCars,0-1 Miles,Europe,Senior,No
+Single,Male,LowIncome,TwoChildren,Partial College,Manual,No,NoCar,0-1 Miles,Europe,MidAge,No
+Single,Female,LowIncome,TwoChildren,Partial College,Manual,No,OneCar,0-1 Miles,Europe,Senior,Yes
+Married,Female,LowIncome,OneChild,Bachelors,Manual,Yes,NoCar,0-1 Miles,Europe,MidAge,No
+Single,Female,MidIncome,OneChild,Bachelors,Professional,Yes,OneCar,5-10 Miles,Pacific,MidAge,Yes
+Married,Female,LowIncome,TwoChildren,High School,Manual,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Female,MidIncome,TwoChildren,Bachelors,Professional,No,OneCar,0-1 Miles,Pacific,Adult,Yes
+Single,Male,MidIncome,TwoChildren,Partial College,Skilled Manual,No,TwoCars,1-2 Miles,Pacific,Senior,No
+Married,Male,LowIncome,NoChild,Partial College,Manual,Yes,OneCar,2-5 Miles,Pacific,Young,Yes
+Married,Female,LowIncome,NoChild,Partial College,Manual,No,OneCar,0-1 Miles,Pacific,Young,No
+Single,Male,HighIncome,OneChild,Bachelors,Professional,Yes,OneCar,2-5 Miles,Pacific,MidAge,Yes
+Single,Male,HighIncome,NoChild,High School,Management,Yes,ThreeCars,10+ Miles,Pacific,Adult,No
+Single,Male,HighIncome,NoChild,Bachelors,Professional,No,OneCar,5-10 Miles,Pacific,MidAge,Yes
+Married,Male,LowIncome,OneChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,MidAge,No
+Married,Female,VeryHighIncome,FourChildren,Partial College,Professional,Yes,ManyCars,5-10 Miles,Europe,Old,Yes
+Married,Female,HighIncome,ManyChildren,Bachelors,Management,Yes,TwoCars,2-5 Miles,Europe,Old,No
+Married,Male,LowIncome,NoChild,Partial High School,Manual,No,TwoCars,0-1 Miles,Europe,Adult,No
+Married,Female,LowIncome,NoChild,Partial College,Manual,Yes,OneCar,2-5 Miles,Pacific,Young,No
+Single,Male,MidIncome,NoChild,Graduate Degree,Skilled Manual,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Female,HighIncome,TwoChildren,Partial College,Skilled Manual,Yes,TwoCars,5-10 Miles,Pacific,Senior,Yes
+Single,Female,LowIncome,NoChild,Partial College,Manual,Yes,NoCar,0-1 Miles,Pacific,Young,Yes
+Single,Female,VeryHighIncome,TwoChildren,Partial College,Professional,No,ThreeCars,5-10 Miles,Europe,MidAge,No
+Married,Male,VeryHighIncome,FourChildren,Partial College,Professional,No,TwoCars,10+ Miles,Europe,Senior,Yes
+Married,Female,LowIncome,NoChild,Graduate Degree,Manual,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Male,LowIncome,OneChild,Graduate Degree,Manual,Yes,NoCar,0-1 Miles,Europe,MidAge,No
+Married,Female,LowIncome,ThreeChildren,Partial College,Clerical,No,TwoCars,1-2 Miles,Pacific,Senior,Yes
+Married,Female,LowIncome,TwoChildren,High School,Manual,No,OneCar,0-1 Miles,Europe,Adult,No
+Single,Male,MidIncome,TwoChildren,Bachelors,Management,Yes,TwoCars,5-10 Miles,Pacific,Old,Yes
+Married,Female,VeryHighIncome,FourChildren,High School,Management,No,ManyCars,10+ Miles,Europe,Senior,No
+Married,Female,HighIncome,OneChild,Bachelors,Professional,Yes,OneCar,2-5 Miles,Pacific,MidAge,Yes
+Married,Female,LowIncome,ThreeChildren,High School,Skilled Manual,No,TwoCars,1-2 Miles,Pacific,Senior,Yes
+Single,Male,HighIncome,ManyChildren,Partial College,Professional,No,TwoCars,10+ Miles,Europe,Senior,No
+Married,Female,HighIncome,NoChild,Bachelors,Professional,Yes,ManyCars,10+ Miles,Pacific,Adult,Yes
+Married,Male,LowIncome,OneChild,Partial College,Clerical,Yes,OneCar,0-1 Miles,Europe,MidAge,Yes
+Married,Male,LowIncome,ThreeChildren,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,Pacific,Senior,No
+Single,Male,LowIncome,TwoChildren,High School,Manual,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Female,HighIncome,ManyChildren,Bachelors,Management,Yes,TwoCars,10+ Miles,Europe,Old,No
+Married,Female,HighIncome,ManyChildren,Bachelors,Professional,Yes,ManyCars,10+ Miles,Pacific,MidAge,No
+Single,Female,LowIncome,NoChild,Partial High School,Manual,No,TwoCars,0-1 Miles,Europe,Adult,No
+Single,Male,LowIncome,NoChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Pacific,Young,Yes
+Single,Female,MidIncome,NoChild,Graduate Degree,Skilled Manual,Yes,NoCar,1-2 Miles,Europe,Adult,No
+Married,Male,MidIncome,TwoChildren,Graduate Degree,Management,Yes,OneCar,0-1 Miles,Pacific,Old,Yes
+Single,Female,HighIncome,NoChild,Graduate Degree,Management,No,OneCar,1-2 Miles,Pacific,Adult,Yes
+Single,Male,HighIncome,NoChild,Bachelors,Professional,No,ThreeCars,10+ Miles,Pacific,Adult,Yes
+Single,Male,MidIncome,NoChild,Bachelors,Professional,No,ThreeCars,2-5 Miles,Pacific,Adult,No
+Married,Male,LowIncome,OneChild,High School,Manual,Yes,NoCar,2-5 Miles,Pacific,Young,Yes
+Single,Male,MidIncome,TwoChildren,Partial College,Clerical,Yes,NoCar,1-2 Miles,Europe,Adult,Yes
+Single,Female,MidIncome,OneChild,Partial College,Skilled Manual,Yes,OneCar,5-10 Miles,Pacific,MidAge,Yes
+Single,Female,HighIncome,ThreeChildren,High School,Professional,No,OneCar,2-5 Miles,Europe,Senior,No
+Married,Male,LowIncome,ThreeChildren,Graduate Degree,Clerical,Yes,NoCar,0-1 Miles,Europe,MidAge,Yes
+Single,Male,HighIncome,ManyChildren,Partial College,Professional,No,TwoCars,10+ Miles,Europe,Old,No
+Single,Female,LowIncome,NoChild,Partial High School,Manual,Yes,TwoCars,1-2 Miles,Europe,Young,Yes
+Single,Female,MidIncome,NoChild,Graduate Degree,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Female,LowIncome,ThreeChildren,Partial College,Clerical,Yes,NoCar,0-1 Miles,Europe,MidAge,Yes
+Married,Female,HighIncome,FourChildren,Graduate Degree,Management,Yes,OneCar,0-1 Miles,Pacific,Adult,No
+Married,Female,MidIncome,NoChild,Graduate Degree,Skilled Manual,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Female,LowIncome,NoChild,Partial College,Clerical,No,OneCar,2-5 Miles,Europe,Young,No
+Single,Male,HighIncome,NoChild,Bachelors,Professional,No,ManyCars,10+ Miles,Pacific,Adult,Yes
+Married,Male,LowIncome,OneChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Old,Yes
+Single,Male,HighIncome,FourChildren,Partial College,Professional,No,TwoCars,2-5 Miles,Europe,Senior,Yes
+Married,Male,LowIncome,TwoChildren,Partial High School,Clerical,Yes,ThreeCars,5-10 Miles,Pacific,Senior,No
+Single,Female,LowIncome,NoChild,Partial High School,Manual,No,TwoCars,0-1 Miles,Europe,Young,No
+Single,Male,LowIncome,OneChild,Bachelors,Manual,Yes,NoCar,0-1 Miles,Europe,MidAge,No
+Single,Male,LowIncome,NoChild,Partial College,Manual,Yes,OneCar,1-2 Miles,Pacific,Young,Yes
+Married,Male,MidIncome,OneChild,Bachelors,Professional,Yes,OneCar,5-10 Miles,Pacific,MidAge,Yes
+Single,Male,LowIncome,NoChild,Partial High School,Manual,No,TwoCars,1-2 Miles,Europe,Adult,No
+Married,Female,LowIncome,ThreeChildren,Partial College,Clerical,No,NoCar,0-1 Miles,Europe,MidAge,No
+Single,Female,HighIncome,ManyChildren,Bachelors,Professional,Yes,ManyCars,10+ Miles,Pacific,Adult,No
+Married,Female,LowIncome,TwoChildren,Partial College,Clerical,No,TwoCars,0-1 Miles,Pacific,Old,No
+Married,Male,LowIncome,OneChild,Partial College,Manual,Yes,NoCar,1-2 Miles,Europe,Old,No
+Single,Female,LowIncome,ThreeChildren,High School,Manual,Yes,OneCar,0-1 Miles,Europe,MidAge,Yes
+Married,Male,LowIncome,ThreeChildren,Partial High School,Manual,Yes,TwoCars,0-1 Miles,Europe,MidAge,No
+Married,Female,LowIncome,OneChild,Graduate Degree,Clerical,Yes,NoCar,0-1 Miles,Europe,MidAge,No
+Single,Male,HighIncome,ManyChildren,High School,Management,Yes,ThreeCars,10+ Miles,Europe,Senior,No
+Married,Male,VeryHighIncome,FourChildren,Partial College,Management,Yes,ThreeCars,10+ Miles,Europe,Senior,No
+Married,Female,MidIncome,NoChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Female,LowIncome,FourChildren,Graduate Degree,Clerical,Yes,NoCar,0-1 Miles,Europe,MidAge,No
+Married,Male,LowIncome,NoChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Pacific,Young,Yes
+Single,Male,HighIncome,NoChild,Bachelors,Professional,No,ManyCars,10+ Miles,Pacific,Adult,Yes
+Married,Female,LowIncome,OneChild,Graduate Degree,Clerical,Yes,NoCar,0-1 Miles,Europe,Old,Yes
+Single,Female,LowIncome,ManyChildren,Graduate Degree,Clerical,Yes,NoCar,0-1 Miles,Europe,MidAge,Yes
+Married,Female,LowIncome,NoChild,Partial College,Manual,No,OneCar,0-1 Miles,Pacific,Young,Yes
+Married,Male,HighIncome,ManyChildren,Partial College,Skilled Manual,Yes,ThreeCars,5-10 Miles,Pacific,MidAge,No
+Single,Female,LowIncome,NoChild,High School,Manual,No,OneCar,2-5 Miles,Europe,Adult,Yes
+Married,Male,LowIncome,OneChild,Graduate Degree,Manual,Yes,NoCar,0-1 Miles,Europe,Adult,No
+Single,Female,LowIncome,ThreeChildren,Partial College,Clerical,Yes,TwoCars,0-1 Miles,Europe,Young,No
+Single,Male,LowIncome,OneChild,Bachelors,Clerical,No,OneCar,0-1 Miles,Europe,Adult,Yes
+Single,Female,LowIncome,NoChild,High School,Manual,No,OneCar,2-5 Miles,Europe,Young,No
+Married,Female,VeryHighIncome,ThreeChildren,Bachelors,Management,No,TwoCars,10+ Miles,Europe,Senior,Yes
+Married,Male,VeryHighIncome,ManyChildren,Bachelors,Management,Yes,ManyCars,2-5 Miles,Pacific,MidAge,Yes
+Married,Female,VeryHighIncome,ThreeChildren,Partial College,Professional,Yes,ThreeCars,0-1 Miles,Europe,Senior,Yes
+Married,Female,HighIncome,NoChild,High School,Management,Yes,ManyCars,10+ Miles,Pacific,Adult,Yes
+Married,Female,LowIncome,ManyChildren,High School,Skilled Manual,No,ThreeCars,1-2 Miles,Pacific,Old,No
+Single,Male,HighIncome,NoChild,Bachelors,Professional,Yes,OneCar,5-10 Miles,Pacific,Adult,Yes
+Married,Male,HighIncome,ManyChildren,Graduate Degree,Management,No,OneCar,1-2 Miles,Pacific,Old,Yes
+Married,Male,VeryHighIncome,FourChildren,High School,Professional,Yes,ThreeCars,0-1 Miles,Europe,Senior,No
+Single,Male,MidIncome,NoChild,Bachelors,Professional,No,ManyCars,2-5 Miles,Pacific,Adult,No
+Married,Male,HighIncome,ThreeChildren,Partial High School,Professional,Yes,NoCar,10+ Miles,Europe,Senior,Yes
+Single,Male,LowIncome,TwoChildren,Partial High School,Clerical,Yes,TwoCars,5-10 Miles,Pacific,Senior,No
+Single,Female,LowIncome,ThreeChildren,Graduate Degree,Clerical,Yes,NoCar,0-1 Miles,Europe,MidAge,Yes
+Married,Male,LowIncome,OneChild,Graduate Degree,Clerical,Yes,NoCar,0-1 Miles,Europe,MidAge,No
+Single,Female,MidIncome,NoChild,Graduate Degree,Skilled Manual,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Female,HighIncome,ThreeChildren,Partial College,Management,Yes,ManyCars,10+ Miles,Europe,Senior,No
+Married,Male,VeryHighIncome,NoChild,Bachelors,Management,Yes,ManyCars,0-1 Miles,Pacific,Adult,Yes
+Single,Female,LowIncome,TwoChildren,Partial College,Clerical,Yes,NoCar,0-1 Miles,Europe,MidAge,No
+Married,Female,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,OneCar,1-2 Miles,Europe,Adult,Yes
+Married,Female,LowIncome,TwoChildren,Partial College,Manual,Yes,NoCar,1-2 Miles,Europe,Senior,No
+Single,Female,HighIncome,ManyChildren,Bachelors,Professional,Yes,ThreeCars,10+ Miles,Pacific,Adult,No
+Married,Male,MidIncome,NoChild,Graduate Degree,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Female,LowIncome,TwoChildren,Partial College,Clerical,Yes,TwoCars,0-1 Miles,Europe,MidAge,No
+Single,Female,LowIncome,ManyChildren,High School,Manual,Yes,TwoCars,0-1 Miles,Europe,Young,No
+Single,Male,HighIncome,ManyChildren,Bachelors,Professional,Yes,OneCar,5-10 Miles,Pacific,MidAge,Yes
+Married,Male,HighIncome,ManyChildren,Partial College,Skilled Manual,Yes,ThreeCars,5-10 Miles,Pacific,MidAge,No
+Single,Female,MidIncome,NoChild,Graduate Degree,Skilled Manual,No,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Female,LowIncome,TwoChildren,Partial College,Manual,Yes,NoCar,0-1 Miles,Europe,Senior,Yes
+Single,Female,LowIncome,NoChild,High School,Manual,No,OneCar,1-2 Miles,Europe,Young,No
+Married,Male,LowIncome,FourChildren,Partial High School,Manual,Yes,OneCar,0-1 Miles,Europe,Adult,Yes
+Single,Female,LowIncome,NoChild,High School,Manual,No,OneCar,2-5 Miles,Europe,Young,No
+Married,Female,LowIncome,NoChild,Bachelors,Clerical,No,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Female,HighIncome,OneChild,Graduate Degree,Management,Yes,NoCar,0-1 Miles,Pacific,Adult,Yes
+Married,Female,LowIncome,TwoChildren,Partial College,Manual,Yes,NoCar,1-2 Miles,Europe,MidAge,No
+Married,Female,LowIncome,TwoChildren,High School,Manual,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Male,HighIncome,NoChild,High School,Management,Yes,ThreeCars,10+ Miles,Pacific,Adult,Yes
+Single,Male,LowIncome,OneChild,Bachelors,Clerical,No,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Female,LowIncome,ThreeChildren,Partial High School,Manual,Yes,TwoCars,0-1 Miles,Europe,MidAge,No
+Single,Male,LowIncome,OneChild,Partial College,Manual,No,NoCar,0-1 Miles,Europe,Adult,No
+Single,Male,LowIncome,NoChild,Partial High School,Manual,No,TwoCars,0-1 Miles,Europe,Adult,No
+Married,Female,HighIncome,ManyChildren,Partial College,Skilled Manual,No,ThreeCars,5-10 Miles,Pacific,MidAge,No
+Single,Male,LowIncome,OneChild,Partial College,Manual,Yes,NoCar,0-1 Miles,Europe,MidAge,No
+Married,Female,MidIncome,OneChild,Partial College,Skilled Manual,Yes,OneCar,5-10 Miles,Pacific,MidAge,No
+Single,Female,HighIncome,OneChild,Bachelors,Management,Yes,ManyCars,2-5 Miles,Pacific,MidAge,No
+Single,Female,LowIncome,ThreeChildren,Graduate Degree,Clerical,No,NoCar,0-1 Miles,Europe,MidAge,Yes
+Married,Male,VeryHighIncome,NoChild,Graduate Degree,Management,Yes,NoCar,5-10 Miles,Pacific,MidAge,No
+Married,Male,LowIncome,ThreeChildren,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,Pacific,Senior,Yes
+Single,Female,MidIncome,OneChild,Partial College,Skilled Manual,No,OneCar,0-1 Miles,Pacific,MidAge,Yes
+Married,Male,MidIncome,NoChild,Bachelors,Clerical,No,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Female,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,NoCar,0-1 Miles,Europe,MidAge,Yes
+Single,Female,LowIncome,OneChild,High School,Manual,No,OneCar,2-5 Miles,Europe,MidAge,Yes
+Single,Male,LowIncome,NoChild,Partial College,Manual,No,OneCar,2-5 Miles,Europe,Adult,Yes
+Single,Female,VeryHighIncome,NoChild,Partial College,Management,Yes,ThreeCars,10+ Miles,Pacific,Adult,Yes
+Single,Female,MidIncome,TwoChildren,Bachelors,Professional,No,OneCar,0-1 Miles,Pacific,Adult,Yes
+Married,Male,HighIncome,OneChild,Graduate Degree,Management,Yes,NoCar,2-5 Miles,Pacific,Adult,Yes
+Married,Female,HighIncome,FourChildren,High School,Professional,No,TwoCars,2-5 Miles,Europe,Senior,Yes
+Married,Female,LowIncome,TwoChildren,Partial College,Clerical,No,TwoCars,5-10 Miles,Pacific,Old,No
+Single,Female,LowIncome,ManyChildren,High School,Skilled Manual,No,TwoCars,1-2 Miles,Pacific,Old,No
+Married,Female,LowIncome,NoChild,Bachelors,Clerical,No,NoCar,0-1 Miles,Pacific,Young,Yes
+Single,Male,LowIncome,OneChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Old,Yes
+Married,Female,LowIncome,OneChild,Bachelors,Skilled Manual,Yes,TwoCars,0-1 Miles,Europe,Adult,No
+Married,Male,HighIncome,FourChildren,Graduate Degree,Management,Yes,OneCar,0-1 Miles,Pacific,Adult,Yes
+Single,Male,LowIncome,TwoChildren,Partial High School,Clerical,Yes,TwoCars,5-10 Miles,Pacific,Senior,No
+Married,Male,HighIncome,TwoChildren,Bachelors,Professional,Yes,NoCar,1-2 Miles,Pacific,Adult,Yes
+Married,Male,LowIncome,TwoChildren,Bachelors,Clerical,Yes,OneCar,0-1 Miles,Europe,Old,No
+Married,Male,MidIncome,TwoChildren,Partial College,Clerical,Yes,OneCar,1-2 Miles,Europe,Adult,Yes
+Married,Female,LowIncome,TwoChildren,Partial College,Manual,Yes,OneCar,2-5 Miles,Europe,MidAge,Yes
+Married,Male,VeryHighIncome,FourChildren,Bachelors,Management,Yes,OneCar,2-5 Miles,Pacific,MidAge,No
+Married,Male,MidIncome,OneChild,Partial College,Skilled Manual,Yes,OneCar,5-10 Miles,Pacific,MidAge,No
+Married,Male,LowIncome,FourChildren,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,Pacific,Senior,Yes
+Single,Male,MidIncome,ThreeChildren,Partial High School,Clerical,No,TwoCars,5-10 Miles,Pacific,Senior,Yes
+Married,Male,HighIncome,ManyChildren,Bachelors,Professional,No,OneCar,0-1 Miles,Pacific,MidAge,Yes
+Single,Male,HighIncome,NoChild,Bachelors,Professional,No,OneCar,5-10 Miles,Pacific,MidAge,No
+Married,Male,MidIncome,TwoChildren,Graduate Degree,Management,Yes,OneCar,5-10 Miles,Pacific,Old,Yes
+Married,Male,LowIncome,NoChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Male,VeryHighIncome,FourChildren,Partial College,Professional,No,ThreeCars,10+ Miles,Europe,Senior,No
+Married,Female,LowIncome,ThreeChildren,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,MidAge,No
+Married,Male,HighIncome,NoChild,Graduate Degree,Management,Yes,NoCar,2-5 Miles,Pacific,Adult,Yes
+Single,Female,VeryHighIncome,NoChild,Graduate Degree,Management,No,ThreeCars,0-1 Miles,Pacific,MidAge,Yes
+Single,Female,LowIncome,FourChildren,Partial High School,Manual,Yes,TwoCars,0-1 Miles,Europe,MidAge,Yes
+Single,Female,MidIncome,NoChild,Graduate Degree,Clerical,No,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Male,HighIncome,FourChildren,Bachelors,Professional,Yes,NoCar,1-2 Miles,Pacific,Adult,Yes
+Single,Male,MidIncome,TwoChildren,Partial College,Clerical,No,TwoCars,0-1 Miles,Europe,Adult,Yes
+Married,Female,LowIncome,NoChild,Bachelors,Clerical,No,NoCar,0-1 Miles,Pacific,Young,Yes
+Married,Male,LowIncome,OneChild,Bachelors,Skilled Manual,Yes,TwoCars,0-1 Miles,Europe,Adult,No
+Single,Male,MidIncome,TwoChildren,Partial College,Clerical,Yes,TwoCars,1-2 Miles,Europe,Adult,No
+Married,Female,HighIncome,ManyChildren,Partial High School,Skilled Manual,Yes,TwoCars,10+ Miles,Europe,Senior,No
+Single,Female,HighIncome,NoChild,Bachelors,Professional,Yes,ThreeCars,10+ Miles,Pacific,Adult,No
+Married,Male,LowIncome,NoChild,Partial High School,Manual,No,TwoCars,0-1 Miles,Europe,Young,No
+Single,Female,LowIncome,NoChild,Partial High School,Manual,No,TwoCars,1-2 Miles,Europe,Adult,Yes
+Married,Male,VeryHighIncome,ThreeChildren,High School,Professional,Yes,ManyCars,5-10 Miles,Europe,Senior,Yes
+Married,Male,HighIncome,TwoChildren,Bachelors,Professional,Yes,OneCar,5-10 Miles,Pacific,MidAge,No
+Married,Female,HighIncome,ManyChildren,Graduate Degree,Management,No,TwoCars,0-1 Miles,Pacific,Adult,No
+Single,Male,LowIncome,NoChild,Partial High School,Manual,No,TwoCars,0-1 Miles,Europe,Adult,No
+Married,Male,LowIncome,NoChild,Partial High School,Manual,Yes,TwoCars,0-1 Miles,Europe,Adult,No
+Single,Female,VeryHighIncome,ThreeChildren,High School,Professional,Yes,ManyCars,5-10 Miles,Europe,MidAge,Yes
+Married,Male,LowIncome,OneChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Old,No
+Single,Male,LowIncome,NoChild,Partial College,Clerical,Yes,OneCar,2-5 Miles,Europe,Young,No
+Single,Female,LowIncome,NoChild,High School,Manual,No,OneCar,2-5 Miles,Europe,Adult,Yes
+Single,Male,LowIncome,NoChild,Partial High School,Manual,Yes,TwoCars,1-2 Miles,Europe,Adult,No
+Single,Female,LowIncome,NoChild,High School,Manual,No,OneCar,2-5 Miles,Europe,Adult,No
+Single,Male,LowIncome,NoChild,Partial College,Clerical,No,OneCar,2-5 Miles,Europe,Adult,Yes
+Married,Female,LowIncome,OneChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,MidAge,Yes
+Married,Male,MidIncome,OneChild,Bachelors,Skilled Manual,No,NoCar,0-1 Miles,Europe,MidAge,Yes
+Single,Female,MidIncome,OneChild,Partial College,Skilled Manual,No,OneCar,0-1 Miles,Pacific,MidAge,Yes
+Married,Male,LowIncome,TwoChildren,High School,Manual,Yes,TwoCars,0-1 Miles,Europe,MidAge,No
+Single,Female,LowIncome,NoChild,Partial College,Clerical,No,OneCar,0-1 Miles,Europe,Young,Yes
+Single,Male,LowIncome,NoChild,Partial College,Manual,No,NoCar,0-1 Miles,Pacific,Young,Yes
+Single,Male,LowIncome,ThreeChildren,High School,Manual,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Female,HighIncome,FourChildren,Partial College,Professional,Yes,TwoCars,2-5 Miles,Europe,Senior,No
+Single,Male,MidIncome,NoChild,Graduate Degree,Clerical,No,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Male,LowIncome,OneChild,Bachelors,Clerical,No,OneCar,1-2 Miles,Europe,Adult,No
+Single,Male,HighIncome,NoChild,Bachelors,Professional,Yes,ThreeCars,10+ Miles,Pacific,Adult,No
+Married,Female,VeryHighIncome,ThreeChildren,High School,Professional,Yes,ThreeCars,0-1 Miles,Europe,Senior,Yes
+Single,Female,LowIncome,NoChild,Partial High School,Manual,Yes,TwoCars,1-2 Miles,Europe,Adult,No
+Married,Male,HighIncome,FourChildren,High School,Management,Yes,ThreeCars,5-10 Miles,Europe,Senior,Yes
+Married,Male,HighIncome,NoChild,Bachelors,Professional,Yes,ThreeCars,10+ Miles,Pacific,Young,No
+Single,Male,VeryHighIncome,NoChild,Graduate Degree,Management,Yes,NoCar,2-5 Miles,Pacific,MidAge,Yes
+Single,Female,LowIncome,ThreeChildren,Partial College,Clerical,No,TwoCars,0-1 Miles,Europe,Young,Yes
+Married,Male,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,OneCar,0-1 Miles,Europe,Adult,Yes
+Married,Female,MidIncome,TwoChildren,Bachelors,Management,Yes,TwoCars,0-1 Miles,Pacific,Old,Yes
+Single,Female,LowIncome,TwoChildren,High School,Manual,Yes,OneCar,0-1 Miles,Europe,Adult,Yes
+Single,Female,MidIncome,NoChild,Bachelors,Clerical,No,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Male,MidIncome,OneChild,Partial College,Skilled Manual,Yes,OneCar,0-1 Miles,Pacific,MidAge,Yes
+Married,Female,VeryHighIncome,ThreeChildren,Partial College,Professional,Yes,ThreeCars,5-10 Miles,Europe,MidAge,Yes
+Single,Female,LowIncome,TwoChildren,Partial College,Clerical,No,TwoCars,5-10 Miles,Pacific,Senior,Yes
+Single,Female,LowIncome,TwoChildren,Partial College,Manual,No,OneCar,0-1 Miles,Europe,Senior,Yes
+Married,Female,HighIncome,FourChildren,Bachelors,Professional,Yes,OneCar,10+ Miles,Pacific,MidAge,No
+Single,Male,HighIncome,ManyChildren,Graduate Degree,Management,Yes,ThreeCars,0-1 Miles,Pacific,Adult,No
+Married,Male,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,OneCar,0-1 Miles,Europe,MidAge,Yes
+Single,Male,LowIncome,NoChild,High School,Manual,No,OneCar,2-5 Miles,Europe,Young,No
+Single,Female,HighIncome,ManyChildren,Bachelors,Professional,Yes,ManyCars,1-2 Miles,Pacific,Adult,No
+Married,Female,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,OneCar,0-1 Miles,Europe,Old,No
+Married,Male,LowIncome,OneChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Old,Yes
+Married,Male,VeryHighIncome,ThreeChildren,Partial College,Professional,No,ThreeCars,5-10 Miles,Europe,Senior,Yes
+Married,Male,LowIncome,ThreeChildren,Partial College,Clerical,No,TwoCars,5-10 Miles,Pacific,Senior,No
+Married,Male,MidIncome,ThreeChildren,Bachelors,Professional,Yes,TwoCars,5-10 Miles,Pacific,MidAge,No
+Single,Male,HighIncome,NoChild,Bachelors,Professional,No,ThreeCars,10+ Miles,Pacific,Young,Yes
+Married,Female,LowIncome,TwoChildren,Partial College,Clerical,Yes,TwoCars,5-10 Miles,Pacific,Old,No
+Married,Male,HighIncome,FourChildren,Partial College,Professional,Yes,TwoCars,10+ Miles,Europe,Senior,No
+Married,Male,MidIncome,NoChild,Graduate Degree,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Female,LowIncome,NoChild,Partial College,Manual,No,OneCar,0-1 Miles,Pacific,Young,Yes
+Single,Male,LowIncome,ThreeChildren,Partial College,Clerical,Yes,NoCar,0-1 Miles,Europe,MidAge,No
+Single,Female,VeryHighIncome,NoChild,Partial High School,Professional,Yes,ManyCars,10+ Miles,Pacific,Adult,Yes
+Single,Female,LowIncome,NoChild,Partial High School,Manual,No,TwoCars,1-2 Miles,Europe,Adult,Yes
+Married,Female,LowIncome,OneChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Old,No
+Married,Female,HighIncome,NoChild,Bachelors,Professional,Yes,OneCar,1-2 Miles,Pacific,MidAge,Yes
+Single,Male,HighIncome,NoChild,Bachelors,Professional,No,OneCar,5-10 Miles,Pacific,Adult,No
+Single,Female,HighIncome,NoChild,Bachelors,Professional,No,OneCar,0-1 Miles,Pacific,MidAge,Yes
+Single,Male,LowIncome,OneChild,Bachelors,Clerical,No,NoCar,0-1 Miles,Europe,Senior,No
+Married,Female,LowIncome,NoChild,Partial High School,Manual,Yes,TwoCars,1-2 Miles,Europe,Adult,No
+Married,Female,MidIncome,NoChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Male,LowIncome,OneChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Male,MidIncome,TwoChildren,Bachelors,Professional,Yes,OneCar,2-5 Miles,Pacific,Adult,Yes
+Married,Female,LowIncome,TwoChildren,Partial High School,Clerical,Yes,TwoCars,5-10 Miles,Pacific,Senior,No
+Single,Male,LowIncome,OneChild,Bachelors,Clerical,Yes,OneCar,1-2 Miles,Europe,Adult,Yes
+Single,Female,MidIncome,TwoChildren,Bachelors,Management,No,OneCar,5-10 Miles,Pacific,Senior,Yes
+Single,Female,VeryHighIncome,ThreeChildren,Bachelors,Management,Yes,ManyCars,10+ Miles,Europe,Senior,No
+Married,Female,MidIncome,OneChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Old,No
+Married,Male,LowIncome,OneChild,Graduate Degree,Manual,Yes,NoCar,0-1 Miles,Europe,MidAge,No
+Married,Male,LowIncome,OneChild,Graduate Degree,Clerical,Yes,NoCar,0-1 Miles,Europe,MidAge,No
+Married,Male,LowIncome,ThreeChildren,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,Pacific,Senior,Yes
+Married,Female,LowIncome,NoChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Female,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,NoCar,0-1 Miles,Europe,MidAge,No
+Single,Female,HighIncome,TwoChildren,Bachelors,Professional,No,NoCar,0-1 Miles,Pacific,Adult,Yes
+Single,Female,MidIncome,TwoChildren,Partial College,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,No
+Married,Female,VeryHighIncome,ThreeChildren,Partial College,Professional,Yes,ManyCars,0-1 Miles,Europe,Senior,No
+Married,Female,LowIncome,TwoChildren,Partial College,Manual,Yes,OneCar,0-1 Miles,Europe,MidAge,Yes
+Married,Male,HighIncome,ManyChildren,Partial College,Skilled Manual,Yes,TwoCars,5-10 Miles,Pacific,MidAge,No
+Single,Male,MidIncome,TwoChildren,Partial College,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,No
+Single,Female,LowIncome,TwoChildren,Partial College,Clerical,No,TwoCars,5-10 Miles,Pacific,Old,No
+Married,Female,MidIncome,NoChild,Graduate Degree,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Female,HighIncome,ManyChildren,Graduate Degree,Management,Yes,ThreeCars,0-1 Miles,Pacific,Adult,No
+Single,Male,MidIncome,TwoChildren,Bachelors,Professional,No,OneCar,0-1 Miles,Pacific,Adult,Yes
+Single,Female,LowIncome,TwoChildren,Partial College,Clerical,No,TwoCars,5-10 Miles,Pacific,Old,No
+Married,Male,LowIncome,OneChild,Bachelors,Skilled Manual,Yes,TwoCars,0-1 Miles,Europe,MidAge,Yes
+Single,Male,LowIncome,TwoChildren,Partial College,Manual,Yes,OneCar,0-1 Miles,Europe,Senior,Yes
+Married,Female,HighIncome,TwoChildren,Bachelors,Management,Yes,ManyCars,10+ Miles,Europe,Senior,No
+Married,Male,LowIncome,TwoChildren,Partial College,Manual,Yes,NoCar,1-2 Miles,Europe,Senior,No
+Single,Male,VeryHighIncome,NoChild,Partial College,Management,No,ThreeCars,10+ Miles,Pacific,Adult,Yes
+Single,Male,LowIncome,NoChild,High School,Manual,Yes,OneCar,2-5 Miles,Europe,Adult,Yes
+Single,Female,LowIncome,ThreeChildren,Partial High School,Manual,Yes,TwoCars,0-1 Miles,Europe,MidAge,No
+Married,Male,MidIncome,TwoChildren,Bachelors,Management,Yes,TwoCars,0-1 Miles,Pacific,Old,No
+Single,Male,LowIncome,NoChild,Partial College,Clerical,No,OneCar,2-5 Miles,Europe,Young,No
+Single,Female,HighIncome,OneChild,Graduate Degree,Management,Yes,NoCar,0-1 Miles,Pacific,Adult,Yes
+Married,Male,VeryHighIncome,FourChildren,Bachelors,Management,Yes,ThreeCars,2-5 Miles,Pacific,MidAge,No
+Single,Female,LowIncome,NoChild,Partial College,Clerical,Yes,OneCar,2-5 Miles,Europe,Adult,No
+Single,Female,LowIncome,ThreeChildren,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,Pacific,Senior,No
+Single,Male,LowIncome,NoChild,Partial College,Manual,Yes,NoCar,0-1 Miles,Pacific,Young,Yes
+Married,Female,VeryHighIncome,NoChild,High School,Management,Yes,ThreeCars,10+ Miles,Pacific,Adult,Yes
+Single,Female,LowIncome,ThreeChildren,Partial College,Clerical,No,OneCar,0-1 Miles,Europe,Young,No
+Married,Female,LowIncome,ThreeChildren,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,Pacific,Senior,Yes
+Single,Female,LowIncome,TwoChildren,Bachelors,Clerical,No,OneCar,2-5 Miles,Europe,Old,No
+Married,Female,HighIncome,TwoChildren,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,Pacific,MidAge,Yes
+Single,Female,LowIncome,ThreeChildren,Partial College,Clerical,Yes,TwoCars,0-1 Miles,Europe,Young,Yes
+Single,Female,HighIncome,NoChild,Graduate Degree,Skilled Manual,No,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Male,HighIncome,ManyChildren,Partial College,Skilled Manual,Yes,TwoCars,0-1 Miles,Pacific,MidAge,No
+Single,Male,HighIncome,NoChild,Bachelors,Professional,No,ThreeCars,10+ Miles,Pacific,Adult,Yes
+Married,Male,HighIncome,TwoChildren,Partial College,Skilled Manual,Yes,TwoCars,5-10 Miles,Pacific,Senior,Yes
+Single,Male,HighIncome,FourChildren,Graduate Degree,Management,Yes,NoCar,0-1 Miles,Pacific,Adult,Yes
+Married,Female,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,OneCar,0-1 Miles,Europe,MidAge,Yes
+Single,Male,LowIncome,NoChild,High School,Manual,No,OneCar,1-2 Miles,Europe,Adult,No
+Married,Female,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,OneCar,1-2 Miles,Europe,Adult,Yes
+Married,Female,VeryHighIncome,NoChild,Graduate Degree,Management,Yes,OneCar,10+ Miles,Pacific,MidAge,No
+Married,Female,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,NoCar,1-2 Miles,Europe,Adult,Yes
+Married,Female,LowIncome,ThreeChildren,Graduate Degree,Clerical,Yes,NoCar,0-1 Miles,Europe,MidAge,No
+Married,Female,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,NoCar,0-1 Miles,Europe,MidAge,No
+Single,Female,LowIncome,TwoChildren,High School,Manual,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Female,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,NoCar,0-1 Miles,Europe,MidAge,No
+Married,Female,LowIncome,TwoChildren,Partial College,Clerical,No,TwoCars,0-1 Miles,Pacific,Old,No
+Single,Female,HighIncome,ManyChildren,Partial College,Skilled Manual,Yes,TwoCars,5-10 Miles,Pacific,MidAge,No
+Single,Male,LowIncome,NoChild,High School,Manual,No,OneCar,2-5 Miles,Europe,Adult,No
+Married,Female,HighIncome,FourChildren,Partial College,Professional,No,OneCar,2-5 Miles,Europe,Senior,Yes
+Single,Male,VeryHighIncome,ThreeChildren,High School,Professional,No,ManyCars,5-10 Miles,Europe,MidAge,No
+Married,Female,LowIncome,OneChild,Partial College,Manual,Yes,NoCar,0-1 Miles,Europe,Old,No
+Married,Male,VeryHighIncome,NoChild,Partial High School,Professional,Yes,ManyCars,10+ Miles,Pacific,Adult,Yes
+Single,Female,HighIncome,NoChild,Bachelors,Professional,No,ThreeCars,10+ Miles,Pacific,Adult,No
+Single,Male,LowIncome,NoChild,Partial High School,Manual,Yes,TwoCars,1-2 Miles,Europe,Adult,Yes
+Married,Female,VeryHighIncome,OneChild,Bachelors,Management,Yes,TwoCars,0-1 Miles,Pacific,MidAge,Yes
+Married,Female,MidIncome,NoChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Single,Male,LowIncome,TwoChildren,High School,Manual,Yes,OneCar,0-1 Miles,Europe,Adult,No
+Single,Female,LowIncome,ThreeChildren,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,MidAge,Yes
+Married,Male,MidIncome,TwoChildren,Bachelors,Management,Yes,TwoCars,0-1 Miles,Pacific,Old,No
+Single,Female,LowIncome,ThreeChildren,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,MidAge,Yes
+Single,Male,HighIncome,OneChild,Bachelors,Management,No,ThreeCars,0-1 Miles,Pacific,MidAge,Yes
+Married,Female,HighIncome,ManyChildren,Graduate Degree,Management,Yes,ThreeCars,0-1 Miles,Pacific,Adult,No
+Married,Female,LowIncome,OneChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Old,No
+Single,Male,LowIncome,NoChild,High School,Manual,No,OneCar,1-2 Miles,Europe,Young,No
+Single,Male,HighIncome,NoChild,Bachelors,Professional,No,TwoCars,5-10 Miles,Pacific,MidAge,Yes
+Single,Female,MidIncome,NoChild,Graduate Degree,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Female,LowIncome,NoChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,MidAge,Yes
+Married,Female,HighIncome,TwoChildren,Bachelors,Professional,No,NoCar,0-1 Miles,Pacific,Adult,Yes
+Married,Male,LowIncome,FourChildren,High School,Skilled Manual,No,TwoCars,1-2 Miles,Pacific,Senior,No
+Single,Female,HighIncome,NoChild,Bachelors,Professional,Yes,OneCar,5-10 Miles,Pacific,MidAge,Yes
+Married,Male,HighIncome,TwoChildren,High School,Skilled Manual,No,TwoCars,1-2 Miles,Pacific,MidAge,Yes
+Married,Male,LowIncome,NoChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Male,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,OneCar,0-1 Miles,Europe,Adult,Yes
+Married,Female,HighIncome,OneChild,Bachelors,Professional,Yes,OneCar,5-10 Miles,Pacific,MidAge,No
+Single,Female,MidIncome,TwoChildren,Partial College,Clerical,Yes,NoCar,1-2 Miles,Europe,Adult,Yes
+Single,Male,MidIncome,NoChild,Graduate Degree,Clerical,No,NoCar,0-1 Miles,Europe,Adult,Yes
+Married,Male,LowIncome,OneChild,Graduate Degree,Clerical,Yes,NoCar,0-1 Miles,Europe,Old,No
+Single,Female,LowIncome,NoChild,Partial College,Clerical,No,OneCar,2-5 Miles,Europe,Adult,Yes
+Single,Male,LowIncome,TwoChildren,Partial College,Clerical,Yes,TwoCars,0-1 Miles,Europe,MidAge,No
+Married,Female,HighIncome,FourChildren,Partial High School,Skilled Manual,Yes,ManyCars,10+ Miles,Europe,Senior,No
+Married,Male,MidIncome,NoChild,Bachelors,Clerical,Yes,NoCar,0-1 Miles,Europe,Adult,No
+Single,Female,LowIncome,NoChild,Partial High School,Manual,Yes,TwoCars,1-2 Miles,Europe,Adult,No
+Married,Male,LowIncome,NoChild,Partial High School,Manual,Yes,TwoCars,0-1 Miles,Europe,Adult,No
+Married,Male,MidIncome,FourChildren,Bachelors,Professional,Yes,NoCar,2-5 Miles,North America,MidAge,No
+Married,Male,HighIncome,TwoChildren,Partial High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,MidAge,No
+Single,Female,MidIncome,ThreeChildren,Partial College,Clerical,Yes,OneCar,1-2 Miles,North America,Adult,Yes
+Single,Male,HighIncome,ManyChildren,Bachelors,Management,Yes,ThreeCars,10+ Miles,North America,Senior,Yes
+Married,Male,HighIncome,FourChildren,High School,Professional,Yes,NoCar,5-10 Miles,North America,Senior,No
+Married,Male,MidIncome,TwoChildren,Partial College,Professional,Yes,TwoCars,10+ Miles,North America,Senior,No
+Single,Female,MidIncome,ThreeChildren,Bachelors,Skilled Manual,Yes,OneCar,2-5 Miles,North America,Adult,Yes
+Single,Female,HighIncome,OneChild,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,Adult,Yes
+Married,Male,HighIncome,OneChild,Partial College,Skilled Manual,Yes,OneCar,2-5 Miles,North America,MidAge,Yes
+Single,Female,MidIncome,NoChild,High School,Skilled Manual,No,TwoCars,1-2 Miles,North America,Adult,Yes
+Married,Male,MidIncome,ManyChildren,Bachelors,Professional,Yes,OneCar,2-5 Miles,North America,MidAge,No
+Married,Female,MidIncome,NoChild,Graduate Degree,Skilled Manual,Yes,NoCar,0-1 Miles,North America,Adult,No
+Married,Male,MidIncome,NoChild,Partial College,Skilled Manual,Yes,OneCar,5-10 Miles,North America,Young,No
+Married,Female,VeryHighIncome,OneChild,Bachelors,Management,Yes,ManyCars,2-5 Miles,North America,MidAge,Yes
+Married,Male,HighIncome,TwoChildren,Bachelors,Skilled Manual,Yes,OneCar,2-5 Miles,North America,Adult,Yes
+Married,Male,HighIncome,FourChildren,Partial College,Professional,Yes,ManyCars,0-1 Miles,North America,Adult,No
+Married,Female,HighIncome,FourChildren,Bachelors,Professional,Yes,TwoCars,2-5 Miles,North America,MidAge,Yes
+Married,Female,MidIncome,OneChild,Partial College,Clerical,Yes,OneCar,1-2 Miles,North America,Senior,Yes
+Married,Male,MidIncome,NoChild,Partial College,Skilled Manual,No,TwoCars,1-2 Miles,North America,Young,No
+Married,Male,MidIncome,ThreeChildren,Bachelors,Professional,Yes,OneCar,2-5 Miles,North America,MidAge,Yes
+Single,Male,HighIncome,NoChild,Bachelors,Professional,No,OneCar,2-5 Miles,North America,Adult,Yes
+Single,Male,HighIncome,FourChildren,Bachelors,Management,Yes,TwoCars,5-10 Miles,North America,Old,Yes
+Married,Female,MidIncome,OneChild,Partial College,Skilled Manual,Yes,OneCar,0-1 Miles,North America,MidAge,Yes
+Single,Female,MidIncome,FourChildren,Graduate Degree,Management,Yes,TwoCars,10+ Miles,North America,Old,Yes
+Single,Male,MidIncome,NoChild,Bachelors,Professional,No,OneCar,2-5 Miles,North America,MidAge,No
+Married,Female,HighIncome,ManyChildren,Bachelors,Professional,Yes,TwoCars,2-5 Miles,North America,MidAge,No
+Married,Female,MidIncome,TwoChildren,High School,Professional,Yes,TwoCars,5-10 Miles,North America,MidAge,No
+Single,Male,MidIncome,ThreeChildren,Bachelors,Professional,No,NoCar,0-1 Miles,North America,MidAge,Yes
+Married,Female,HighIncome,NoChild,Bachelors,Management,Yes,OneCar,1-2 Miles,North America,Adult,Yes
+Married,Male,HighIncome,ManyChildren,Bachelors,Management,Yes,TwoCars,1-2 Miles,North America,Old,No
+Single,Male,HighIncome,OneChild,Partial College,Professional,No,ThreeCars,1-2 Miles,North America,MidAge,No
+Single,Male,MidIncome,FourChildren,High School,Professional,Yes,TwoCars,10+ Miles,North America,Old,Yes
+Single,Male,MidIncome,ThreeChildren,Bachelors,Professional,No,OneCar,0-1 Miles,North America,MidAge,Yes
+Married,Male,HighIncome,ThreeChildren,Partial College,Professional,No,TwoCars,0-1 Miles,North America,MidAge,Yes
+Single,Female,HighIncome,FourChildren,Graduate Degree,Management,Yes,TwoCars,5-10 Miles,North America,Old,No
+Single,Male,MidIncome,ManyChildren,Bachelors,Management,Yes,ThreeCars,10+ Miles,North America,Senior,Yes
+Married,Female,VeryHighIncome,OneChild,Bachelors,Management,Yes,TwoCars,1-2 Miles,North America,MidAge,No
+Married,Male,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,NoCar,0-1 Miles,North America,Adult,No
+Single,Female,LowIncome,NoChild,Partial College,Skilled Manual,Yes,OneCar,5-10 Miles,North America,Young,No
+Married,Male,MidIncome,TwoChildren,Partial College,Professional,Yes,OneCar,10+ Miles,North America,Senior,Yes
+Married,Male,MidIncome,NoChild,Partial College,Skilled Manual,Yes,OneCar,5-10 Miles,North America,Young,Yes
+Single,Male,LowIncome,NoChild,Partial High School,Clerical,Yes,TwoCars,5-10 Miles,North America,Young,No
+Single,Female,MidIncome,OneChild,Bachelors,Professional,No,OneCar,0-1 Miles,North America,MidAge,Yes
+Married,Male,MidIncome,ThreeChildren,Bachelors,Management,Yes,TwoCars,10+ Miles,North America,Old,No
+Married,Male,MidIncome,FourChildren,High School,Professional,Yes,TwoCars,10+ Miles,North America,Old,No
+Married,Male,MidIncome,ThreeChildren,Bachelors,Skilled Manual,Yes,ThreeCars,10+ Miles,North America,MidAge,No
+Single,Female,HighIncome,ThreeChildren,Bachelors,Skilled Manual,Yes,OneCar,0-1 Miles,North America,MidAge,Yes
+Married,Female,MidIncome,OneChild,Partial College,Clerical,Yes,OneCar,1-2 Miles,North America,MidAge,Yes
+Married,Female,HighIncome,FourChildren,Bachelors,Management,Yes,NoCar,0-1 Miles,North America,MidAge,No
+Single,Female,HighIncome,NoChild,Bachelors,Professional,No,OneCar,2-5 Miles,North America,Adult,Yes
+Single,Female,HighIncome,ThreeChildren,Graduate Degree,Management,Yes,TwoCars,1-2 Miles,North America,Senior,No
+Married,Male,MidIncome,OneChild,Graduate Degree,Skilled Manual,Yes,NoCar,1-2 Miles,North America,Adult,No
+Married,Male,MidIncome,NoChild,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Young,No
+Married,Female,HighIncome,TwoChildren,High School,Professional,Yes,TwoCars,2-5 Miles,North America,Senior,No
+Single,Male,VeryHighIncome,TwoChildren,Bachelors,Management,No,ManyCars,1-2 Miles,North America,Adult,No
+Single,Male,MidIncome,NoChild,Partial College,Skilled Manual,No,TwoCars,1-2 Miles,North America,Young,No
+Married,Male,MidIncome,FourChildren,Bachelors,Professional,Yes,TwoCars,2-5 Miles,North America,MidAge,Yes
+Married,Male,MidIncome,TwoChildren,High School,Professional,Yes,TwoCars,2-5 Miles,North America,Senior,Yes
+Single,Female,HighIncome,FourChildren,Graduate Degree,Skilled Manual,No,NoCar,0-1 Miles,North America,MidAge,No
+Married,Female,VeryHighIncome,OneChild,Bachelors,Management,Yes,ThreeCars,0-1 Miles,North America,MidAge,Yes
+Single,Female,HighIncome,NoChild,Bachelors,Professional,No,OneCar,0-1 Miles,Pacific,MidAge,Yes
+Married,Female,MidIncome,FourChildren,Bachelors,Management,Yes,TwoCars,10+ Miles,North America,Old,No
+Single,Male,MidIncome,ThreeChildren,High School,Professional,Yes,TwoCars,10+ Miles,North America,Senior,Yes
+Married,Male,MidIncome,ThreeChildren,Partial College,Professional,No,TwoCars,5-10 Miles,North America,Old,Yes
+Married,Female,MidIncome,TwoChildren,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,Adult,Yes
+Single,Male,MidIncome,NoChild,Partial College,Skilled Manual,No,OneCar,2-5 Miles,North America,Adult,Yes
+Married,Male,HighIncome,FourChildren,Bachelors,Management,Yes,NoCar,1-2 Miles,North America,MidAge,No
+Married,Female,MidIncome,ThreeChildren,Partial College,Clerical,Yes,NoCar,1-2 Miles,North America,Adult,No
+Married,Female,MidIncome,ThreeChildren,Bachelors,Skilled Manual,Yes,TwoCars,0-1 Miles,North America,MidAge,No
+Single,Female,MidIncome,TwoChildren,Bachelors,Management,Yes,NoCar,10+ Miles,North America,Senior,No
+Married,Female,MidIncome,NoChild,Graduate Degree,Professional,Yes,NoCar,0-1 Miles,North America,Adult,No
+Married,Female,LowIncome,TwoChildren,Partial High School,Clerical,No,TwoCars,0-1 Miles,North America,MidAge,No
+Married,Female,HighIncome,TwoChildren,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,Adult,Yes
+Single,Female,LowIncome,NoChild,Partial College,Skilled Manual,Yes,OneCar,5-10 Miles,North America,Young,No
+Single,Male,LowIncome,NoChild,Partial College,Skilled Manual,Yes,OneCar,5-10 Miles,North America,Young,No
+Married,Male,MidIncome,ThreeChildren,Partial College,Professional,No,TwoCars,5-10 Miles,North America,Senior,Yes
+Married,Female,MidIncome,TwoChildren,Graduate Degree,Management,Yes,TwoCars,5-10 Miles,North America,Old,No
+Married,Male,MidIncome,OneChild,Partial College,Clerical,Yes,OneCar,1-2 Miles,North America,MidAge,Yes
+Married,Male,HighIncome,OneChild,Partial College,Skilled Manual,Yes,OneCar,2-5 Miles,North America,MidAge,Yes
+Single,Male,MidIncome,ThreeChildren,Graduate Degree,Management,Yes,TwoCars,10+ Miles,North America,Old,No
+Married,Male,HighIncome,ThreeChildren,Partial High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Senior,No
+Married,Male,MidIncome,TwoChildren,Partial High School,Skilled Manual,Yes,TwoCars,2-5 Miles,North America,Senior,No
+Single,Male,LowIncome,NoChild,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Young,No
+Married,Male,MidIncome,ThreeChildren,Graduate Degree,Management,Yes,TwoCars,1-2 Miles,North America,Old,No
+Single,Female,HighIncome,NoChild,Bachelors,Management,Yes,OneCar,1-2 Miles,North America,Adult,Yes
+Single,Male,MidIncome,TwoChildren,Partial College,Professional,Yes,OneCar,10+ Miles,North America,Senior,No
+Single,Female,MidIncome,NoChild,High School,Skilled Manual,Yes,OneCar,5-10 Miles,North America,Adult,No
+Married,Male,VeryHighIncome,OneChild,Bachelors,Management,Yes,ManyCars,0-1 Miles,North America,Adult,No
+Married,Male,MidIncome,FourChildren,Bachelors,Management,Yes,TwoCars,2-5 Miles,North America,Senior,No
+Single,Female,MidIncome,ThreeChildren,Partial College,Clerical,No,TwoCars,0-1 Miles,North America,Adult,No
+Married,Female,MidIncome,ThreeChildren,Graduate Degree,Management,Yes,TwoCars,10+ Miles,North America,Old,No
+Married,Male,MidIncome,NoChild,Partial College,Skilled Manual,Yes,OneCar,5-10 Miles,North America,Young,No
+Married,Male,HighIncome,FourChildren,Graduate Degree,Skilled Manual,Yes,NoCar,1-2 Miles,North America,MidAge,No
+Married,Male,MidIncome,ThreeChildren,Bachelors,Management,Yes,TwoCars,10+ Miles,North America,Old,No
+Single,Male,HighIncome,TwoChildren,Bachelors,Skilled Manual,No,OneCar,0-1 Miles,North America,Adult,Yes
+Single,Male,VeryHighIncome,TwoChildren,Bachelors,Management,No,ThreeCars,0-1 Miles,North America,Adult,Yes
+Married,Male,MidIncome,TwoChildren,High School,Professional,No,TwoCars,1-2 Miles,North America,Senior,No
+Married,Female,VeryHighIncome,NoChild,Graduate Degree,Management,Yes,ThreeCars,1-2 Miles,North America,Adult,No
+Married,Female,HighIncome,TwoChildren,High School,Professional,Yes,OneCar,10+ Miles,North America,Senior,Yes
+Single,Male,MidIncome,TwoChildren,Bachelors,Management,Yes,NoCar,10+ Miles,North America,Senior,No
+Married,Female,MidIncome,OneChild,Graduate Degree,Professional,No,NoCar,0-1 Miles,North America,Adult,Yes
+Married,Male,MidIncome,FourChildren,High School,Professional,No,TwoCars,10+ Miles,North America,Old,Yes
+Single,Female,HighIncome,ManyChildren,Partial College,Professional,Yes,TwoCars,5-10 Miles,North America,MidAge,No
+Single,Female,HighIncome,TwoChildren,Partial College,Professional,Yes,NoCar,5-10 Miles,North America,MidAge,Yes
+Married,Male,HighIncome,FourChildren,Graduate Degree,Management,Yes,TwoCars,5-10 Miles,North America,Old,No
+Single,Female,LowIncome,ThreeChildren,High School,Skilled Manual,Yes,TwoCars,2-5 Miles,North America,Old,No
+Married,Female,HighIncome,FourChildren,Partial College,Professional,Yes,OneCar,1-2 Miles,North America,MidAge,No
+Single,Male,MidIncome,TwoChildren,High School,Professional,No,OneCar,2-5 Miles,North America,Senior,Yes
+Married,Male,VeryHighIncome,OneChild,Graduate Degree,Management,Yes,ManyCars,0-1 Miles,North America,MidAge,No
+Married,Female,MidIncome,TwoChildren,Partial College,Professional,Yes,OneCar,2-5 Miles,North America,Senior,Yes
+Married,Male,LowIncome,TwoChildren,High School,Skilled Manual,No,TwoCars,0-1 Miles,North America,MidAge,No
+Single,Female,HighIncome,FourChildren,Partial College,Professional,No,TwoCars,0-1 Miles,North America,MidAge,No
+Single,Male,MidIncome,TwoChildren,Partial High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Senior,Yes
+Married,Male,MidIncome,OneChild,Graduate Degree,Professional,Yes,NoCar,0-1 Miles,North America,Adult,Yes
+Married,Male,MidIncome,NoChild,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Young,No
+Single,Male,HighIncome,ThreeChildren,High School,Professional,Yes,NoCar,5-10 Miles,North America,Senior,Yes
+Single,Male,MidIncome,TwoChildren,Bachelors,Skilled Manual,Yes,NoCar,2-5 Miles,North America,Adult,No
+Single,Female,HighIncome,ManyChildren,Graduate Degree,Professional,Yes,ThreeCars,10+ Miles,North America,MidAge,Yes
+Married,Male,MidIncome,ThreeChildren,Partial High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Senior,Yes
+Married,Male,HighIncome,NoChild,Bachelors,Professional,No,OneCar,0-1 Miles,North America,MidAge,No
+Married,Male,MidIncome,OneChild,Partial College,Skilled Manual,Yes,OneCar,2-5 Miles,North America,MidAge,No
+Married,Female,HighIncome,NoChild,Bachelors,Management,Yes,OneCar,1-2 Miles,North America,Adult,Yes
+Single,Female,LowIncome,NoChild,Partial High School,Clerical,Yes,TwoCars,5-10 Miles,North America,Young,No
+Single,Male,VeryHighIncome,OneChild,Partial College,Professional,Yes,ManyCars,5-10 Miles,North America,MidAge,Yes
+Married,Female,HighIncome,ThreeChildren,Partial College,Professional,Yes,ManyCars,1-2 Miles,North America,MidAge,No
+Single,Female,MidIncome,FourChildren,Graduate Degree,Skilled Manual,No,NoCar,0-1 Miles,North America,MidAge,Yes
+Single,Female,HighIncome,FourChildren,Graduate Degree,Skilled Manual,Yes,NoCar,1-2 Miles,North America,MidAge,No
+Married,Male,MidIncome,FourChildren,High School,Skilled Manual,Yes,TwoCars,2-5 Miles,North America,MidAge,Yes
+Single,Female,LowIncome,ThreeChildren,Partial High School,Clerical,No,TwoCars,0-1 Miles,North America,MidAge,No
+Single,Female,MidIncome,NoChild,High School,Skilled Manual,Yes,OneCar,5-10 Miles,North America,Young,No
+Married,Female,HighIncome,FourChildren,Partial College,Professional,Yes,ManyCars,2-5 Miles,North America,MidAge,Yes
+Married,Male,HighIncome,FourChildren,Bachelors,Management,Yes,OneCar,1-2 Miles,North America,Senior,No
+Married,Male,MidIncome,ManyChildren,Bachelors,Professional,Yes,OneCar,2-5 Miles,North America,MidAge,No
+Married,Female,HighIncome,FourChildren,Partial College,Professional,Yes,OneCar,1-2 Miles,North America,Senior,No
+Single,Female,HighIncome,NoChild,Partial College,Skilled Manual,No,TwoCars,0-1 Miles,North America,Young,Yes
+Married,Male,MidIncome,ThreeChildren,Graduate Degree,Management,Yes,TwoCars,1-2 Miles,North America,Old,No
+Married,Female,MidIncome,NoChild,Partial College,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Young,No
+Married,Female,MidIncome,ThreeChildren,Graduate Degree,Management,Yes,TwoCars,1-2 Miles,North America,Old,No
+Single,Male,HighIncome,ThreeChildren,Partial College,Professional,No,OneCar,1-2 Miles,North America,Senior,Yes
+Married,Female,MidIncome,OneChild,Graduate Degree,Skilled Manual,Yes,NoCar,0-1 Miles,North America,Adult,No
+Married,Male,MidIncome,NoChild,High School,Skilled Manual,No,TwoCars,1-2 Miles,North America,Young,No
+Single,Male,HighIncome,ManyChildren,Partial College,Professional,Yes,ThreeCars,2-5 Miles,North America,MidAge,No
+Single,Female,HighIncome,FourChildren,Graduate Degree,Skilled Manual,Yes,NoCar,1-2 Miles,North America,MidAge,No
+Married,Female,VeryHighIncome,OneChild,Bachelors,Management,Yes,TwoCars,0-1 Miles,North America,MidAge,Yes
+Married,Male,MidIncome,ThreeChildren,Bachelors,Management,No,TwoCars,1-2 Miles,North America,Old,No
+Single,Female,LowIncome,TwoChildren,High School,Skilled Manual,No,TwoCars,0-1 Miles,North America,MidAge,No
+Single,Female,VeryHighIncome,FourChildren,Partial College,Professional,Yes,ThreeCars,5-10 Miles,North America,MidAge,Yes
+Single,Male,MidIncome,NoChild,High School,Skilled Manual,No,TwoCars,1-2 Miles,North America,Young,No
+Single,Male,HighIncome,ThreeChildren,Graduate Degree,Management,Yes,TwoCars,5-10 Miles,North America,Old,Yes
+Married,Male,HighIncome,TwoChildren,Graduate Degree,Management,Yes,ThreeCars,1-2 Miles,North America,Old,No
+Married,Female,MidIncome,TwoChildren,Partial College,Professional,Yes,TwoCars,2-5 Miles,North America,Senior,Yes
+Married,Male,MidIncome,FourChildren,Bachelors,Management,Yes,TwoCars,10+ Miles,North America,Old,No
+Married,Female,HighIncome,ThreeChildren,Partial College,Professional,Yes,TwoCars,5-10 Miles,North America,MidAge,Yes
+Married,Female,HighIncome,ThreeChildren,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,Adult,Yes
+Married,Female,MidIncome,ManyChildren,Bachelors,Skilled Manual,Yes,ThreeCars,10+ Miles,North America,MidAge,No
+Single,Female,MidIncome,NoChild,Graduate Degree,Skilled Manual,Yes,NoCar,0-1 Miles,North America,Adult,No
+Single,Female,MidIncome,FourChildren,Graduate Degree,Skilled Manual,Yes,NoCar,1-2 Miles,North America,MidAge,No
+Single,Male,MidIncome,NoChild,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Adult,No
+Single,Female,HighIncome,TwoChildren,Bachelors,Management,No,OneCar,2-5 Miles,North America,Senior,Yes
+Single,Female,HighIncome,NoChild,Bachelors,Professional,No,OneCar,2-5 Miles,North America,Adult,Yes
+Single,Female,HighIncome,ManyChildren,Graduate Degree,Management,Yes,TwoCars,10+ Miles,North America,Old,Yes
+Single,Male,MidIncome,NoChild,Partial College,Professional,No,TwoCars,1-2 Miles,North America,Adult,Yes
+Married,Male,HighIncome,ManyChildren,Partial College,Professional,No,ThreeCars,5-10 Miles,North America,MidAge,No
+Single,Male,LowIncome,NoChild,High School,Skilled Manual,No,TwoCars,1-2 Miles,North America,Adult,Yes
+Single,Male,MidIncome,NoChild,High School,Skilled Manual,No,TwoCars,1-2 Miles,North America,Adult,Yes
+Married,Female,MidIncome,ThreeChildren,Partial College,Clerical,Yes,OneCar,0-1 Miles,North America,Adult,No
+Married,Male,MidIncome,TwoChildren,High School,Professional,No,TwoCars,5-10 Miles,North America,MidAge,No
+Married,Male,HighIncome,OneChild,Partial College,Skilled Manual,Yes,OneCar,0-1 Miles,North America,MidAge,No
+Single,Male,MidIncome,TwoChildren,Bachelors,Skilled Manual,Yes,OneCar,2-5 Miles,North America,Adult,Yes
+Single,Female,MidIncome,FourChildren,Bachelors,Management,Yes,TwoCars,10+ Miles,North America,Old,No
+Married,Female,MidIncome,OneChild,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,Adult,Yes
+Single,Male,MidIncome,NoChild,High School,Skilled Manual,No,TwoCars,0-1 Miles,North America,Young,Yes
+Single,Female,HighIncome,OneChild,Partial College,Professional,No,ThreeCars,1-2 Miles,North America,MidAge,No
+Married,Female,HighIncome,ManyChildren,Graduate Degree,Professional,Yes,OneCar,0-1 Miles,North America,MidAge,No
+Married,Female,HighIncome,NoChild,Graduate Degree,Skilled Manual,Yes,NoCar,1-2 Miles,North America,Adult,Yes
+Married,Male,VeryHighIncome,OneChild,Graduate Degree,Management,Yes,ManyCars,0-1 Miles,North America,Adult,No
+Married,Female,MidIncome,OneChild,Partial College,Skilled Manual,Yes,OneCar,2-5 Miles,North America,MidAge,Yes
+Married,Female,MidIncome,ManyChildren,High School,Professional,No,TwoCars,10+ Miles,North America,Old,No
+Married,Female,MidIncome,NoChild,Graduate Degree,Professional,Yes,NoCar,0-1 Miles,North America,Adult,No
+Married,Female,MidIncome,TwoChildren,High School,Professional,Yes,TwoCars,5-10 Miles,North America,MidAge,No
+Married,Male,HighIncome,TwoChildren,Partial College,Professional,Yes,OneCar,10+ Miles,North America,Senior,No
+Single,Female,MidIncome,OneChild,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,Adult,Yes
+Single,Female,MidIncome,NoChild,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Young,No
+Single,Female,HighIncome,FourChildren,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,Adult,Yes
+Married,Female,LowIncome,TwoChildren,High School,Skilled Manual,Yes,TwoCars,1-2 Miles,North America,MidAge,No
+Married,Male,HighIncome,ThreeChildren,Bachelors,Management,Yes,ManyCars,0-1 Miles,North America,MidAge,No
+Married,Male,MidIncome,TwoChildren,Partial College,Clerical,Yes,OneCar,0-1 Miles,North America,MidAge,No
+Married,Male,MidIncome,FourChildren,Graduate Degree,Skilled Manual,No,NoCar,0-1 Miles,North America,MidAge,No
+Married,Male,HighIncome,ManyChildren,Bachelors,Management,No,TwoCars,2-5 Miles,Europe,Old,No
+Married,Male,MidIncome,FourChildren,Bachelors,Management,Yes,TwoCars,10+ Miles,North America,Senior,No
+Married,Female,MidIncome,NoChild,Partial College,Skilled Manual,No,OneCar,1-2 Miles,North America,Adult,No
+Single,Female,HighIncome,FourChildren,Graduate Degree,Skilled Manual,No,NoCar,0-1 Miles,North America,MidAge,No
+Married,Male,LowIncome,ThreeChildren,Partial High School,Clerical,No,TwoCars,0-1 Miles,North America,Senior,No
+Married,Female,HighIncome,ManyChildren,Partial College,Professional,Yes,ThreeCars,2-5 Miles,North America,Adult,No
+Single,Female,MidIncome,FourChildren,Bachelors,Skilled Manual,No,TwoCars,0-1 Miles,North America,MidAge,No
+Single,Female,MidIncome,ThreeChildren,Graduate Degree,Management,Yes,TwoCars,5-10 Miles,North America,Senior,Yes
+Married,Female,MidIncome,OneChild,Partial College,Clerical,Yes,OneCar,1-2 Miles,North America,Senior,Yes
+Single,Male,LowIncome,NoChild,Partial College,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Young,No
+Single,Male,MidIncome,FourChildren,Bachelors,Skilled Manual,No,TwoCars,0-1 Miles,North America,MidAge,No
+Married,Male,LowIncome,NoChild,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Young,No
+Single,Female,VeryHighIncome,OneChild,Bachelors,Management,No,OneCar,2-5 Miles,North America,MidAge,No
+Married,Male,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,NoCar,0-1 Miles,North America,Adult,Yes
+Married,Male,HighIncome,OneChild,Bachelors,Professional,Yes,OneCar,2-5 Miles,North America,MidAge,Yes
+Single,Female,MidIncome,FourChildren,Bachelors,Skilled Manual,No,TwoCars,0-1 Miles,North America,MidAge,Yes
+Single,Female,HighIncome,ThreeChildren,Graduate Degree,Professional,No,NoCar,0-1 Miles,North America,Adult,Yes
+Married,Male,HighIncome,ManyChildren,Partial College,Professional,Yes,TwoCars,0-1 Miles,North America,MidAge,No
+Single,Male,MidIncome,NoChild,Partial College,Professional,No,TwoCars,1-2 Miles,North America,Young,No
+Married,Female,LowIncome,NoChild,Partial High School,Clerical,No,TwoCars,0-1 Miles,North America,Young,No
+Married,Male,LowIncome,TwoChildren,Partial High School,Clerical,Yes,TwoCars,1-2 Miles,North America,MidAge,No
+Single,Male,HighIncome,NoChild,Partial College,Professional,No,TwoCars,0-1 Miles,North America,MidAge,Yes
+Married,Female,HighIncome,FourChildren,Bachelors,Management,Yes,OneCar,1-2 Miles,North America,Senior,No
+Single,Male,LowIncome,NoChild,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Young,No
+Married,Male,VeryHighIncome,OneChild,High School,Professional,Yes,ManyCars,5-10 Miles,North America,MidAge,Yes
+Single,Female,MidIncome,NoChild,Graduate Degree,Skilled Manual,Yes,NoCar,1-2 Miles,North America,Adult,No
+Single,Female,MidIncome,NoChild,Bachelors,Professional,Yes,OneCar,2-5 Miles,North America,MidAge,Yes
+Married,Female,HighIncome,FourChildren,Bachelors,Management,Yes,OneCar,10+ Miles,North America,Senior,No
+Single,Female,MidIncome,NoChild,Partial College,Skilled Manual,No,OneCar,1-2 Miles,North America,Adult,Yes
+Married,Female,HighIncome,OneChild,Partial College,Skilled Manual,Yes,OneCar,0-1 Miles,North America,MidAge,Yes
+Married,Male,HighIncome,ManyChildren,Bachelors,Management,Yes,ManyCars,10+ Miles,North America,Senior,No
+Single,Female,HighIncome,TwoChildren,Bachelors,Management,Yes,OneCar,10+ Miles,North America,Senior,No
+Married,Male,MidIncome,NoChild,High School,Professional,Yes,TwoCars,5-10 Miles,North America,Adult,Yes
+Married,Female,HighIncome,TwoChildren,Partial College,Professional,Yes,OneCar,10+ Miles,North America,Senior,No
+Married,Female,MidIncome,TwoChildren,High School,Professional,No,TwoCars,2-5 Miles,North America,Senior,No
+Single,Female,HighIncome,TwoChildren,Bachelors,Skilled Manual,Yes,OneCar,2-5 Miles,North America,Adult,No
+Married,Male,MidIncome,NoChild,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Young,Yes
+Married,Female,MidIncome,OneChild,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,Adult,Yes
+Single,Female,HighIncome,NoChild,Graduate Degree,Skilled Manual,No,NoCar,0-1 Miles,North America,Adult,No
+Single,Male,HighIncome,FourChildren,Bachelors,Management,Yes,OneCar,1-2 Miles,North America,Adult,Yes
+Married,Male,HighIncome,FourChildren,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,Adult,Yes
+Married,Female,HighIncome,ManyChildren,Graduate Degree,Professional,Yes,TwoCars,0-1 Miles,North America,Adult,No
+Single,Female,MidIncome,ManyChildren,High School,Professional,No,ThreeCars,2-5 Miles,North America,Senior,Yes
+Single,Male,VeryHighIncome,FourChildren,Bachelors,Management,Yes,ManyCars,5-10 Miles,North America,MidAge,Yes
+Single,Female,HighIncome,ThreeChildren,Graduate Degree,Management,No,TwoCars,1-2 Miles,North America,Senior,No
+Single,Female,HighIncome,TwoChildren,Partial High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,MidAge,No
+Married,Male,LowIncome,TwoChildren,High School,Skilled Manual,Yes,TwoCars,1-2 Miles,North America,MidAge,No
+Married,Male,VeryHighIncome,TwoChildren,Graduate Degree,Management,Yes,ThreeCars,0-1 Miles,North America,MidAge,Yes
+Married,Male,LowIncome,TwoChildren,High School,Manual,No,TwoCars,0-1 Miles,North America,Senior,No
+Married,Male,HighIncome,OneChild,Graduate Degree,Professional,Yes,OneCar,0-1 Miles,North America,MidAge,Yes
+Married,Male,MidIncome,NoChild,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Young,No
+Married,Female,MidIncome,ThreeChildren,Bachelors,Professional,Yes,OneCar,0-1 Miles,North America,MidAge,Yes
+Single,Female,MidIncome,FourChildren,Bachelors,Skilled Manual,Yes,TwoCars,2-5 Miles,North America,MidAge,Yes
+Married,Male,MidIncome,TwoChildren,High School,Professional,No,TwoCars,1-2 Miles,North America,MidAge,Yes
+Single,Female,MidIncome,NoChild,Graduate Degree,Professional,Yes,OneCar,2-5 Miles,North America,Adult,Yes
+Single,Male,VeryHighIncome,OneChild,Bachelors,Management,No,ManyCars,0-1 Miles,North America,MidAge,No
+Single,Female,VeryHighIncome,OneChild,Bachelors,Management,No,ThreeCars,0-1 Miles,North America,MidAge,Yes
+Single,Female,LowIncome,NoChild,Partial College,Skilled Manual,Yes,OneCar,5-10 Miles,North America,Young,No
+Married,Male,MidIncome,NoChild,High School,Skilled Manual,Yes,OneCar,5-10 Miles,North America,Adult,No
+Married,Male,HighIncome,TwoChildren,Partial High School,Skilled Manual,No,TwoCars,1-2 Miles,North America,MidAge,No
+Single,Female,MidIncome,TwoChildren,Partial College,Clerical,No,OneCar,1-2 Miles,North America,MidAge,Yes
+Married,Female,MidIncome,TwoChildren,Partial College,Professional,Yes,OneCar,10+ Miles,North America,Senior,No
+Married,Male,MidIncome,FourChildren,Partial College,Clerical,No,NoCar,0-1 Miles,North America,Young,No
+Married,Female,MidIncome,OneChild,Partial College,Clerical,Yes,OneCar,1-2 Miles,North America,MidAge,Yes
+Single,Male,LowIncome,NoChild,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Young,No
+Married,Male,VeryHighIncome,OneChild,Bachelors,Management,Yes,ThreeCars,5-10 Miles,North America,MidAge,No
+Married,Female,HighIncome,FourChildren,Partial College,Professional,Yes,OneCar,10+ Miles,North America,Senior,No
+Married,Male,MidIncome,FourChildren,Graduate Degree,Skilled Manual,Yes,NoCar,1-2 Miles,North America,MidAge,Yes
+Married,Female,MidIncome,TwoChildren,Bachelors,Management,Yes,NoCar,10+ Miles,North America,Senior,No
+Single,Female,HighIncome,OneChild,Bachelors,Professional,No,OneCar,0-1 Miles,North America,MidAge,No
+Married,Male,VeryHighIncome,TwoChildren,Graduate Degree,Management,Yes,ThreeCars,2-5 Miles,North America,Old,No
+Married,Female,HighIncome,TwoChildren,Partial College,Professional,Yes,OneCar,2-5 Miles,North America,Senior,No
+Married,Male,LowIncome,TwoChildren,High School,Skilled Manual,Yes,TwoCars,1-2 Miles,North America,MidAge,No
+Married,Male,MidIncome,OneChild,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,Adult,No
+Married,Male,MidIncome,NoChild,Partial College,Professional,Yes,TwoCars,5-10 Miles,North America,Adult,No
+Single,Female,MidIncome,NoChild,Partial College,Skilled Manual,No,OneCar,1-2 Miles,North America,Young,No
+Married,Female,MidIncome,FourChildren,High School,Professional,Yes,TwoCars,5-10 Miles,North America,Senior,Yes
+Married,Male,MidIncome,ThreeChildren,High School,Professional,No,TwoCars,2-5 Miles,North America,Senior,No
+Married,Male,MidIncome,OneChild,Bachelors,Skilled Manual,No,OneCar,0-1 Miles,North America,Adult,Yes
+Single,Male,LowIncome,OneChild,High School,Clerical,Yes,TwoCars,1-2 Miles,North America,Senior,Yes
+Single,Female,HighIncome,ManyChildren,Graduate Degree,Skilled Manual,No,NoCar,0-1 Miles,North America,MidAge,No
+Single,Female,MidIncome,ThreeChildren,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,MidAge,Yes
+Single,Male,LowIncome,ThreeChildren,Partial High School,Clerical,No,TwoCars,0-1 Miles,North America,MidAge,No
+Married,Female,MidIncome,ManyChildren,Bachelors,Management,Yes,ThreeCars,10+ Miles,North America,Senior,No
+Single,Male,MidIncome,TwoChildren,Bachelors,Skilled Manual,Yes,NoCar,2-5 Miles,North America,Adult,Yes
+Married,Male,MidIncome,OneChild,Graduate Degree,Skilled Manual,Yes,NoCar,0-1 Miles,North America,Adult,Yes
+Married,Female,MidIncome,NoChild,Partial College,Skilled Manual,No,OneCar,1-2 Miles,North America,Young,No
+Single,Female,HighIncome,NoChild,Partial College,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Adult,Yes
+Married,Male,MidIncome,FourChildren,Bachelors,Skilled Manual,Yes,ThreeCars,10+ Miles,North America,MidAge,No
+Married,Female,MidIncome,TwoChildren,Partial College,Professional,Yes,TwoCars,2-5 Miles,North America,Senior,Yes
+Married,Female,VeryHighIncome,OneChild,High School,Professional,No,ManyCars,2-5 Miles,North America,MidAge,No
+Married,Female,HighIncome,FourChildren,Bachelors,Management,Yes,ManyCars,0-1 Miles,North America,Adult,No
+Married,Male,MidIncome,OneChild,Graduate Degree,Skilled Manual,No,NoCar,0-1 Miles,North America,Adult,No
+Married,Male,HighIncome,OneChild,Partial College,Skilled Manual,No,OneCar,0-1 Miles,North America,MidAge,Yes
+Single,Male,MidIncome,FourChildren,Graduate Degree,Skilled Manual,Yes,NoCar,1-2 Miles,North America,MidAge,Yes
+Married,Female,MidIncome,OneChild,Graduate Degree,Skilled Manual,Yes,NoCar,0-1 Miles,North America,Adult,No
+Married,Female,HighIncome,ThreeChildren,Graduate Degree,Professional,Yes,NoCar,0-1 Miles,North America,Adult,Yes
+Married,Male,HighIncome,TwoChildren,Partial High School,Skilled Manual,Yes,TwoCars,10+ Miles,North America,Senior,No
+Single,Male,HighIncome,TwoChildren,Bachelors,Management,No,OneCar,2-5 Miles,North America,Senior,Yes
+Single,Male,MidIncome,NoChild,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Young,No
+Married,Male,HighIncome,ManyChildren,Partial College,Professional,Yes,ThreeCars,0-1 Miles,North America,MidAge,No
+Married,Male,HighIncome,ThreeChildren,Partial College,Professional,No,TwoCars,2-5 Miles,North America,MidAge,Yes
+Married,Female,MidIncome,TwoChildren,Partial College,Professional,Yes,OneCar,10+ Miles,North America,Senior,No
+Married,Male,HighIncome,FourChildren,Bachelors,Management,Yes,NoCar,0-1 Miles,North America,MidAge,No
+Single,Male,HighIncome,FourChildren,Bachelors,Professional,Yes,TwoCars,2-5 Miles,North America,MidAge,Yes
+Married,Male,MidIncome,FourChildren,Bachelors,Skilled Manual,Yes,ThreeCars,5-10 Miles,North America,MidAge,No
+Single,Female,LowIncome,TwoChildren,High School,Manual,Yes,TwoCars,1-2 Miles,North America,Senior,Yes
+Single,Female,MidIncome,NoChild,High School,Skilled Manual,No,TwoCars,0-1 Miles,North America,Young,Yes
+Married,Female,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,OneCar,0-1 Miles,North America,Adult,No
+Single,Female,HighIncome,TwoChildren,Bachelors,Management,No,OneCar,2-5 Miles,North America,Senior,Yes
+Single,Female,LowIncome,TwoChildren,Partial High School,Clerical,Yes,TwoCars,1-2 Miles,North America,MidAge,No
+Married,Male,MidIncome,TwoChildren,High School,Professional,No,TwoCars,1-2 Miles,North America,MidAge,Yes
+Single,Female,HighIncome,TwoChildren,Partial High School,Skilled Manual,No,TwoCars,1-2 Miles,North America,MidAge,No
+Married,Male,MidIncome,NoChild,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Young,Yes
+Single,Male,LowIncome,OneChild,High School,Clerical,No,OneCar,5-10 Miles,North America,Senior,No
+Married,Male,LowIncome,OneChild,High School,Clerical,Yes,OneCar,2-5 Miles,North America,Senior,Yes
+Married,Male,MidIncome,TwoChildren,Graduate Degree,Management,Yes,TwoCars,5-10 Miles,North America,Old,No
+Single,Male,MidIncome,TwoChildren,High School,Professional,Yes,TwoCars,5-10 Miles,North America,Senior,No
+Married,Male,HighIncome,ManyChildren,Partial College,Professional,Yes,TwoCars,1-2 Miles,North America,Senior,Yes
+Single,Male,MidIncome,NoChild,Partial College,Skilled Manual,Yes,OneCar,5-10 Miles,North America,Young,Yes
+Single,Female,LowIncome,NoChild,High School,Skilled Manual,No,TwoCars,0-1 Miles,North America,Young,Yes
+Single,Female,MidIncome,OneChild,Graduate Degree,Skilled Manual,Yes,NoCar,1-2 Miles,North America,Adult,Yes
+Single,Male,MidIncome,FourChildren,Bachelors,Professional,Yes,TwoCars,2-5 Miles,North America,MidAge,Yes
+Married,Male,HighIncome,FourChildren,Graduate Degree,Management,Yes,TwoCars,5-10 Miles,North America,Old,No
+Married,Male,MidIncome,NoChild,Partial College,Skilled Manual,Yes,OneCar,5-10 Miles,North America,Young,No
+Married,Male,MidIncome,NoChild,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Young,Yes
+Married,Male,MidIncome,NoChild,High School,Skilled Manual,No,TwoCars,0-1 Miles,North America,Young,Yes
+Single,Female,MidIncome,NoChild,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Adult,No
+Married,Female,LowIncome,TwoChildren,High School,Manual,Yes,TwoCars,1-2 Miles,North America,Senior,No
+Single,Female,MidIncome,NoChild,Partial College,Professional,No,TwoCars,1-2 Miles,North America,Adult,Yes
+Single,Male,LowIncome,TwoChildren,High School,Skilled Manual,Yes,TwoCars,1-2 Miles,North America,MidAge,Yes
+Married,Female,MidIncome,FourChildren,High School,Professional,Yes,TwoCars,5-10 Miles,North America,Old,No
+Single,Female,HighIncome,ThreeChildren,Graduate Degree,Management,Yes,TwoCars,5-10 Miles,North America,Senior,Yes
+Married,Male,MidIncome,NoChild,Partial College,Skilled Manual,No,TwoCars,1-2 Miles,North America,Adult,No
+Single,Female,HighIncome,FourChildren,Bachelors,Management,Yes,TwoCars,10+ Miles,North America,Old,No
+Married,Female,HighIncome,TwoChildren,High School,Professional,Yes,TwoCars,10+ Miles,North America,Senior,No
+Single,Female,HighIncome,FourChildren,Bachelors,Management,Yes,TwoCars,1-2 Miles,North America,Old,Yes
+Married,Male,MidIncome,NoChild,Partial College,Skilled Manual,No,TwoCars,1-2 Miles,North America,Young,No
+Married,Female,MidIncome,ThreeChildren,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,MidAge,Yes
+Married,Female,MidIncome,ThreeChildren,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,MidAge,Yes
+Married,Male,MidIncome,NoChild,Partial College,Skilled Manual,Yes,OneCar,5-10 Miles,North America,Young,No
+Single,Female,MidIncome,NoChild,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Young,No
+Single,Male,VeryHighIncome,OneChild,Bachelors,Management,Yes,OneCar,5-10 Miles,North America,MidAge,No
+Married,Male,MidIncome,NoChild,Partial College,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Adult,Yes
+Married,Male,LowIncome,NoChild,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Adult,No
+Single,Female,HighIncome,FourChildren,High School,Professional,Yes,NoCar,5-10 Miles,North America,MidAge,Yes
+Single,Male,VeryHighIncome,TwoChildren,Bachelors,Management,No,ThreeCars,0-1 Miles,North America,Adult,Yes
+Married,Male,HighIncome,ThreeChildren,High School,Professional,No,OneCar,1-2 Miles,North America,Senior,Yes
+Married,Male,HighIncome,FourChildren,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,Adult,Yes
+Single,Female,HighIncome,ThreeChildren,Bachelors,Skilled Manual,Yes,TwoCars,2-5 Miles,North America,MidAge,Yes
+Single,Female,MidIncome,NoChild,Partial High School,Clerical,Yes,TwoCars,5-10 Miles,North America,Young,No
+Single,Male,VeryHighIncome,OneChild,Graduate Degree,Management,No,ManyCars,0-1 Miles,North America,Old,No
+Married,Male,MidIncome,TwoChildren,High School,Professional,No,TwoCars,5-10 Miles,North America,Senior,No
+Married,Female,HighIncome,FourChildren,Bachelors,Professional,Yes,TwoCars,0-1 Miles,North America,MidAge,Yes
+Married,Female,MidIncome,NoChild,Graduate Degree,Professional,Yes,NoCar,0-1 Miles,North America,Adult,No
+Single,Female,HighIncome,NoChild,Bachelors,Professional,No,OneCar,0-1 Miles,North America,Adult,Yes
+Single,Female,HighIncome,TwoChildren,Partial High School,Skilled Manual,No,TwoCars,2-5 Miles,North America,Senior,Yes
+Single,Female,MidIncome,ThreeChildren,Bachelors,Skilled Manual,Yes,NoCar,2-5 Miles,North America,Adult,Yes
+Married,Female,MidIncome,NoChild,Partial College,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Young,No
+Married,Male,MidIncome,OneChild,Graduate Degree,Skilled Manual,Yes,NoCar,0-1 Miles,North America,Adult,No
+Single,Female,HighIncome,ThreeChildren,Bachelors,Skilled Manual,Yes,TwoCars,2-5 Miles,North America,MidAge,Yes
+Single,Female,HighIncome,ThreeChildren,Graduate Degree,Professional,Yes,NoCar,0-1 Miles,North America,Adult,Yes
+Married,Male,HighIncome,FourChildren,Partial College,Professional,Yes,TwoCars,10+ Miles,North America,Senior,No
+Married,Male,VeryHighIncome,TwoChildren,Graduate Degree,Management,Yes,ThreeCars,5-10 Miles,North America,Old,No
+Married,Female,MidIncome,OneChild,Partial College,Skilled Manual,Yes,OneCar,2-5 Miles,North America,MidAge,Yes
+Single,Male,HighIncome,TwoChildren,Partial High School,Skilled Manual,No,TwoCars,1-2 Miles,North America,Senior,No
+Married,Female,MidIncome,ManyChildren,High School,Professional,Yes,TwoCars,10+ Miles,North America,Senior,No
+Single,Female,LowIncome,ThreeChildren,Partial High School,Clerical,Yes,TwoCars,1-2 Miles,North America,MidAge,No
+Married,Female,HighIncome,FourChildren,Partial College,Professional,No,OneCar,1-2 Miles,North America,Senior,No
+Single,Female,MidIncome,NoChild,Partial High School,Clerical,Yes,TwoCars,5-10 Miles,North America,Young,No
+Single,Male,VeryHighIncome,NoChild,Graduate Degree,Management,No,TwoCars,0-1 Miles,North America,Adult,Yes
+Married,Female,MidIncome,ManyChildren,High School,Professional,No,TwoCars,2-5 Miles,North America,Senior,No
+Single,Female,VeryHighIncome,TwoChildren,Bachelors,Management,No,ManyCars,0-1 Miles,North America,Old,No
+Married,Male,MidIncome,NoChild,Partial College,Skilled Manual,Yes,OneCar,5-10 Miles,North America,Adult,Yes
+Single,Male,MidIncome,TwoChildren,Bachelors,Skilled Manual,No,OneCar,0-1 Miles,North America,Adult,Yes
+Single,Male,MidIncome,OneChild,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,Adult,Yes
+Married,Female,MidIncome,NoChild,Partial College,Professional,Yes,TwoCars,5-10 Miles,North America,Adult,No
+Single,Female,LowIncome,NoChild,Partial College,Skilled Manual,No,OneCar,1-2 Miles,North America,Adult,No
+Single,Male,MidIncome,NoChild,Partial College,Skilled Manual,Yes,OneCar,5-10 Miles,North America,Young,No
+Married,Female,MidIncome,OneChild,Bachelors,Professional,Yes,OneCar,0-1 Miles,North America,MidAge,Yes
+Married,Male,MidIncome,NoChild,Bachelors,Professional,No,OneCar,0-1 Miles,North America,MidAge,No
+Married,Male,LowIncome,TwoChildren,High School,Skilled Manual,Yes,TwoCars,1-2 Miles,North America,MidAge,No
+Single,Male,LowIncome,NoChild,Partial College,Skilled Manual,Yes,OneCar,5-10 Miles,North America,Adult,No
+Married,Female,LowIncome,TwoChildren,High School,Manual,No,TwoCars,1-2 Miles,North America,Senior,Yes
+Married,Male,MidIncome,NoChild,Graduate Degree,Skilled Manual,Yes,NoCar,1-2 Miles,North America,Adult,Yes
+Single,Male,HighIncome,NoChild,Bachelors,Management,No,OneCar,0-1 Miles,North America,Adult,Yes
+Single,Male,MidIncome,NoChild,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Adult,No
+Single,Female,HighIncome,NoChild,Bachelors,Management,No,OneCar,0-1 Miles,North America,Adult,Yes
+Married,Male,MidIncome,TwoChildren,High School,Professional,Yes,TwoCars,10+ Miles,North America,Senior,No
+Married,Male,HighIncome,ThreeChildren,Partial College,Professional,Yes,OneCar,5-10 Miles,North America,MidAge,No
+Single,Male,LowIncome,ManyChildren,Partial High School,Skilled Manual,Yes,ThreeCars,10+ Miles,North America,Senior,Yes
+Single,Female,VeryHighIncome,ThreeChildren,Bachelors,Management,No,ManyCars,1-2 Miles,North America,MidAge,No
+Married,Male,MidIncome,OneChild,Partial College,Skilled Manual,Yes,OneCar,0-1 Miles,North America,MidAge,No
+Married,Male,MidIncome,TwoChildren,High School,Professional,Yes,TwoCars,10+ Miles,North America,Senior,No
+Single,Female,HighIncome,ThreeChildren,Graduate Degree,Management,Yes,TwoCars,5-10 Miles,North America,Senior,Yes
+Married,Male,MidIncome,ThreeChildren,Bachelors,Skilled Manual,Yes,TwoCars,2-5 Miles,North America,Adult,No
+Married,Female,LowIncome,OneChild,Bachelors,Skilled Manual,Yes,OneCar,5-10 Miles,North America,Senior,Yes
+Single,Female,HighIncome,TwoChildren,Bachelors,Skilled Manual,Yes,NoCar,2-5 Miles,North America,Adult,Yes
+Single,Male,LowIncome,NoChild,Partial High School,Clerical,No,TwoCars,0-1 Miles,North America,Young,No
+Married,Male,HighIncome,ManyChildren,Bachelors,Management,Yes,TwoCars,2-5 Miles,North America,Old,No
+Married,Male,MidIncome,TwoChildren,Graduate Degree,Management,Yes,TwoCars,5-10 Miles,North America,Old,No
+Married,Male,HighIncome,FourChildren,High School,Professional,Yes,TwoCars,1-2 Miles,North America,MidAge,No
+Married,Male,HighIncome,TwoChildren,Graduate Degree,Professional,Yes,NoCar,0-1 Miles,North America,Adult,Yes
+Married,Female,HighIncome,FourChildren,Graduate Degree,Management,Yes,TwoCars,0-1 Miles,North America,Old,Yes
+Married,Male,LowIncome,NoChild,Graduate Degree,Skilled Manual,Yes,NoCar,0-1 Miles,North America,Adult,No
+Married,Female,MidIncome,OneChild,Bachelors,Professional,Yes,OneCar,2-5 Miles,North America,MidAge,Yes
+Married,Male,HighIncome,FourChildren,Graduate Degree,Management,Yes,TwoCars,5-10 Miles,North America,Old,No
+Married,Female,LowIncome,TwoChildren,Partial High School,Clerical,Yes,TwoCars,0-1 Miles,North America,MidAge,No
+Married,Male,HighIncome,ThreeChildren,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,Adult,No
+Married,Male,MidIncome,NoChild,Graduate Degree,Skilled Manual,Yes,NoCar,0-1 Miles,North America,Adult,No
+Single,Female,MidIncome,FourChildren,Bachelors,Skilled Manual,No,TwoCars,0-1 Miles,North America,MidAge,No
+Married,Female,HighIncome,OneChild,Graduate Degree,Skilled Manual,Yes,NoCar,0-1 Miles,North America,Adult,Yes
+Married,Female,MidIncome,TwoChildren,Partial College,Clerical,Yes,OneCar,0-1 Miles,North America,MidAge,No
+Single,Male,HighIncome,OneChild,Graduate Degree,Management,Yes,ThreeCars,2-5 Miles,North America,Old,Yes
+Single,Female,HighIncome,FourChildren,Bachelors,Skilled Manual,Yes,TwoCars,2-5 Miles,North America,MidAge,Yes
+Married,Male,MidIncome,OneChild,Graduate Degree,Professional,Yes,NoCar,0-1 Miles,North America,Adult,No
+Married,Male,HighIncome,ThreeChildren,Graduate Degree,Professional,Yes,NoCar,0-1 Miles,North America,Adult,Yes
+Married,Female,MidIncome,FourChildren,Bachelors,Management,Yes,TwoCars,1-2 Miles,North America,Old,Yes
+Married,Female,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,NoCar,0-1 Miles,North America,Adult,Yes
+Married,Male,LowIncome,NoChild,Partial High School,Clerical,No,TwoCars,0-1 Miles,North America,Young,No
+Single,Male,HighIncome,ManyChildren,Bachelors,Management,Yes,ThreeCars,10+ Miles,North America,Senior,Yes
+Married,Female,HighIncome,ManyChildren,Graduate Degree,Professional,Yes,ThreeCars,10+ Miles,North America,MidAge,No
+Married,Male,MidIncome,FourChildren,High School,Skilled Manual,Yes,TwoCars,0-1 Miles,North America,MidAge,Yes
+Single,Female,MidIncome,FourChildren,Bachelors,Skilled Manual,Yes,TwoCars,2-5 Miles,North America,MidAge,Yes
+Single,Male,HighIncome,ThreeChildren,Bachelors,Skilled Manual,Yes,NoCar,2-5 Miles,North America,Adult,No
+Single,Male,HighIncome,FourChildren,Graduate Degree,Management,Yes,OneCar,5-10 Miles,North America,Old,No
+Single,Female,MidIncome,TwoChildren,Bachelors,Skilled Manual,No,NoCar,0-1 Miles,North America,Adult,Yes
+Single,Male,HighIncome,FourChildren,Bachelors,Management,Yes,OneCar,1-2 Miles,North America,Adult,Yes
+Married,Male,MidIncome,OneChild,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,Adult,Yes
+Married,Male,MidIncome,FourChildren,Bachelors,Management,Yes,TwoCars,10+ Miles,North America,Old,No
+Single,Male,MidIncome,ThreeChildren,Bachelors,Skilled Manual,Yes,TwoCars,2-5 Miles,North America,MidAge,Yes
+Married,Male,MidIncome,NoChild,Graduate Degree,Skilled Manual,Yes,NoCar,1-2 Miles,North America,Adult,Yes
+Married,Male,MidIncome,FourChildren,High School,Skilled Manual,Yes,TwoCars,2-5 Miles,North America,MidAge,No
+Married,Female,HighIncome,ManyChildren,Bachelors,Management,Yes,TwoCars,5-10 Miles,North America,Old,No
+Married,Female,MidIncome,ThreeChildren,Partial College,Clerical,Yes,OneCar,1-2 Miles,North America,Adult,No
+Single,Male,MidIncome,TwoChildren,Bachelors,Skilled Manual,Yes,NoCar,2-5 Miles,North America,Adult,Yes
+Single,Male,HighIncome,ManyChildren,Graduate Degree,Skilled Manual,No,NoCar,0-1 Miles,North America,MidAge,No
+Married,Male,MidIncome,ThreeChildren,Graduate Degree,Management,Yes,TwoCars,10+ Miles,North America,Old,No
+Single,Male,HighIncome,ThreeChildren,Graduate Degree,Professional,No,NoCar,0-1 Miles,North America,Adult,Yes
+Single,Male,VeryHighIncome,ThreeChildren,Bachelors,Management,Yes,ManyCars,2-5 Miles,North America,Adult,Yes
+Married,Female,HighIncome,NoChild,Partial College,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Adult,Yes
+Married,Female,MidIncome,FourChildren,High School,Professional,Yes,TwoCars,10+ Miles,North America,Old,No
+Married,Male,LowIncome,TwoChildren,High School,Skilled Manual,Yes,TwoCars,1-2 Miles,North America,Senior,No
+Single,Female,HighIncome,ThreeChildren,Partial College,Professional,Yes,OneCar,5-10 Miles,North America,MidAge,Yes
+Married,Female,MidIncome,ThreeChildren,Partial College,Professional,No,TwoCars,1-2 Miles,North America,Senior,Yes
+Single,Male,HighIncome,ThreeChildren,Graduate Degree,Management,No,TwoCars,1-2 Miles,North America,Senior,Yes
+Single,Male,HighIncome,TwoChildren,Partial College,Professional,Yes,OneCar,2-5 Miles,North America,MidAge,Yes
+Single,Female,MidIncome,NoChild,Graduate Degree,Skilled Manual,Yes,NoCar,1-2 Miles,North America,Adult,Yes
+Single,Female,MidIncome,TwoChildren,High School,Professional,Yes,TwoCars,10+ Miles,North America,Senior,No
+Married,Female,HighIncome,NoChild,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,Adult,No
+Married,Male,MidIncome,TwoChildren,High School,Professional,Yes,TwoCars,5-10 Miles,North America,MidAge,No
+Married,Male,MidIncome,TwoChildren,High School,Professional,Yes,TwoCars,5-10 Miles,North America,MidAge,No
+Married,Male,HighIncome,ManyChildren,Graduate Degree,Professional,No,ThreeCars,10+ Miles,North America,MidAge,No
+Married,Female,MidIncome,OneChild,Partial College,Clerical,Yes,OneCar,1-2 Miles,North America,MidAge,Yes
+Single,Female,MidIncome,NoChild,High School,Skilled Manual,No,TwoCars,0-1 Miles,North America,Young,Yes
+Single,Male,MidIncome,NoChild,Partial College,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Young,No
+Married,Male,MidIncome,TwoChildren,Bachelors,Management,Yes,NoCar,2-5 Miles,North America,Senior,No
+Married,Female,MidIncome,OneChild,Partial College,Skilled Manual,Yes,OneCar,0-1 Miles,North America,MidAge,Yes
+Married,Female,MidIncome,FourChildren,Bachelors,Management,Yes,TwoCars,2-5 Miles,North America,Senior,No
+Married,Male,HighIncome,FourChildren,Graduate Degree,Professional,Yes,NoCar,0-1 Miles,North America,Adult,Yes
+Married,Female,MidIncome,NoChild,High School,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Young,No
+Single,Male,HighIncome,TwoChildren,Partial High School,Skilled Manual,No,TwoCars,1-2 Miles,North America,MidAge,No
+Single,Female,MidIncome,OneChild,Graduate Degree,Skilled Manual,Yes,NoCar,1-2 Miles,North America,Adult,No
+Married,Female,MidIncome,OneChild,Graduate Degree,Skilled Manual,Yes,NoCar,2-5 Miles,North America,Adult,Yes
+Married,Female,MidIncome,ThreeChildren,Partial College,Professional,Yes,TwoCars,5-10 Miles,North America,Senior,No
+Married,Female,MidIncome,FourChildren,Bachelors,Skilled Manual,Yes,TwoCars,0-1 Miles,North America,MidAge,No
+Married,Female,MidIncome,OneChild,Bachelors,Skilled Manual,Yes,NoCar,2-5 Miles,North America,Adult,Yes
+Single,Male,MidIncome,TwoChildren,Bachelors,Skilled Manual,No,OneCar,0-1 Miles,North America,Adult,Yes
+Married,Female,HighIncome,ManyChildren,Bachelors,Management,Yes,TwoCars,1-2 Miles,North America,Old,Yes
+Single,Female,HighIncome,FourChildren,High School,Professional,No,ThreeCars,1-2 Miles,North America,MidAge,Yes
+Single,Female,MidIncome,NoChild,Graduate Degree,Skilled Manual,No,NoCar,0-1 Miles,North America,Adult,No
+Married,Male,HighIncome,TwoChildren,Partial High School,Skilled Manual,Yes,TwoCars,10+ Miles,North America,Senior,No
+Single,Female,HighIncome,OneChild,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,Adult,No
+Married,Male,HighIncome,NoChild,Bachelors,Professional,No,OneCar,0-1 Miles,North America,Adult,No
+Married,Female,HighIncome,FourChildren,Bachelors,Management,No,OneCar,1-2 Miles,North America,Senior,No
+Single,Female,MidIncome,ThreeChildren,Partial College,Clerical,Yes,OneCar,1-2 Miles,North America,Young,Yes
+Married,Male,MidIncome,OneChild,Bachelors,Professional,Yes,OneCar,0-1 Miles,North America,MidAge,Yes
+Married,Female,MidIncome,FourChildren,High School,Skilled Manual,Yes,TwoCars,2-5 Miles,North America,MidAge,No
+Married,Female,HighIncome,FourChildren,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,Adult,Yes
+Married,Female,MidIncome,NoChild,Partial College,Professional,Yes,TwoCars,5-10 Miles,North America,Young,No
+Married,Male,HighIncome,ManyChildren,Graduate Degree,Professional,Yes,NoCar,0-1 Miles,North America,MidAge,Yes
+Married,Male,MidIncome,OneChild,Partial College,Skilled Manual,Yes,OneCar,2-5 Miles,North America,MidAge,Yes
+Single,Male,HighIncome,ThreeChildren,Partial College,Professional,No,ManyCars,1-2 Miles,North America,MidAge,No
+Married,Female,VeryHighIncome,TwoChildren,Bachelors,Management,Yes,ThreeCars,5-10 Miles,North America,Old,No
+Married,Male,MidIncome,TwoChildren,Partial College,Professional,Yes,TwoCars,10+ Miles,North America,Senior,No
+Married,Female,HighIncome,ManyChildren,Bachelors,Management,Yes,TwoCars,1-2 Miles,North America,Old,Yes
+Single,Male,HighIncome,FourChildren,Partial College,Professional,Yes,OneCar,10+ Miles,North America,Senior,No
+Single,Female,MidIncome,ThreeChildren,Bachelors,Skilled Manual,No,OneCar,0-1 Miles,North America,Adult,No
+Married,Female,MidIncome,NoChild,Graduate Degree,Skilled Manual,Yes,NoCar,1-2 Miles,North America,Adult,Yes
+Married,Male,HighIncome,ThreeChildren,Bachelors,Management,Yes,OneCar,1-2 Miles,North America,Senior,No
+Single,Male,LowIncome,NoChild,Partial High School,Clerical,No,TwoCars,5-10 Miles,North America,Young,No
+Married,Male,MidIncome,NoChild,Graduate Degree,Professional,No,NoCar,0-1 Miles,North America,Adult,No
+Married,Female,MidIncome,NoChild,Partial College,Skilled Manual,Yes,TwoCars,5-10 Miles,North America,Adult,No
+Single,Female,MidIncome,TwoChildren,Partial High School,Skilled Manual,No,TwoCars,1-2 Miles,North America,Senior,No
+Married,Female,LowIncome,OneChild,High School,Clerical,Yes,OneCar,5-10 Miles,North America,Senior,No
+Married,Male,MidIncome,OneChild,Partial College,Skilled Manual,No,OneCar,0-1 Miles,North America,MidAge,No
+Married,Male,HighIncome,ThreeChildren,Graduate Degree,Management,Yes,TwoCars,5-10 Miles,North America,Senior,Yes
+Married,Male,HighIncome,ThreeChildren,Graduate Degree,Professional,Yes,NoCar,0-1 Miles,North America,Adult,Yes
+Married,Female,MidIncome,ThreeChildren,Bachelors,Management,Yes,TwoCars,10+ Miles,North America,Old,No
+Single,Female,HighIncome,FourChildren,Graduate Degree,Management,Yes,TwoCars,5-10 Miles,North America,Old,No
+Married,Male,HighIncome,ManyChildren,Partial College,Professional,Yes,ThreeCars,5-10 Miles,North America,MidAge,No
+Single,Male,MidIncome,NoChild,High School,Skilled Manual,Yes,OneCar,5-10 Miles,North America,Adult,No
+Single,Female,HighIncome,ThreeChildren,Bachelors,Skilled Manual,Yes,ThreeCars,10+ Miles,North America,Adult,Yes
+Married,Male,VeryHighIncome,ManyChildren,Partial College,Professional,Yes,ManyCars,2-5 Miles,North America,MidAge,No
+Single,Male,MidIncome,TwoChildren,Partial College,Clerical,No,OneCar,1-2 Miles,North America,MidAge,Yes
+Married,Male,VeryHighIncome,TwoChildren,Graduate Degree,Management,Yes,TwoCars,0-1 Miles,North America,MidAge,No
+Married,Male,MidIncome,TwoChildren,High School,Professional,No,TwoCars,1-2 Miles,North America,MidAge,Yes
+Single,Female,MidIncome,FourChildren,Bachelors,Skilled Manual,Yes,TwoCars,0-1 Miles,North America,MidAge,No
+Single,Male,MidIncome,ManyChildren,High School,Professional,Yes,ManyCars,10+ Miles,North America,Senior,Yes
+Single,Female,MidIncome,ThreeChildren,Graduate Degree,Management,Yes,TwoCars,10+ Miles,North America,Old,No
+Married,Male,HighIncome,ManyChildren,Bachelors,Management,Yes,TwoCars,10+ Miles,North America,Old,No
+Married,Male,MidIncome,FourChildren,Bachelors,Skilled Manual,No,ThreeCars,10+ Miles,North America,MidAge,No
+Single,Female,LowIncome,NoChild,High School,Skilled Manual,No,TwoCars,5-10 Miles,North America,Young,No
+Single,Female,MidIncome,OneChild,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,Adult,Yes
+Married,Male,HighIncome,TwoChildren,Partial College,Professional,No,NoCar,5-10 Miles,North America,MidAge,Yes
+Single,Male,VeryHighIncome,OneChild,Partial College,Professional,No,ThreeCars,0-1 Miles,North America,MidAge,Yes
+Married,Male,HighIncome,ManyChildren,Partial College,Professional,Yes,ThreeCars,1-2 Miles,North America,MidAge,No
+Married,Male,MidIncome,TwoChildren,High School,Professional,Yes,TwoCars,2-5 Miles,North America,Senior,Yes
+Single,Male,HighIncome,FourChildren,Graduate Degree,Professional,Yes,NoCar,2-5 Miles,North America,Adult,Yes
+Married,Male,MidIncome,TwoChildren,Bachelors,Skilled Manual,Yes,NoCar,0-1 Miles,North America,Adult,Yes
+Single,Male,HighIncome,ThreeChildren,Bachelors,Management,No,ThreeCars,1-2 Miles,North America,Adult,No
+Single,Male,MidIncome,ThreeChildren,High School,Professional,Yes,TwoCars,10+ Miles,North America,Senior,Yes
