@@ -182,60 +182,48 @@ decoded = pygifi.categorical_decode(encoded, mapping)
 
 ---
 
-## ⚖️ Validation Against R's Gifi (How Comparison Works)
+## ⚖️ Validation Against R's Gifi
 
-This project includes a full **validation suite** to verify that Python results match R's output exactly (within tolerance `1e-3`).
+This project includes a full **automated validation suite** that runs both the Python and R Gifi implementations end-to-end, then produces a category-by-category comparison report.
 
-### Step-by-step: How to run the comparison yourself
-
-#### 1. Prepare your dataset
-
-Place your CSV dataset in:
-```
-validation/datasets/
-```
-
-For example: `validation/datasets/my_data.csv`
-
-The CSV should be comma-separated with a header row. Column types (nominal, ordinal) are handled by the Python and R scripts.
-
-#### 2. Run the R script
-
-Install R's Gifi package first:
-```r
-install.packages("Gifi")
-```
-
-Then run the R script (which reads your dataset and writes results):
-```bash
-Rscript validation/r_scripts/run_gifi.R
-```
-
-This produces CSV files in `validation/results/` prefixed with `r_` (e.g., `r_homals_my_data.csv`).
-
-#### 3. Run the Python script
+### One-command run (from the project root)
 
 ```bash
-python validation/python_scripts/run_pygifi.py
+python3 run_validation.py
 ```
 
-This produces CSV files in `validation/results/` prefixed with `py_` (e.g., `py_homals_my_data.csv`).
+This single command:
+1. **Preprocesses** all datasets in `validation/datasets/` → saves cleaned versions to `validation/datasets/processed/`
+2. **Runs PyGifi Princals** on every dataset → generates internal result CSVs
+3. **Runs R Gifi Princals** (`Rscript validation/r_scripts/run_gifi.R`) → generates internal result CSVs
+4. **Compares** R vs Python category quantifications variable-by-variable
+5. **Cleans up** all intermediate files
+6. Writes **two final output files** only:
+   - `validation/results/comparison_report.txt` — human-readable category-wise diff table
+   - `validation/results/comparison_summary.csv` — machine-readable pass/fail per parameter
 
-#### 4. Compare results
+> **Requirements:** R must be installed with `install.packages("Gifi")`.
+
+### Running individual master test scripts
+
+You can also run either side independently to inspect full model output (eigenvalues, loadings, category quantifications, and transformed dataset) for every dataset:
 
 ```bash
-python validation/compare/compare_results.py
+# Python side — loops over all datasets in validation/datasets/processed/
+python3 pyGifi_test.py
+# Output: console + validation/results/python_master_report.txt
+
+# R side — same loop
+Rscript Gifi_test.R
+# Output: console + validation/results/r_master_report.txt
 ```
 
-This prints a report comparing R and Python outputs element-wise and flags any differences exceeding the tolerance.
+Both scripts automatically detect all datasets in `validation/datasets/processed/` — no hardcoded paths.
 
-#### 5. Generate a full validation report
+### Adding your own dataset
 
-```bash
-python validation/report.py
-```
-
-> Results CSV files for `bike_dataset` and `car_dataset` are already pre-computed in `validation/results/` so you can see example outputs immediately.
+1. Drop your CSV into `validation/datasets/`
+2. Run `python3 run_validation.py` — it will be picked up automatically.
 
 ---
 
@@ -312,23 +300,32 @@ pyGifi/
 │       ├── morals_neumann.json     ← R Morals output on neumann dataset
 │       └── ...                     ← Other reference outputs
 │
-├── validation/                     ← Cross-validation: Python vs R comparison suite
+├── validation/                     ← Automated R vs Python comparison suite
 │   ├── datasets/                   ← Put YOUR datasets here for comparison
 │   │   ├── bike_dataset.csv        ← Example dataset (pre-included)
 │   │   ├── car_dataset.csv         ← Example dataset (pre-included)
-│   │   └── processed/              ← Cleaned versions of datasets after preprocessing
+│   │   └── processed/              ← Cleaned versions created by preprocess_datasets.py
 │   ├── python_scripts/
-│   │   └── run_pygifi.py           ← Runs pygifi on the datasets, writes py_*.csv results
+│   │   └── run_pygifi.py           ← Runs pygifi Princals on all datasets, writes py_*.csv
 │   ├── r_scripts/
-│   │   └── run_gifi.R              ← Runs R Gifi on the datasets, writes r_*.csv results
+│   │   └── run_gifi.R              ← Runs R Gifi Princals on all datasets, writes r_*.csv
 │   ├── compare/
-│   │   └── compare_results.py      ← Reads py_*.csv and r_*.csv and checks they match
-│   ├── results/                    ← Output CSVs from both Python and R (auto-generated)
-│   │   ├── py_homals_bike_dataset.csv
-│   │   ├── r_homals_bike_dataset.csv
-│   │   └── ...
+│   │   └── compare_results.py      ← Reads py_*.csv and r_*.csv, category-by-category diff
+│   ├── results/                    ← Final outputs only (intermediate files are auto-removed)
+│   │   ├── comparison_report.txt   ← Human-readable category-wise pass/fail table
+│   │   └── comparison_summary.csv  ← Machine-readable per-parameter status
 │   ├── preprocess_datasets.py      ← Cleans raw datasets before running comparisons
-│   └── report.py                   ← Generates a combined validation report
+│   └── report.py                   ← Orchestrates all pipeline steps (Steps 1–5)
+│
+├── pyGifi_test.py                  ← Standalone PyGifi master test: loops over all datasets,
+│                                      prints eigenvalues, loadings, quantifications, transform
+│                                      → saves output to validation/results/python_master_report.txt
+│
+├── Gifi_test.R                     ← Standalone R Gifi master test: same loop as above
+│                                      → saves output to validation/results/r_master_report.txt
+│
+├── run_validation.py               ← Project-root launcher: runs the full validation pipeline
+│                                      with a single `python3 run_validation.py` command
 │
 ├── docs/                           ← Documentation and theory notebooks
 │   ├── tutorial.md                 ← Quickstart tutorial
