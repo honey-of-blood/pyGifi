@@ -18,7 +18,10 @@ import pandas as pd
 from datetime import datetime
 
 # ── Tolerances ────────────────────────────────────────────────────────────────
-ABS_TOL   = 0.05   # max-abs threshold for PASS
+# Tightened from 0.05 → 1e-5 now that pygifi_rng gives exact R initialization
+# parity (MT19937 + AS241 qnorm). If pygifi_rng is not compiled, the SVD
+# fallback may produce slightly different results and this will report FAILs.
+ABS_TOL   = 1e-6   # Tightened for exact R parity mode (seed 123)
 PREVIEW_N = 5      # number of rows to preview in general tables
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -121,8 +124,26 @@ for ds in datasets:
                 
                 rows.append({"Dataset": ds, "Variable": "Transformed Dataset", "Category": "ALL",
                              "Max|diff|": round(res_max, 6), "Mean|diff|": round(res_mean, 6),
+                             "% diff": 0.0, 
                              "Status": "PASS" if passed else "FAIL"})
 
+    # 1.5 Compare Eigenvalues
+    line()
+    line(f"  ┌─── [EIGENVALUES] " + "─" * (W - 20))
+    r_ev_path = os.path.join(RESULTS_DIR, f"r_princals_{ds}_evals.csv")
+    py_ev_path = os.path.join(RESULTS_DIR, f"py_princals_{ds}_evals.csv")
+    
+    r_ev_df, r_ev_err = load_csv(r_ev_path)
+    py_ev_df, py_ev_err = load_csv(py_ev_path)
+    
+    if r_ev_err or py_ev_err:
+        line(f"  │  [MISSING] Eigenvalues")
+    else:
+        res_max, res_mean, err = compare_arrays(r_ev_df.iloc[:, 0].values, py_ev_df.iloc[:, 0].values)
+        passed = bool(res_max <= ABS_TOL)
+        status = "✓ PASS" if passed else "✗ FAIL"
+        line(f"  │  Status: {status}  (Max diff: {res_max:.6f}, Mean diff: {res_mean:.6f})")
+        if not passed: all_passed = False
     line(f"  └" + "─" * (W - 4))
 
     # 2. Compare Category Quantifications Variable by Variable
@@ -174,9 +195,9 @@ for ds in datasets:
         py_q_map = dict(zip(py_q_df[py_cat_col].astype(str).str.strip().str.lower(), py_q_df[py_dim1_col]))
 
         col_w = 14
-        hdr = (f"  │      {'Category':<20} | {'R value':>{col_w}} | {'PyGifi value':>{col_w}} | {'diff':>{col_w}} | {'Status'}")
+        hdr = (f"  │      {'Category':<20} | {'R value':>{col_w}} | {'PyGifi value':>{col_w}} | {'diff':>{col_w}} | {'% diff':>{col_w}} | {'Status'}")
         line(hdr)
-        line(f"  │      " + "-" * 78)
+        line(f"  │      " + "-" * 93)
 
         var_max_diff = 0
         for cat in sorted(common_cats):
@@ -189,14 +210,26 @@ for ds in datasets:
             diff = min(diff_raw, diff_flip)
             var_max_diff = max(var_max_diff, diff)
 
+            # Calculate percentage difference (using aligned value)
+            if diff_flip < diff_raw:
+                aligned_py_val = -py_val
+            else:
+                aligned_py_val = py_val
+            
+            if abs(r_val) > 1e-12:
+                p_diff = (aligned_py_val - r_val) / r_val * 100
+            else:
+                p_diff = 0.0 if abs(aligned_py_val) < 1e-12 else float('inf')
+
             passed = bool(diff <= ABS_TOL)
             if not passed: all_passed = False
             status = "✓ PASS" if passed else "✗ FAIL"
 
-            line(f"  │      {cat:<20} | {r_val:>{col_w}.6f} | {py_val:>{col_w}.6f} | {diff:>{col_w}.6f} | {status}")
+            line(f"  │      {cat:<20} | {r_val:>{col_w}.6f} | {py_val:>{col_w}.6f} | {diff:>{col_w}.6f} | {p_diff:>{col_w}.6f}%| {status}")
             
             rows.append({"Dataset": ds, "Variable": vname, "Category": str(cat),
                          "Max|diff|": round(diff, 6), "Mean|diff|": round(diff, 6),
+                         "% diff": round(p_diff, 6) if p_diff != float('inf') else "inf",
                          "Status": "PASS" if passed else "FAIL"})
 
         if len(common_cats) < len(r_categories) or len(common_cats) < len(py_categories):

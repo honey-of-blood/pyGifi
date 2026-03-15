@@ -42,6 +42,10 @@ def preprocess_datasets():
                         # Fallback if column is entirely NaNs
                         df[col].fillna("Missing", inplace=True)
 
+        # 2.5 Cap at 2,000 rows to ensure validation completes in reasonable time/memory
+        if len(df) > 2000:
+            df = df.sample(n=2000, random_state=123).sort_index()
+
         # 3. Save to processed directory
         processed_path = os.path.join(processed_dir, file_name)
         df.to_csv(processed_path, index=False)

@@ -44,6 +44,14 @@ print("\n[Step 4] Running parameter comparison ...")
 compare_script = os.path.join(HERE, "compare", "compare_results.py")
 run(["python3", compare_script], env=ENV)
 
+print("\n[Step 4.5] Phase 2 — Distribution Comparison ...")
+dist_script = os.path.join(HERE, "compare", "visualize_distributions.py")
+run(["python3", dist_script], env=ENV)
+
+print("\n[Step 4.6] Phase 3 — Structural PCA Comparison ...")
+pca_script = os.path.join(HERE, "compare", "pca_comparison.py")
+run(["python3", pca_script], env=ENV)
+
 # ── Step 5: Clean up intermediate files ──────────────────────────────────────
 print("\n[Step 5] Cleaning up intermediate files ...")
 

@@ -30,8 +30,9 @@ for (ds in datasets) {
     # PRINCALS
     # ─────────────────────────────────────────────────────────────────
     cat("  Fitting R Gifi PRINCALS ...\n")
-    # Using the exact exported seed matrix if available, otherwise default
-    pr <- princals(data, ndim=2)
+    # Using explicit seed for exact parity with PyGifi's r_seed=1
+    set.seed(1)
+    pr <- princals(data, ndim=2, itmax=1000, levels="ordinal")
     base <- paste0(RESULTS_DIR, "r_princals_", prefix)
 
     # 1. Export Category Quantifications
@@ -60,9 +61,13 @@ for (ds in datasets) {
     df_transformed <- as.data.frame(as.matrix(pr$transform))
     colnames(df_transformed) <- varnames
 
-    transformed_path <- paste0(DATASETS_DIR, "gifi_transformed_", prefix, ".csv")
+    transformed_path = paste0(DATASETS_DIR, "gifi_transformed_", prefix, ".csv")
     write.csv(df_transformed, transformed_path, row.names=FALSE)
     cat(sprintf("    -> gifi_transformed_%s.csv  [%d, %d] [Transformed Dataset]\n", prefix, nrow(df_transformed), ncol(df_transformed)))
+
+    # 3. Export Eigenvalues
+    ev_df <- data.frame(eigenvalue = pr$evals)
+    write.csv(ev_df, paste0(base, "_evals.csv"), row.names=FALSE)
 }
 
 cat("\nDone — all R Gifi Princals results exported.\n")
