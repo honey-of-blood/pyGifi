@@ -54,28 +54,24 @@ def level_to_spline(levels, data):
         df_col = pd.DataFrame(col)
 
         if lv == 'nominal':
-            # R: knotsGifi(x, "D") — knots at unique data values (drop endpoints)
+            # R: knotsGifi(x, "D")
             kl = knots_gifi(df_col, type='D')
             knot_list.append(kl[0])
             ord_vec.append(False)
-            deg_vec.append(-1)   # categorical indicator basis
 
         elif lv == 'ordinal':
-            # R: knotsGifi(x, "Q") — quantile knots; ordinal=True for PAVA
-            kl = knots_gifi(df_col, type='Q')
+            # R: knotsGifi(x, "D")
+            kl = knots_gifi(df_col, type='D')
             knot_list.append(kl[0])
             ord_vec.append(True)
-            deg_vec.append(-1)   # categorical ordinal by default
 
         elif lv == 'metric':
-            # R: knotsGifi(x, "E") — no interior knots; linear polynomial
+            # R: knotsGifi(x, "E") (no interior knots)
             kl = knots_gifi(df_col, type='E')
             knot_list.append(kl[0])
             ord_vec.append(True)
-            deg_vec.append(1)    # linear (degree=1) continuous transform
 
     return {
         'knotList': knot_list,
         'ordvec': ord_vec,
-        'degvec': deg_vec,
     }

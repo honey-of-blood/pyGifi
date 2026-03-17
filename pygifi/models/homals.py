@@ -102,6 +102,7 @@ class Homals(BaseEstimator, TransformerMixin):  # type: ignore
         eps: float = 1e-6,
         verbose: bool = False,
         init_x: Optional[Any] = None,
+        r_seed: Optional[int] = None,
         optimizer: str = 'als',
     ) -> None:
         self.ndim = ndim
@@ -119,6 +120,7 @@ class Homals(BaseEstimator, TransformerMixin):  # type: ignore
         self.eps = eps
         self.verbose = verbose
         self.init_x = init_x
+        self.r_seed = r_seed
         self.optimizer = optimizer
 
     def fit(self, X: Union[pd.DataFrame, Any],
@@ -169,7 +171,7 @@ class Homals(BaseEstimator, TransformerMixin):  # type: ignore
             levelprep = level_to_spline(levels_v, data)  # type: ignore
             ordinal_v = levelprep['ordvec']
             knots_v = levelprep['knotList']
-            degrees_v = levelprep['degvec']
+            degrees_v = reshape(self.degrees, nvars)  # type: ignore
         else:
             ordinal_v = reshape(
                 self.ordinal if self.ordinal is not None else True,
@@ -219,7 +221,7 @@ class Homals(BaseEstimator, TransformerMixin):  # type: ignore
         # --- Run ALS engine ---
         h = gifi_engine(gifi, ndim=self.ndim, itmax=self.itmax,  # type: ignore
                         eps=self.eps, verbose=self.verbose,
-                        init_x=self.init_x)
+                        init_x=self.init_x, r_seed=self.r_seed)
 
         # --- Optional majorization refinement (Homals: nominal, no ordinal) ---
         if self.optimizer == 'majorization':

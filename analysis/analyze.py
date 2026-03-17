@@ -11,8 +11,11 @@ Usage (from project root):
 Outputs (per dataset):
     analysis/plots/<dataset_name>/
         01_raw_distributions.png   — category frequency bar charts for every variable
-        02_trend_plots.png         — quantification values: raw vs PyGifi vs R Gifi
-        03_pca_plots.png           — PCA scatter on all 3 forms of the data
+        02_trend_plots.png         — overlapping quantification trends (Line plots)
+        03_pca_plots.png           — PCA scatter on all 3 forms of the data (Subplots)
+        04_overlapping_pca.png     — All 3 PCA forms on a single plot for direct comparison
+        05_global_transform.png    — Overlay of all variable transformations
+        06_distribution_comp.png   — Density comparison of transformed datasets
 
 Requirements:
     pip install matplotlib seaborn scikit-learn
@@ -184,42 +187,40 @@ for ds_file in csv_files:
     legend_drawn = False
     for idx, (col, q) in enumerate(zip(df.columns, quantifications)):
         ax = axes[idx // ncols][idx % ncols]
-        cats   = df[col].cat.categories
+        cats = df[col].cat.categories
         n_cats = len(cats)
-        x      = np.arange(n_cats)
-        width  = 0.25
+        x = np.arange(n_cats)
 
-        raw_vals  = np.arange(n_cats, dtype=float)
+        # Scale raw codes for comparison
+        raw_vals = np.arange(n_cats, dtype=float)
         py_quants = q[:, 0]
         py_range  = py_quants.max() - py_quants.min() if n_cats > 1 else 1.0
         raw_range = float(n_cats - 1) if n_cats > 1 else 1.0
         raw_scaled = (raw_vals - raw_vals.mean()) / raw_range * py_range
 
-        ax.bar(x - width, raw_scaled, width, label="Raw (scaled)",
-               color=COLORS["raw"], alpha=0.82, edgecolor="#6699cc", linewidth=0.4)
-        ax.bar(x, py_quants, width, label="PyGifi",
-               color=COLORS["pygifi"], alpha=0.82, edgecolor="#77bb77", linewidth=0.4)
+        ax.plot(x, raw_scaled, marker="o", linestyle="--", linewidth=1.2,
+                color=COLORS["raw"], label="Raw (scaled)", alpha=0.6)
+        ax.plot(x, py_quants, marker="s", linestyle="-", linewidth=1.8,
+                color=COLORS["pygifi"], label="PyGifi", alpha=0.9)
 
         if df_r is not None and col in df_r.columns:
-            r_col_vals  = df_r[col].values
+            r_col_vals = df_r[col].values
             r_cat_means = np.array([
                 r_col_vals[df[col].values == cat].mean()
                 if (df[col].values == cat).any() else 0.0
                 for cat in cats
             ])
-            ax.bar(x + width, r_cat_means, width, label="R Gifi",
-                   color=COLORS["r"], alpha=0.82, edgecolor="#cc7777", linewidth=0.4)
+            ax.plot(x, r_cat_means, marker="^", linestyle="-.", linewidth=1.2,
+                    color=COLORS["r"], label="R Gifi", alpha=0.6)
 
         ax.set_title(col, fontsize=9, fontweight="bold", color="#cdd6f4")
         ax.set_xticks(x)
         ax.set_xticklabels(cats, rotation=45, ha="right", fontsize=7)
-        ax.set_ylabel("Quantification Value", fontsize=8)
-        ax.axhline(0, color="#888899", linewidth=0.6, linestyle="--")
-        ax.grid(axis="y")
+        ax.axhline(0, color="#888899", linewidth=0.5, linestyle="--")
+        ax.grid(True, alpha=0.15)
 
         if not legend_drawn:
-            ax.legend(fontsize=7, loc="upper right",
-                      facecolor="#1e1e2e", edgecolor="#555577")
+            ax.legend(fontsize=7, loc="best", facecolor="#1e1e2e", edgecolor="#555577")
             legend_drawn = True
 
     for j in range(n_vars, nrows * ncols):
@@ -267,6 +268,92 @@ for ds_file in csv_files:
 
     plt.tight_layout()
     fig.savefig(os.path.join(out_dir, "03_pca_plots.png"),
+                dpi=150, bbox_inches="tight", facecolor=fig.get_facecolor())
+    plt.close(fig)
+
+    # ══════════════════════════════════════════════════════════════════════════
+    # PLOT 4: Overlapping PCA Scatter
+    # ══════════════════════════════════════════════════════════════════════════
+    print("  →  04_overlapping_pca.png")
+    fig, ax = plt.subplots(figsize=(10, 8))
+    fig.suptitle(f"Overlapping PCA Comparison — {ds_name}",
+                 fontsize=14, fontweight="bold", color="#cdd6f4")
+
+    for title, data_df, color in series:
+        X = np.nan_to_num(data_df.values.astype(float), nan=0.0)
+        X_scaled = StandardScaler().fit_transform(X)
+        pca = PCA(n_components=2)
+        coords = pca.fit_transform(X_scaled)
+        
+        lbl = title.replace("\n", " ")
+        ax.scatter(coords[:, 0], coords[:, 1],
+                   color=color, alpha=0.5, s=25, label=lbl, edgecolors="white", linewidth=0.3)
+
+    ax.set_xlabel("Principal Component 1", color="#cdd6f4")
+    ax.set_ylabel("Principal Component 2", color="#cdd6f4")
+    ax.axhline(0, color="#444466", linewidth=0.8)
+    ax.axvline(0, color="#444466", linewidth=0.8)
+    ax.grid(True, alpha=0.3)
+    ax.legend(facecolor="#1e1e2e", edgecolor="#555577", loc="best")
+
+    plt.tight_layout()
+    fig.savefig(os.path.join(out_dir, "04_overlapping_pca.png"),
+                dpi=150, bbox_inches="tight", facecolor=fig.get_facecolor())
+    plt.close(fig)
+
+    # ══════════════════════════════════════════════════════════════════════════
+    # PLOT 5: Global Transformation Comparison
+    # ══════════════════════════════════════════════════════════════════════════
+    print("  →  05_global_transform.png")
+    fig, ax = plt.subplots(figsize=(10, 6))
+    fig.suptitle(f"Global Transformation Overview — {ds_name}", fontsize=14, fontweight="bold", color="#cdd6f4")
+    
+    for idx, (col, q) in enumerate(zip(df.columns, quantifications)):
+        cats = df[col].cat.categories
+        n_cats = len(cats)
+        # normalize x to 0-1 for overlapping multiple variables
+        x_norm = np.linspace(0, 1, n_cats)
+        py_quants = q[:, 0]
+        ax.plot(x_norm, py_quants, label=col, alpha=0.6, linewidth=1.5)
+    
+    ax.set_xlabel("Category Index (Normalized 0-1)", color="#cdd6f4")
+    ax.set_ylabel("Quantification Value", color="#cdd6f4")
+    ax.grid(True, alpha=0.2)
+    # Legend can get very large, so we move it outside or limit it
+    if len(df.columns) <= 15:
+        ax.legend(fontsize=7, ncol=2, facecolor="#1e1e2e", edgecolor="#555577", loc="upper left", bbox_to_anchor=(1, 1))
+
+    plt.tight_layout()
+    fig.savefig(os.path.join(out_dir, "05_global_transform.png"),
+                dpi=150, bbox_inches="tight", facecolor=fig.get_facecolor())
+    plt.close(fig)
+
+    # ══════════════════════════════════════════════════════════════════════════
+    # PLOT 6: Overall Distribution Comparison
+    # ══════════════════════════════════════════════════════════════════════════
+    print("  →  06_distribution_comp.png")
+    fig, ax = plt.subplots(figsize=(10, 6))
+    fig.suptitle(f"Distribution Comparison (All Variables) — {ds_name}", fontsize=14, fontweight="bold", color="#cdd6f4")
+    
+    import seaborn as sns
+    combined_data = []
+    
+    # Raw
+    combined_data.append(pd.DataFrame({"Value": df_raw.values.flatten(), "Source": "Raw (integer codes)"}))
+    # PyGifi
+    combined_data.append(pd.DataFrame({"Value": df_pygifi.values.flatten(), "Source": "PyGifi Transformed"}))
+    # R Gifi
+    if df_r is not None:
+        combined_data.append(pd.DataFrame({"Value": df_r.values.flatten(), "Source": "R Gifi Transformed"}))
+    
+    plot_df = pd.concat(combined_data)
+    sns.kdeplot(data=plot_df, x="Value", hue="Source", fill=True, ax=ax, palette=[COLORS["raw"], COLORS["pygifi"], COLORS["r"]][:len(combined_data)])
+    
+    ax.set_xlabel("Transformed Value", color="#cdd6f4")
+    ax.grid(True, alpha=0.2)
+
+    plt.tight_layout()
+    fig.savefig(os.path.join(out_dir, "06_distribution_comp.png"),
                 dpi=150, bbox_inches="tight", facecolor=fig.get_facecolor())
     plt.close(fig)
 

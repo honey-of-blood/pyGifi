@@ -65,6 +65,7 @@ class Morals(BaseEstimator, TransformerMixin):  # type: ignore
         eps: float = 1e-6,
         verbose: bool = False,
         init_x: Optional[Any] = None,
+        r_seed: Optional[int] = None,
         optimizer: str = 'als',
     ) -> None:
         self.xknots = xknots
@@ -83,6 +84,7 @@ class Morals(BaseEstimator, TransformerMixin):  # type: ignore
         self.eps = eps
         self.verbose = verbose
         self.init_x = init_x
+        self.r_seed = r_seed
         self.optimizer = optimizer
 
     def fit(self,
@@ -122,7 +124,7 @@ class Morals(BaseEstimator, TransformerMixin):  # type: ignore
         # Default knots
         if self.xknots is None:
             xknots = [
-                knots_gifi(X.iloc[:, [i]], type="Q", n=None)[0]  # type: ignore
+                knots_gifi(X.iloc[:, [i]], type="E", n=None)[0]  # type: ignore
                 for i in range(npred)
             ]
         else:
@@ -132,7 +134,7 @@ class Morals(BaseEstimator, TransformerMixin):  # type: ignore
             yknots = [
                 knots_gifi(
                     pd.DataFrame(y),
-                    type="Q",
+                    type="E",
                     n=None)[0]]  # type: ignore
         else:
             yknots = self.yknots
@@ -158,7 +160,7 @@ class Morals(BaseEstimator, TransformerMixin):  # type: ignore
 
         h = gifi_engine(  # type: ignore
             gifi, ndim=1, itmax=self.itmax, eps=self.eps,
-            verbose=self.verbose, init_x=self.init_x
+            verbose=self.verbose, init_x=self.init_x, r_seed=self.r_seed
         )
 
         # --- Optional majorization refinement (Morals: all monotone, ndim=1) ---

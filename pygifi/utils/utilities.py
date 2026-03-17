@@ -295,8 +295,10 @@ def cor_list(matrices):
     np.ndarray — correlation matrix of shape (sum(k_i), sum(k_i))
     """
     h = np.concatenate(matrices, axis=1)
-    # np.corrcoef treats rows as variables; we need columns as variables
-    return np.corrcoef(h.T)
+    # R: corList(x) -> rhat[i, j] = sum(v[[i]] * v[[j]])
+    # Since our transforms are centered and unit-normalized (sum(v^2)=1),
+    # their inner product is exactly the correlation.
+    return h.T @ h
 
 
 def svd_orthogonalize(X):

@@ -98,6 +98,7 @@ class Princals(BaseEstimator, TransformerMixin):  # type: ignore
         eps: float = 1e-6,
         verbose: bool = False,
         init_x: Optional[Any] = None,
+        r_seed: Optional[int] = None,
         optimizer: str = 'als',
     ) -> None:
         self.ndim = ndim
@@ -116,6 +117,7 @@ class Princals(BaseEstimator, TransformerMixin):  # type: ignore
         self.eps = eps
         self.verbose = verbose
         self.init_x = init_x
+        self.r_seed = r_seed
         self.optimizer = optimizer
 
     def _get_ordinal_flags(self,
@@ -169,7 +171,7 @@ class Princals(BaseEstimator, TransformerMixin):  # type: ignore
             levelprep = level_to_spline(levels_v, data)  # type: ignore
             knots_v = levelprep['knotList']
             ordinal_v = levelprep['ordvec']
-            degrees_v = levelprep['degvec']
+            degrees_v = reshape(self.degrees, nvars)  # type: ignore
         else:
             knots_v = self.knots
             if self.ordinal is not None:
@@ -213,7 +215,7 @@ class Princals(BaseEstimator, TransformerMixin):  # type: ignore
         # --- Run ALS engine ---
         h = gifi_engine(gifi, ndim=self.ndim, itmax=self.itmax,  # type: ignore
                         eps=self.eps, verbose=self.verbose,
-                        init_x=self.init_x)
+                        init_x=self.init_x, r_seed=self.r_seed)
 
         # --- Optional majorization refinement ---
         if self.optimizer == 'majorization':
@@ -271,8 +273,12 @@ class Princals(BaseEstimator, TransformerMixin):  # type: ignore
         loadings_out = np.hstack(loadings_list).T        # (nvars, ndim)
 
         # --- rhat, evals ---
-        rhat = cor_list(transforms_list)  # type: ignore
-        evals = np.linalg.eigh(rhat)[0][::-1]
+        # R: rhat <- corList(v); evals <- eigen(rhat)$values
+        # cor_list uses Inner Product of unit-length vectors, which is the correlation.
+        # This matches R's corList behavior for unit-normalized variables.
+        # The eigenvalues of the correlation matrix sum to nvars.
+        rhat = cor_list(transforms_list)
+        evals = np.linalg.eigvalsh(rhat)[::-1]
 
         # --- objectscores with optional sqrt(nobs) scaling ---
         objectscores = h['x'].copy()
@@ -282,6 +288,10 @@ class Princals(BaseEstimator, TransformerMixin):  # type: ignore
         # --- scoremat: first dim of each var's scores ---
         scoremat = np.column_stack([sc[:, 0] for sc in scores_list])
 
+        # --- lambda_ (Discrimination Measures) ---
+        # R: lambda <- dsum / nvars. dsum is sum(crossprod(y[[j]]))
+        # Here lambda_ should be a matrix of shape (ndim, ndim).
+        # We'll use the dsum accumulated in the engine.
         lambda_ = dsum / nvars
 
         # call_ mirrors R's match.call() — stores constructor args as string

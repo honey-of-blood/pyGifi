@@ -71,25 +71,14 @@ def gifi_transform(
             h[:, 0] = project_cone(
                 target=t0, data=data, basis=basis,
                 cone_type='s', missing=missing)
-    elif degree in (0, 1):
+    elif degree >= 0:
         if ordinal:
-            # Low-degree ordinal spline: PAVA on B-spline coefficients
-            h[:, 0] = project_cone(
-                target=t0, data=data, basis=basis,
-                cone_type='m', ties=ties, missing=missing)
-        else:
-            # Low-degree non-ordinal: subspace OLS
-            h[:, 0] = project_cone(
-                target=t0, data=data, basis=basis,
-                cone_type='s', ties=ties, missing=missing)
-    else:  # degree >= 2
-        if ordinal:
-            # High-degree ordinal spline: Dykstra col-space ∩ isotone cone
+            # Ordinal spline: Dykstra col-space ∩ isotone cone (R Gifi behavior)
             h[:, 0] = project_cone(
                 target=t0, data=data, basis=basis,
                 cone_type='i', ties=ties, missing=missing)
         else:
-            # High-degree non-ordinal: subspace OLS
+            # Non-ordinal: subspace OLS
             h[:, 0] = project_cone(
                 target=t0, data=data, basis=basis,
                 cone_type='s', ties=ties, missing=missing)
@@ -108,7 +97,7 @@ def gifi_transform(
     return h
 
 
-def gifi_engine(gifi, ndim, itmax=1000, eps=1e-6, verbose=False, init_x=None):
+def gifi_engine(gifi, ndim, itmax=1000, eps=1e-6, verbose=False, init_x=None, r_seed=None):
     """
     Alternating Least Squares engine for all Gifi methods.
 
@@ -128,6 +117,10 @@ def gifi_engine(gifi, ndim, itmax=1000, eps=1e-6, verbose=False, init_x=None):
             set.seed(123)
             x <- matrix(rnorm(nobs * ndim), nobs, ndim)
         and pass to Python. If None (default), uses NumPy's RNG with seed 123.
+    r_seed  : int, optional
+        If provided, uses the exact C-ported R RNG (MT19937 + AS241 Inversion)
+        to generate the starting matrix `X` for exact numerical parity with R.
+        Bypasses SVD deterministic initialization.
 
     Returns
     -------
@@ -144,7 +137,18 @@ def gifi_engine(gifi, ndim, itmax=1000, eps=1e-6, verbose=False, init_x=None):
             f"but only {nvars} were provided.")
 
     # --- Initialization ---
-    if init_x is not None:
+    if r_seed is not None:
+        try:
+            import pygifi_rng
+            x = pygifi_rng.r_init_x(nobs, ndim, r_seed)
+            x = np.asarray(x, dtype=float)
+            x = gs_rc(center(x))['q']
+        except ImportError:
+            raise ImportError(
+                "pygifi_rng C extension not built! Run `python3 setup_rng.py build_ext --inplace` "
+                "in `pygifi/rng` to use exact R numerical parity."
+            )
+    elif init_x is not None:
         # User-provided initial matrix (e.g., from R for exact parity)
         x = np.asarray(init_x, dtype=float)
         if x.shape != (nobs, ndim):
