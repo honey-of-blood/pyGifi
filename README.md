@@ -184,25 +184,23 @@ decoded = pygifi.categorical_decode(encoded, mapping)
 
 ## ⚖️ Validation Against R's Gifi
 
-This project includes a full **automated validation suite** that runs both the Python and R Gifi implementations end-to-end, then produces a category-by-category comparison report.
+This project includes a **3-Phase Automated Validation Suite** that runs both the Python and R Gifi implementations end-to-end, producing extensive comparison reports and plots.
 
 ### One-command run (from the project root)
 
 ```bash
-python3 run_validation.py
+python3 compare_test.py
 ```
 
-This single command:
-1. **Preprocesses** all datasets in `validation/datasets/` → saves cleaned versions to `validation/datasets/processed/`
-2. **Runs PyGifi Princals** on every dataset → generates internal result CSVs
-3. **Runs R Gifi Princals** (`Rscript validation/r_scripts/run_gifi.R`) → generates internal result CSVs
-4. **Compares** R vs Python category quantifications variable-by-variable
-5. **Cleans up** all intermediate files
-6. Writes **two final output files** only:
-   - `validation/results/comparison_report.txt` — human-readable category-wise diff table
-   - `validation/results/comparison_summary.csv` — machine-readable pass/fail per parameter
+This single command executes all three phases:
+1. **Phase 1: Numerical Accuracy** — Preprocesses datasets, runs PyGifi and R Gifi locally, and performs a category-by-category diff on model outputs tracking discrepancies.
+2. **Phase 2: Distribution Comparison** — Analyzes differences in empirical skewness, kurtosis, and overlays histograms for visual verification inside `validation/results/plots/`.
+3. **Phase 3: Structural PCA Comparison** — Evaluates macro-structural differences via Eigenvalues, Object Scores, and Component Loadings scatter plots.
 
-> **Requirements:** R must be installed with `install.packages("Gifi")`.
+> **Requirements:** 
+> - R must be installed with `install.packages("Gifi")`.
+> - **Exact Parity (1e-6)** requires compiling the `pygifi_rng` C extension representing R's random number generator initial state matrix setup:
+>   `cd pygifi/rng && python3 setup_rng.py build_ext --inplace`
 
 ### Running individual master test scripts
 
@@ -223,7 +221,7 @@ Both scripts automatically detect all datasets in `validation/datasets/processed
 ### Adding your own dataset
 
 1. Drop your CSV into `validation/datasets/`
-2. Run `python3 run_validation.py` — it will be picked up automatically.
+2. Run `python3 compare_test.py` — it will be picked up automatically.
 
 ---
 
@@ -244,36 +242,32 @@ pytest tests/ --ignore=tests/test_parity.py --cov=pygifi --cov-report=term-missi
 
 ## 📊 Analysis / Visualization
 
-Generate three types of plots for every dataset — comparing raw data, PyGifi-transformed, and R Gifi-transformed values.
+We provide tools for generating comparison plots against R, as well as standalone batch analysis tools.
 
-### One-command run (from the project root)
+### R Comparison Plots
+
+Generate three types of comparative plots (`01_raw_distributions.png`, `02_trend_plots.png`, `03_pca_plots.png`) using:
 
 ```bash
 python3 plot.py
 ```
 
-This automatically:
-1. Runs R Gifi Princals on all datasets (`analysis/get_r_transforms.R`) → saves transforms to `analysis/r_transforms/`
-2. Runs PyGifi Princals on all datasets
-3. Generates three plots per dataset into `analysis/plots/<dataset_name>/`:
-
-| Output file | What it shows |
-|---|---|
-| `01_raw_distributions.png` | Bar chart of category frequencies for every variable (original data, before transformation) |
-| `02_trend_plots.png` | Grouped bars per category showing the value each method assigns: Raw (scaled integer codes), PyGifi, R Gifi |
-| `03_pca_plots.png` | PCA scatter (PC1 vs PC2) on all 3 forms of the data side-by-side — shows how optimal scaling changes structure |
-
 > **Requirements:** R with `install.packages("Gifi")`. If R is unavailable, plots are generated for Raw and PyGifi only.
 
-### Adding your own dataset
+### Batch Model Analysis (master_analysis.py)
 
-Drop a CSV into `validation/datasets/` and run `python3 plot.py` — it picks up all datasets automatically.
+If you just want to run PyGifi models (`Homals`, `Princals`, `Morals`) on multiple datasets and automatically generate visualization plots (Biplots, Transplots, Screeplots) without concerning yourself with R comparisons:
+
+```bash
+python3 master_analysis.py
+```
+This script loops over all datasets in the project, fits corresponding Gifi models, and drops all output plots directly into `results/master_analysis/plots/`.
 
 ---
 
 ## 📁 Project Structure — Explained for Beginners
 
-```
+```text
 pyGifi/
 │
 ├── pygifi/                         ← The actual Python library (install this)
@@ -291,103 +285,63 @@ pyGifi/
 │   │   ├── addals.py               ← Addals: additive analysis
 │   │   └── impute.py               ← GifiIterativeImputer: missing value imputation
 │   │
-│   ├── core/                       ← Engine internals (you don't need to touch these)
-│   │   ├── engine.py               ← Main ALS loop (gifi_engine) + transformation routing
-│   │   ├── structures.py           ← Data structure builders (make_gifi, make_x_gifi)
-│   │   ├── linalg.py               ← Linear algebra helpers (Gram-Schmidt, least squares)
+│   ├── core/                       ← Engine internals
+│   │   ├── engine.py               ← Main ALS loop + transformation routing
+│   │   ├── structures.py           ← Data structure builders
+│   │   ├── linalg.py               ← Linear algebra helpers
 │   │   └── cv.py                   ← Cross-validation: cv_morals()
 │   │
 │   ├── utils/                      ← Low-level utilities (internal helpers)
-│   │   ├── _cone.py                ← Cone projection router (project_cone) — ALS H-update
-│   │   ├── isotone.py              ← PAVA, Dykstra, monotone regression algorithms
-│   │   ├── splines.py              ← B-spline basis construction (matches R's splineDesign)
-│   │   ├── coding.py               ← make_numeric, encode/decode, categorical coding
-│   │   ├── utilities.py            ← center, normalize, reshape, GS-orthogonalize helpers
+│   │   ├── _cone.py                ← Cone projection router
+│   │   ├── isotone.py              ← PAVA, Dykstra, monotone regression functions
+│   │   ├── splines.py              ← B-spline basis construction
+│   │   ├── coding.py               ← Categorical coding, encoding/decoding
+│   │   ├── utilities.py            ← Matrix manipulation components
 │   │   └── prepspline.py           ← Spline knot pre-processing utilities
 │   │
-│   ├── visualization/              ← All plotting code
-│   │   └── plot.py                 ← plot(), plot_homals, plot_princals, plot_morals, biplot
+│   ├── rng/                        ← C Extension for exact R compatibility
+│   │   ├── rng.c                   ← R's Mersenne-Twister / Normal generation ported to C
+│   │   ├── pygifi_rng.c            ← Python/C API Wrapper
+│   │   └── setup_rng.py            ← Build script for the extension
 │   │
-│   └── data/                       ← Built-in datasets (CSV files, loaded by get_dataset())
-│       ├── ABC.csv, galo.csv, hartigan.csv, neumann.csv, mammals.csv ...
+│   ├── visualization/              ← All plotting code
+│   │   └── plot.py                 ← Plot dispatcher for all models
+│   │
+│   └── data/                       ← Built-in datasets
 │
-├── analysis/                       ← Visualization analysis (raw distributions, trends, PCA)
-│   ├── analyze.py                  ← Main analysis script — generates all 3 plot types
-│   ├── get_r_transforms.R          ← R helper: runs Gifi Princals, saves transforms for analysis
-│   ├── r_transforms/               ← Auto-generated R transformed CSVs (input for analyze.py)
-│   └── plots/                      ← All generated plots (auto-created on each run)
-│       └── <dataset_name>/
-│           ├── 01_raw_distributions.png
-│           ├── 02_trend_plots.png
-│           └── 03_pca_plots.png
-│
-├── tests/                          ← Automated test suite
-│   ├── test_homals.py              ← Tests for Homals model
-│   ├── test_princals.py            ← Tests for Princals model
-│   ├── test_morals.py              ← Tests for Morals model
-│   ├── test_engine.py              ← Tests for the core ALS engine
-│   ├── test_isotone.py             ← Tests for PAVA / monotone regression
-│   ├── test_coding.py              ← Tests for encoding utilities
-│   ├── test_splines.py             ← Tests for B-spline construction
-│   ├── test_linalg.py              ← Tests for linear algebra helpers
-│   ├── test_structures.py          ← Tests for data structure builders
-│   ├── test_parity.py              ← (Slow) R vs Python parity tests — requires R installed
-│   ├── test_plot.py / test_plot2.py / test_plot_unified.py ← Plot smoke tests
-│   └── fixtures/                   ← Pre-computed R output files used as ground truth
-│       ├── homals_hartigan.json    ← R Homals output on hartigan dataset
-│       ├── princals_abc.json       ← R Princals output on ABC dataset
-│       ├── morals_neumann.json     ← R Morals output on neumann dataset
-│       └── ...                     ← Other reference outputs
-│
-├── validation/                     ← Automated R vs Python comparison suite
-│   ├── datasets/                   ← Put YOUR datasets here for comparison
-│   │   ├── bike_dataset.csv        ← Example dataset (pre-included)
-│   │   ├── car_dataset.csv         ← Example dataset (pre-included)
-│   │   └── processed/              ← Cleaned versions created by preprocess_datasets.py
+├── validation/                     ← Automated 3-Phase R vs Python Validation Suite
+│   ├── datasets/                   
+│   │   ├── processed/              ← Pre-processed CSVs ready for modeling
+│   │   └── final_dataset/          ← Organized final transformed model outputs
 │   ├── python_scripts/
-│   │   └── run_pygifi.py           ← Runs pygifi Princals on all datasets, writes py_*.csv
+│   │   └── run_pygifi.py           ← PyGifi model execution script
 │   ├── r_scripts/
-│   │   └── run_gifi.R              ← Runs R Gifi Princals on all datasets, writes r_*.csv
-│   ├── compare/
-│   │   └── compare_results.py      ← Reads py_*.csv and r_*.csv, category-by-category diff
-│   ├── results/                    ← Final outputs only (intermediate files are auto-removed)
-│   │   ├── comparison_report.txt   ← Human-readable category-wise pass/fail table
-│   │   └── comparison_summary.csv  ← Machine-readable per-parameter status
-│   ├── preprocess_datasets.py      ← Cleans raw datasets before running comparisons
-│   └── report.py                   ← Orchestrates all pipeline steps (Steps 1–5)
+│   │   └── run_gifi.R              ← R implementation script
+│   ├── compare/                    
+│   │   ├── compare_results.py      ← Phase 1: Numerical Accuracy comparison
+│   │   ├── visualize_distributions.py ← Phase 2: Distribution Comparison
+│   │   └── pca_comparison.py       ← Phase 3: Structural PCA Difference calculation
+│   ├── results/                    ← Summary comparison CSVs and parameter diff txts
+│   ├── preprocess_datasets.py      ← Cleaning raw datasets step
+│   └── report.py                   ← Orchestration of Phases 1 to 3
 │
-├── pyGifi_test.py                  ← Standalone PyGifi master test: loops over all datasets,
-│                                      prints eigenvalues, loadings, quantifications, transform
-│                                      → saves output to validation/results/python_master_report.txt
+├── compare_test.py                 ← Launcher: Runs the 3-Phase validation pipeline
+├── master_analysis.py              ← Batch Tool: Runs Homals/Princals/Morals on datasets + plots
+├── pyGifi_test.py                  ← Standalone test: Print PyGifi outputs
+├── Gifi_test.R                     ← Standalone test: Print R Gifi outputs
+├── diag_gifi.R                     ← Diagnostics test inside R directly
+├── plot.py                         ← Compare dataset structures via auto-generated R overlays
 │
-├── Gifi_test.R                     ← Standalone R Gifi master test: same loop as above
-│                                      → saves output to validation/results/r_master_report.txt
+├── analysis/                       ← Visualization analysis
+│   ├── analyze.py                  ← Main analysis script
+│   ├── get_r_transforms.R          ← R helper: runs Gifi Princals
+│   ├── r_transforms/               ← Auto-generated R transformed CSVs
+│   └── plots/                      ← All generated plots
 │
-├── plot.py                         ← Project-root launcher: runs analysis/analyze.py
-│                                      with a single `python3 plot.py` command
-│
-├── run_validation.py               ← Project-root launcher: runs the full validation pipeline
-│                                      with a single `python3 run_validation.py` command
-│
-├── docs/                           ← Documentation and theory notebooks
-│   ├── tutorial.md                 ← Quickstart tutorial
-│   ├── api.md                      ← Full API reference
-│   ├── theory.md                   ← Mathematical background on Gifi methods
-│   ├── gifi_theory.ipynb           ← Jupyter notebook: theory deep-dive
-│   ├── homals_tutorial.ipynb       ← Jupyter notebook: Homals walkthrough
-│   ├── princals_tutorial.ipynb     ← Jupyter notebook: Princals walkthrough
-│   └── morals_tutorial.ipynb       ← Jupyter notebook: Morals walkthrough
-│
-├── examples/                       ← Standalone worked examples
-│   ├── homals_example.ipynb
-│   ├── princals_example.ipynb
-│   └── morals_example.ipynb
-│
-├── pyproject.toml                  ← Package configuration: dependencies, version, metadata
-├── setup.py                        ← Legacy build script (kept for compatibility)
-├── MANIFEST.in                     ← Tells pip which non-Python files to include
-├── CHANGELOG.md                    ← Version history and what changed
-├── LICENSE                         ← GPL-3.0 license
+├── docs/                           ← Documentation and Jupyter Notebook tutorials
+├── examples/                       ← Standalone worked code examples
+├── tests/                          ← Automated Pytest Suite (ignores slow parity by default)
+├── setup.py / pyproject.toml       ← Package configurations
 └── README.md                       ← This file
 ```
 
